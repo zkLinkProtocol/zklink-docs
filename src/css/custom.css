@@ -23,3 +23,34 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.fields {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.fields a{
+  color: #000000;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.fields .field1, .fields .field2 {
+  flex: 1;
+  margin-right: 30px;
+  background: #e9eace;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.4s ease 0s;
+  text-align: center;
+  line-height: 200px;
+}
+
+.fields .field2 {
+  margin-right: 0;
+}
+
+.fields .field1:hover, .fields .field2:hover {
+  transform: scale(1.03);
+  outline-width: 0;
+}
