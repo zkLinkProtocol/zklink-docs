@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Welcome to zkLink
 
-**zkLink** is the first multi-chain integration DEX based on ZK-Rollup technology, which aims to link multiple chains, aggregate the liquidity of different ecosystems, and make it possible for native assets on different chains to interact and pair with each other. The platform adopts zero-knowledge technology and the DAO governance model to ensure the security and consistency of multi-chain asset interoperability, creating multi-chain DeFi scenarios such as trading, loaning and revenue aggregating with a secure, efficient and low-cost user experience.
+**zkLink** is the first multi-chain integration DEX based on ZK-Rollup technology, which aggregates the liquidity of different ecosystems, and makes it possible for native assets on different chains to interact and pair with each other. The platform adopts zero-knowledge technology and the DAO governance model to ensure the security and consistency of multi-chain asset interoperability, creating multi-chain DeFi scenarios such as swapping, loaning and revenue aggregating with a secure, efficient and low-cost user experience.
 
 <!-- zkLink概念插图 -->
 
