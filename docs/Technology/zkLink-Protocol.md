@@ -10,6 +10,7 @@ sidebar_position: 2
 zkLink system consists of 4 parts: **Multi-Chain Rollup Contract**, **ZK Prove System**, **Layer2 Data System**, **Layer2 Service System**.
 
 <!-- protocol插图 -->
+![protocol](../../static/img/zklink-protocol.png)
 
 **Multi-Chain Rollup Contract**: a series of rollup contracts are deployed on different L1s, fulfilling the role of regulating capital flow, verifying and storing the updated status of L2 data. The verification of zero-knowledge proofs is also completed in the rollup contracts.
 
