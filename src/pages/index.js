@@ -30,8 +30,9 @@ export default withRouter(function Home(props) {
   const {siteConfig} = useDocusaurusContext();
 
   useEffect(() => {
-    props.history.push('/docs/Introduction')
+    props.history.replace('/docs/Introduction')
   }, [])
+  return null
   return (
     <div className={styles.loading}>
       <svg width="80" height="80" version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
