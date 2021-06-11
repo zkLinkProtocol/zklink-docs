@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import { withRouter } from "react-router-dom"
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -25,8 +26,13 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
+export default withRouter(function Home(props) {
+  console.log(props)
   const {siteConfig} = useDocusaurusContext();
+
+  useEffect(() => {
+    props.history.push('/docs/Introduction')
+  }, [])
   return (
     <Layout
       title={`zk.Link - Connect Chains Together`}
@@ -37,4 +43,4 @@ export default function Home() {
       </main>
     </Layout>
   );
-}
+})
