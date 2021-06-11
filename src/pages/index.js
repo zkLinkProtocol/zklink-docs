@@ -29,8 +29,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`zk.Link - Connect Chains Together`}
+      description="A Multi-Chain Integration DEX Based on ZK-Rollup">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
