@@ -35,7 +35,7 @@ sidebar_position: 1
 
 More detailed documentation about zkLink can be found from the sidebar.
 
-## Devloper Guides
+## Developer Guides
 <!-- *等技术爸爸补充* -->
 
 
