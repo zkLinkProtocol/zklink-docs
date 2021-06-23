@@ -107,9 +107,11 @@ Step 5. Swap request is submitted. It takes 5 seconds to 2 minutes for the swap 
 
 ![img](../static/img/guide/user-guide-15.png)
 
-![img](../static/img/guide/user-guide-16.png)
+<div class="user-guide-field">
 
+![img](../static/img/guide/user-guide-16.png)
 ![img](../static/img/guide/user-guide-17.png)
+</div>
 
 ### Mirror (Stablecoins swap)
 
