@@ -133,8 +133,6 @@ Step 7. Swap request is submitted. It takes 5 seconds to 2 minutes for the swap 
 
 ![img](../static/img/guide/user-guide-18.png)
 
-![img](../static/img/guide/user-guide-19.png)
-
 ![img](../static/img/guide/user-guide-20.png)
 
 ### Add liquidity
@@ -171,7 +169,7 @@ Step 3. Confirm and sign in the MetaMask pop-up window
 
 Step 4. It takes 5 seconds to 2 minutes for the request to be confirmed, depending on Layer2 traffic. The more transactions on Layer2 are happening, the fast your swap is confirmed
 
-![img](../static/img/guide/user-guide-27.png)
+![img](../static/img/guide/user-guide-26.png)
 
 ![img](../static/img/guide/user-guide-28.png)
 
