@@ -37,9 +37,11 @@ Step 5. You can check the status in the deposit history
 
 ![img](../static/img/guide/user-guide-4.png)
 
-![img](../static/img/guide/user-guide-5.png)
+<div class="user-guide-field">
 
+![img](../static/img/guide/user-guide-5.png)
 ![img](../static/img/guide/user-guide-6.png)
+</div>
 
 ### Transactions
 
@@ -55,9 +57,11 @@ Step 5. You can check the status in the transaction history
 
 ![img](../static/img/guide/user-guide-7.png)
 
-![img](../static/img/guide/user-guide-8.png)
+<div class="user-guide-field">
 
+![img](../static/img/guide/user-guide-8.png)
 ![img](../static/img/guide/user-guide-9.png)
+</div>
 
 ### Withdrawal to Layer1
 
@@ -73,9 +77,11 @@ Step 5. You can check the status in the withdrawal history
 
 ![img](../static/img/guide/user-guide-10.png)
 
-![img](../static/img/guide/user-guide-11.png)
+<div class="user-guide-field">
 
+![img](../static/img/guide/user-guide-11.png)
 ![img](../static/img/guide/user-guide-12.png)
+</div>
 
 ### My Layer2 wallet
 

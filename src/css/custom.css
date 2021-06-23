@@ -102,3 +102,16 @@
   transform: scale(1.03);
   outline-width: 0;
 }
+
+.user-guide-field {
+  overflow: hidden;
+}
+.user-guide-field img{
+  display: block;
+  width: 49%;
+  float: left;
+}
+
+.user-guide-field img:nth-child(2) {
+  float: right;
+}
