@@ -105,6 +105,8 @@ Step 5. Swap request is submitted. It takes 5 seconds to 2 minutes for the swap 
 
 ![img](../static/img/guide/user-guide-14.png)
 
+![img](../static/img/guide/user-guide-14-2.png)
+
 ![img](../static/img/guide/user-guide-15.png)
 
 <div class="user-guide-field">
