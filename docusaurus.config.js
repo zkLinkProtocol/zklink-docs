@@ -21,6 +21,7 @@ module.exports = {
           href: 'https://zk.link',
           label: 'Home',
           position: 'left',
+          target: '_self'
         },
         {
           type: 'doc',
