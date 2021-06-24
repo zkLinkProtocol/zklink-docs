@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'zkLink-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'zkLink',
@@ -17,6 +17,11 @@ module.exports = {
         src: 'img/index-logo.png',
       },
       items: [
+        {
+          href: 'https://zk.link',
+          label: 'Home',
+          position: 'left',
+        },
         {
           type: 'doc',
           docId: 'Introduction',
@@ -73,7 +78,7 @@ module.exports = {
             // },
             {
               label: 'GitHub',
-              href: '/',
+              href: 'https://github.com/zklinkprotocol',
             }
           ],
         },
