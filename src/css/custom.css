@@ -29,7 +29,7 @@
   margin-bottom: 20px;
 }
 
-.fields a{
+.fields a {
   color: #000000;
   font-size: 22px;
   text-decoration: none;
@@ -38,19 +38,80 @@
 .fields .field1, .fields .field2 {
   flex: 1;
   margin-right: 30px;
-  background: #e9eace;
+  background: #faf9f7;
   height: 200px;
   cursor: pointer;
   transition: transform 0.4s ease 0s;
   text-align: center;
+  line-height: 26px;
   line-height: 200px;
 }
-
+.fields .title:before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  background: rgba(3, 212, 152, 1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
 .fields .field2 {
   margin-right: 0;
+}
+
+.fields .field1 {
+  background-image: url('../../static/img/field1-bg.png');
+  background-position: right -30px bottom -30px;
+  background-repeat: no-repeat;
+  background-size: 180px;
+}
+.fields .field2 {
+  background-image: url('../../static/img/field2-bg.png');
+  background-position: right -30px bottom -30px;
+  background-repeat: no-repeat;
+  background-size: 180px;
 }
 
 .fields .field1:hover, .fields .field2:hover {
   transform: scale(1.03);
   outline-width: 0;
+}
+
+.field-feature {
+  display: flex;
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+.field-feature .li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #faf9f7;
+  color: #000000;
+  height: 64px;
+  border-radius: 32px;
+  margin: 0 12px;
+  line-height: 20px;
+  transition: transform 0.4s ease;
+}
+
+.field-feature .li:hover {
+  transform: scale(1.03);
+  outline-width: 0;
+}
+
+.user-guide-field {
+  overflow: hidden;
+}
+.user-guide-field img{
+  display: block;
+  width: 49%;
+  float: left;
+}
+
+.user-guide-field img:nth-child(2) {
+  float: right;
 }
