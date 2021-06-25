@@ -4,21 +4,7 @@ sidebar_position: 7
 
 # FAQ
 
-## Community
 
-##### Q. How can I join zkLink's community
-
-A. We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach our to us via the following links:
-
-Web: https://zk.link/
-
-Twitter：https://twitter.com/zkLinkorg
-
-Telegram: https://t.me/zkLinkorg
-
-Discord：https://discord.gg/9GCwxN7xaJ
-
-Medium：https://zklinkdefi.medium.com
 
 ## What is zkLink
 
@@ -35,7 +21,7 @@ A.  As a multi-chain integration dex, zkLink functions as the "connector" betwee
 
 ##### Q. What are the fees for using zkLink's cross-chain swapping?
 
-A. Users pay 0.3%(待定) of the sum as transaction fees, which goes directly to liquidity providers. In addition, users pay the gas fee, which is typically very low since zkLink batches hundreds of transactions into one, and all users share this gas fee.
+A. Users pay 0.3% of the sum as transaction fees, which goes directly to liquidity providers. For ZKL holders, we will exempt part of transaction fees in forms of subsidies or direct discount. In addition, users pay the gas fee, which is typically very low for the following two reasons: firstly, since zkLink batches hundreds of transactions into one, and all users share this gas fee; secondly, the gas fee on Layer2 is negligible due to the light traffic.
 
 ## About technology
 
@@ -55,13 +41,13 @@ A. zkLink is the first Layer2 cross-chain DEX that adopts ZK-Rollup technique. T
 
   - In addition, zkLink will refer to Uniswap V3 on concentrated liquidity so that capital eﬀiciency could be increased by about 4,000 times in the following version.
 
-##### Q. How are security and privacy guaranteed with zkLink.
+##### Q. How are security and privacy guaranteed when using zkLink.
 
 A. zkLink's layer2 could achieve the same security level as Ethereum Layer1, and this is assured by the adoption of zero-knowledge. The Layer2 network will generate zero-knowledge proofs of the off-chain state on a regular basis and upload them to respective Layer1 contracts for verification, making sure that the transaction is correctly approved and signed bu users and the account balance on Layer1 (the mainchain) is correctly updated. In this way, the security of assets and transactions is guaranteed by cryptography rather than game theory and economic models, meaning that nobody, including the platform itself, is able to jeopardize the security of assets, and users are able to withdraw tokens losslessly under extreme cases.
 
 ##### Q. Are zkLink's smart contracts audited?
 
-A. Yes. All of zkLink's code and smart contracts are audited by Certik.
+A. Yes. All of zkLink's code and smart contracts are audited by Certik. To view the complete audit report, please view: (审计报告链接)
 
 ## What is ZKL
 
@@ -73,24 +59,50 @@ A. ZKL is the governance token of zkLink, and is an ERC-20 token. The total supp
 
 A.
 
-1. becoming a staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
-2. provide liquidity / staking: user can provide liquidity to trading pairs, or pledge idle tokens on zkLink and get ZKL as rewards.
-3. campaigns and community reward: users who offer constructive suggestions or make contribution to product design / community / resource referral.
+
+1. Provide liquidity / staking: user can provide liquidity to trading pairs, or pledge idle tokens on zkLink and get ZKL as rewards.
+2. Campaigns and community reward: users who offer constructive suggestions or make contribution to product design / community / resource referral will be rewarded with ZKL.
+3. Becoming a staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
 
 ##### Q. How holders of ZKL benefit from it?
 
 A.
 
-1. becoming the staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
-2. proposal initiation and voting: users can participate in our DAO governance by holding ZKL, and can initiate a proposal by burning certain amount of ZKL.
-3. get airdrop: those who have been holding ZKL for a considerable time can expect irregularly airdrop as a reward.
+1. Better transaction fee offers: for ZKL holders, zkLink will exempt part of transaction fees in forms of subsidies or direct discount.
+2. Get airdrop: those who have been holding ZKL for a considerable time can expect irregularly airdrop as a reward.
+3. Proposal initiation and voting: users can participate in our DAO governance by holding ZKL, and can initiate a proposal by burning certain amount of ZKL.
+4. Becoming the staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
 
 ## How to setup and play with zkLink?
 
 *For step-by-step instructions, please refer to zkLink userguide: (网址)*
+
+##### Q. Where should I start to use zkLink?
+A. To get started, users need to firstly deposit tokens to their Layer2 address via MetaMask, since every execution will happen on Layer2. Then you can start swapping / transaction / providing liquidity on this second layer, and experience all product features, before you withdraw your tokens from Layer2 back to Layer1 (the main chain). During the whole process, users always hold their assets.
+
 
 ##### Q. What wallets does zkLink support?
 
 A. Currently, users can connect MetaMask to zkLink, and zkLink will support more wallets in the following version.
 
 ##### Q. What tokens and pairs are supported by zkLink?
+
+A. 待补充
+
+
+
+## Community
+
+##### Q. How can I join zkLink's community
+
+A. We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach our to us via the following links:
+
+Web: https://zk.link/
+
+Twitter：https://twitter.com/zkLinkorg
+
+Telegram: https://t.me/zkLinkorg
+
+Discord：https://discord.gg/9GCwxN7xaJ
+
+Medium：https://zklinkdefi.medium.com
