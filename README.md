@@ -18,6 +18,12 @@ npm install
 npm run start
 ```
 
+### Self-Hosting
+#### Change port using --port and --host to change host.
+```
+npm run start -- --port 80 --host 0.0.0.0
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
