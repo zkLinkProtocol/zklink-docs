@@ -114,14 +114,14 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   - RAY：0xd42b3eebb2e86ef83f78eFB7d5432912D5F9259c
 
 #### - HECO testnet (COW, MDX)
+  - COW ：0x1A508809A119Eee6F4b7ADeef3f2a9b4479608Ac
+  - MDX ：0xe583769738b6dd4E7CAF8451050d1948BE717679
 
+#### - Polygon testnet (QUICK, KRILL）
   - QUICK ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - KRILL ：0x5122fa43c7D6dA72Ecf423F4955A0cC38753dab2
 
-#### - Polygon testnet (QUICK, KRILL）
 
-  - COW ：0x1A508809A119Eee6F4b7ADeef3f2a9b4479608Ac
-  - MDX ：0xe583769738b6dd4E7CAF8451050d1948BE717679
 
 
 #### Take XVS as an example, and you can add another token in the same way
