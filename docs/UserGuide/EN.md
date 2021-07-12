@@ -101,7 +101,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   c. Wait around 1 min and you can check the HT balance in your wallet.
 
 
-### 3. Add 8 test tokens to Metamask
+### 3. Add 10 test tokens to Metamask
 
 #### - Rinkeby testnet (XVS, AUTO, UNI, SUSHI)
 
