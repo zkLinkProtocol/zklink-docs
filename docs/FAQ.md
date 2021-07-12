@@ -47,18 +47,17 @@ A. zkLink's layer2 could achieve the same security level as Ethereum Layer1, and
 
 ##### Q. Are zkLink's smart contracts audited?
 
-A. Yes. All of zkLink's code and smart contracts are audited by Certik. To view the complete audit report, please view: (审计报告链接)
+A. Yes. All of zkLink's code and smart contracts are audited by Certik. Please check out our official website for complete audit report.
 
 ## What is ZKL
 
 ##### Q. What is ZKL?
 
-A. ZKL is the governance token of zkLink, and is an ERC-20 token. The total supply of ZKL is 1,000,000,000. For more detailed information and token economy, please refer to zkLink Whitepaper: (链接)
+A. ZKL is the governance token of zkLink, and is an ERC-20 token. The total supply of ZKL is 1,000,000,000. More details about token economy will be released at a later time. 
 
 ##### Q. How can users acquire ZKL
 
 A.
-
 
 1. Provide liquidity / staking: user can provide liquidity to trading pairs, or pledge idle tokens on zkLink and get ZKL as rewards.
 2. Campaigns and community reward: users who offer constructive suggestions or make contribution to product design / community / resource referral will be rewarded with ZKL.
@@ -75,7 +74,7 @@ A.
 
 ## How to setup and play with zkLink?
 
-*For step-by-step instructions, please refer to zkLink userguide: (网址)*
+*For step-by-step instructions, please refer to zkLink userguide: https://docs.zk.link/docs/UserGuide/EN*
 
 ##### Q. Where should I start to use zkLink?
 A. To get started, users need to firstly deposit tokens to their Layer2 address via MetaMask, since every execution will happen on Layer2. Then you can start swapping / transaction / providing liquidity on this second layer, and experience all product features, before you withdraw your tokens from Layer2 back to Layer1 (the main chain). During the whole process, users always hold their assets.
@@ -84,11 +83,6 @@ A. To get started, users need to firstly deposit tokens to their Layer2 address 
 ##### Q. What wallets does zkLink support?
 
 A. Currently, users can connect MetaMask to zkLink, and zkLink will support more wallets in the following version.
-
-##### Q. What tokens and pairs are supported by zkLink?
-
-A. 待补充
-
 
 
 ## Community
