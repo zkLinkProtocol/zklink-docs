@@ -103,10 +103,12 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ### 3. Add 8 test tokens to Metamask
 
-#### - Rinkeby testnet (XVS, AUTO)
+#### - Rinkeby testnet (XVS, AUTO, UNI, SUSHI)
 
   - XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - AUTO ：0x5122fa43c7D6dA72Ecf423F4955A0cC38753dab2
+  - UNI  ：0x8Dc5CA19e64ade17aEEB4F8c52BF8ff220eD17dE
+  - SUSHI：0xFced6f29c8BE8C1A679fBc7Ebb0AC1D3298e775e
 
 #### - Goerli testnet (SRM, RAY)
 
