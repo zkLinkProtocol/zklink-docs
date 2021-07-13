@@ -88,6 +88,7 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 ![img](../../static/img/TestnetUserGuide/10.png)
 
+
 #### - Heco
 
   a. Metamask网络切换到test Heco，打开heco水龙头: https://scan-testnet.hecochain.com/faucet
@@ -101,10 +102,27 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
   c. 领取完成等1分钟左右可以在钱包查看HT测试币是否到账
 
 
+## 二、在Metamask添加测试币
+
+### 1. 领取测试币
+  a. 保证自己测试网有一定量的Gas费
+
+  b. 切换到对应的测试网，设置Metamask和zkLink的网络一致。以Rinkeby测试网领取UNI为例
+
+  c. 导航栏选择【Faucet】，选择UNI，点击Get
+
+  d. 在Metamask钱包签名，在钱包查看测试币到账
+
+#### 目前支持领取的测试币：
+  - Rinkeby （XVS、AUTO、UNI、SUSHI）
+  - Goerli （SRM、RAY）
+  - Polygon Test （QUICK、KRILL）
+  - Heco Test（COW、MDX）
+
+![img](../../static/img/TestnetUserGuide/1000.png)
 
 
-
-### 3. Metamask添加测试币
+### 2. 在钱包里添加测试币
 
 #### 测试代币合约地址：
 
@@ -130,8 +148,6 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
   - COW ：0x1A508809A119Eee6F4b7ADeef3f2a9b4479608Ac
   - MDX ：0xe583769738b6dd4E7CAF8451050d1948BE717679
 
-
-
 #### 如何添加
 
 这里以Rinkeby添加XVS为例。添加代币需先切换到对应网络，其他同理:
@@ -147,7 +163,7 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/14.png)
 
 
-## 二、如何进行充提和转账
+## 三、如何进行充提和转账
 
 ### 1. 充值
   - a. 点击首页【充值】,进入充值页面；
@@ -179,7 +195,7 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/CH-6.png)
 
 
-## 三、如何交换和提供流动性
+## 四、如何交换和提供流动性
 
 ### 1. 交换代币
   - a. 点击L2交换；

@@ -101,7 +101,26 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   c. Wait around 1 min and you can check the HT balance in your wallet.
 
 
-### 3. Add 10 test tokens to Metamask
+
+## Step 2. Claim and add test tokens
+
+### 1. Claim test tokens
+  a. Make sure that you have claimed testnet gas fees.
+
+  b. Switch your network to the corresponding testnet.
+
+  c. Choose "Faucet" on the sidebar, select a token and click "Get".
+
+  d. Sign in your wallet.
+
+**We provide 10 test tokens as followed**
+  - Rinkeby （XVS, AUTO, UNI, SUSHI）
+  - Goerli （SRM, RAY）
+  - Polygon Test （QUICK, KRILL）
+  - Heco Test（COW, MDX）
+
+
+### 2. Add 10 test tokens to Metamask
 
 #### - Rinkeby testnet (XVS, AUTO, UNI, SUSHI)
 
@@ -124,8 +143,6 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   - KRILL ：0x5122fa43c7D6dA72Ecf423F4955A0cC38753dab2
 
 
-
-
 #### Take XVS as an example, and you can add another token in the same way
 
   a. Switch Metamask network to Rinkeby.
@@ -139,7 +156,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ![img](../../static/img/TestnetUserGuide/14.png)
 
 
-## Step 2. Deposit, withdrawal and transfer
+## Step 3. Deposit, withdrawal and transfer
 
 ### 1. Deposit to Layer2
   - Step 1. Click "Deposit" on the home page.
@@ -171,7 +188,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ![img](../../static/img/TestnetUserGuide/EN-6.png)
 
 
-## Step 3. Swap and provide liquidity
+## Step 4. Swap and provide liquidity
 
 ### 1. Swap
   - Step 1. Click "L2 Swap" from home page.
