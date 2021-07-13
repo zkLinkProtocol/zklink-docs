@@ -46,6 +46,7 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 
 ### 2. 领取测试网络的Gas费
+[![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
 
 #### - Rinkeby
   a. Metamask网络切换到Rinkeby，打开水龙头领取测试币网址: https://faucet.rinkeby.io/
@@ -105,6 +106,8 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 ## 二、在Metamask添加测试币
 
 ### 1. 领取测试币
+[![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   a. 保证自己测试网有一定量的Gas费
 
   b. 切换到对应的测试网，设置Metamask和zkLink的网络一致。以Rinkeby测试网领取UNI为例
@@ -123,6 +126,7 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 
 ### 2. 在钱包里添加测试币
+[![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")
 
 #### 测试代币合约地址：
 
@@ -166,6 +170,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ## 三、如何进行充提和转账
 
 ### 1. 充值
+[![Deposit-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170035/video_to_markdown/images/youtube--qCgDTI413Dg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=qCgDTI413Dg&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=4 "Deposit-test")
+
   - a. 点击首页【充值】,进入充值页面；
   - b. 在充值页面，选择想要充值代币并输入充值金额，点击【充值】；
   - c. MetaMask会将显示一个弹出窗口以确认交易。您可以在此处调整 GAS 费用（GAS费视当时L1主网平均手续费而定），点击确认；
@@ -176,6 +182,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/CH-2.png)
 
 ### 2. 转账
+[![How to transfer assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170342/video_to_markdown/images/youtube--uMo9p97Hx0g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=uMo9p97Hx0g&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=8 "How to transfer assets")
+
   - a. 点击首页【转账】,进入转账页面；
   - b. 输入转账地址（其他 zkLinkSwap layer2 钱包地址），选择代币并输入转账金额，点击【转账】；
   - c. MetaMask会自动弹窗，点击签名完成转账；
@@ -185,6 +193,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/CH-4.png)
 
 ### 3. 提现
+[![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   - a. 点击首页【提现】,进入提现页面；
   - b. 输入提现地址 - 选择要提现的币种 - 输入提现金额 - 选择提现网络 - 点击【提现】；
   - c. MetaMask会自动弹窗，点击签名完成提现；
@@ -198,6 +208,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ## 四、如何交换和提供流动性
 
 ### 1. 交换代币
+[![Swap-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170088/video_to_markdown/images/youtube--YQcbHayPRgQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YQcbHayPRgQ&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=5 "Swap-test")
+
   - a. 点击L2交换；
   - b. 选择输入的代币种类和数量-选择输出的代币种类；
   - c. 在上角设置滑点-点击兑换；
@@ -208,6 +220,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/CH-8.png)
 
 ### 2. 如何添加流动性
+[![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   - a. 左边导航栏选择L2流动性，点击【添加流动性】；
   - b. 选择添加流动性的两种代币，输入其中一种代币数量，系统会自动生成需要添加的另一种的代币数量 - 点击【供应】；
   - c. MetaMask 弹窗显示即将执行的交易 - 点击签名；
@@ -221,6 +235,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/CH-13.png)
 
 ### 3. 如何移除流动性
+[![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   - a. 左边导航栏选择L2流动性，点击已添加过流动性资金池，点击【移除】按钮；
   - b. 拉动按钮确认移除金额的百分比 - 点击【移除】；（目前约等待5秒至2分钟完成移除确认，取决于L2交易状况，交易越多则确认越快）；
   - c. MetaMask 自动弹窗显示即将执行的交易 - 点击“签名”；
