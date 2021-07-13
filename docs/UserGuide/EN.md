@@ -50,6 +50,9 @@ c. Mannually add HECO Testnet as below
 
 You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO Testnet, and Polygon Testnet.
 
+[![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
+
+
 #### - Claim ETH test tokens on Rinkeby testnet
   a. Switch network on Metamask to Rinkeby, and open the website: https://faucet.rinkeby.io/
 
@@ -105,6 +108,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ## Step 2. Claim and add test tokens
 
 ### 1. Claim test tokens
+[![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
   a. Make sure that you have claimed testnet gas fees.
 
   b. Switch your network to the corresponding testnet.
@@ -121,6 +125,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 
 ### 2. Add 10 test tokens to Metamask
+[![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")
 
 #### - Rinkeby testnet (XVS, AUTO, UNI, SUSHI)
 
@@ -159,6 +164,8 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ## Step 3. Deposit, withdrawal and transfer
 
 ### 1. Deposit to Layer2
+[![Deposit-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170035/video_to_markdown/images/youtube--qCgDTI413Dg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=qCgDTI413Dg&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=4 "Deposit-test")
+
   - Step 1. Click "Deposit" on the home page.
   - Step 2. In the following page, select a target token and enter the amount of token that you wish to deposit. Then click "Deposit".
   - Step 3. Confirm the transaction in your wallet.
@@ -169,6 +176,8 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ![img](../../static/img/TestnetUserGuide/EN-2.png)
 
 ### 2. Transfer
+[![How to transfer assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170342/video_to_markdown/images/youtube--uMo9p97Hx0g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=uMo9p97Hx0g&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=8 "How to transfer assets")
+
   - Step 1. Click "Transfer" from the home page.
   - Step 2. Enter the address (another zkLinkSwap Layer2 wallet address), then select a designated token, enter the amount, and then click "Transfer".
   - Step 3. Sign in your wallet.
@@ -179,6 +188,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ![img](../../static/img/TestnetUserGuide/EN-4.png)
 
 ### 3. Withdraw to Layer1
+[![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
   - Step 1. Click "Withdraw" from the home page.
   - Step 2. Enter the target address --- select a token --- enter the amount --- select a network, and click "Withdraw".
   - Step 3. Confirm and sign in your wallet.
@@ -191,6 +201,8 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ## Step 4. Swap and provide liquidity
 
 ### 1. Swap
+[![Swap-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170088/video_to_markdown/images/youtube--YQcbHayPRgQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YQcbHayPRgQ&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=5 "Swap-test")
+
   - Step 1. Click "L2 Swap" from home page.
   - Step 2. Choose the token in “From” and “To” and enter the amount you want to swap.
   - Step 3. Set a slippage and click "Swap".
@@ -202,6 +214,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 ![img](../../static/img/TestnetUserGuide/EN-9.png)
 
 ### 2. Add liquidity
+[![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
   - Step 1. Click "L2 Liquidity" from the sidebar.
   - Step 2. Select two tokens you want to add liquidity. Enter the amount of one token, and the amount of the another token required will be filled automatically. Then click "Supply".
   - Step 3. Confirm and sign in the your wallet.
@@ -216,6 +229,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 
 ### 3. Remove liquidity
+[![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
   - Step 1. Click the liquidity pool that you want to remove, and click "remove".
   - Step 2. Slide and choose a percentage that you want to remove, and click "approve".
   - Step 3. Confirm and sign in your wallet.
