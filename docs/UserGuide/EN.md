@@ -123,6 +123,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   - Polygon Test （QUICK, KRILL）
   - Heco Test（COW, MDX）
 
+![img](../../static/img/TestnetUserGuide/1000.png)
 
 ### 2. Add 10 test tokens to Metamask
 [![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")

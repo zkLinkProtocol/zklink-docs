@@ -178,8 +178,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - d. 充值提交完成：需要等待L1主链区块确认后，充值进zkLink的代币才会到账，具体时间基于L1主链网络情况而定。到账后将会在L2钱包资产明细中显示；
   - e. 可在充值记录查看充值明细，点击可以跳转至zkLink浏览器充值查看详情。
 
-![img](../../static/img/TestnetUserGuide/CH-1.png)
-![img](../../static/img/TestnetUserGuide/CH-2.png)
+![img](../../static/img/TestnetUserGuide/EN-1.png)
+![img](../../static/img/TestnetUserGuide/EN-2.png)
 
 ### 2. 转账
 [![How to transfer assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170342/video_to_markdown/images/youtube--uMo9p97Hx0g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=uMo9p97Hx0g&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=8 "How to transfer assets")
@@ -189,8 +189,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - c. MetaMask会自动弹窗，点击签名完成转账；
   - d. 可在转账记录查看转账明细，点击可以跳转至zkLink浏览器查看详情。
 
-![img](../../static/img/TestnetUserGuide/CH-3.png)
-![img](../../static/img/TestnetUserGuide/CH-4.png)
+![img](../../static/img/TestnetUserGuide/EN-3.png)
+![img](../../static/img/TestnetUserGuide/EN-4.png)
 
 ### 3. 提现
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
@@ -201,8 +201,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - d. 提现提交完成（预计1-3分钟提现交易会发送至L1网络，具体到账时间取决于L1网络状况，可以跳转至浏览器查看进度）；
   - e. 可在提现记录查看提现明细，点击可以跳转至zkLink浏览器查看详情。
 
-![img](../../static/img/TestnetUserGuide/CH-5.png)
-![img](../../static/img/TestnetUserGuide/CH-6.png)
+![img](../../static/img/TestnetUserGuide/EN-5.png)
+![img](../../static/img/TestnetUserGuide/EN-6.png)
 
 
 ## 四、如何交换和提供流动性
@@ -216,8 +216,9 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - d. MetaMask 弹窗显示即将执行的对话交易 - 点击签名；
   - e. 兑换完成提交：（目前约等待5秒至2分钟完成兑换确认，取决于L2交易状况，交易越多则确认越快）。
 
-![img](../../static/img/TestnetUserGuide/CH-7.png)
-![img](../../static/img/TestnetUserGuide/CH-8.png)
+![img](../../static/img/TestnetUserGuide/EN-7.png)
+![img](../../static/img/TestnetUserGuide/EN-8.png)
+![img](../../static/img/TestnetUserGuide/EN-9.png)
 
 ### 2. 如何添加流动性
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
@@ -228,11 +229,12 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - d. 添加流动性完成；（目前约等待5秒至2分钟完成添加确认，取决于L2交易状态，交易越多则确认越快）；
   - e. 在流动性页面可以看到已添加过流动性的资金池显示 ，下拉展开已添加流动性列表，点击【增加】可以添加流动性的份额。
 
-![img](../../static/img/TestnetUserGuide/CH-9.png)
-![img](../../static/img/TestnetUserGuide/CH-10.png)
-![img](../../static/img/TestnetUserGuide/CH-11.png)
-![img](../../static/img/TestnetUserGuide/CH-12.png)
-![img](../../static/img/TestnetUserGuide/CH-13.png)
+![img](../../static/img/TestnetUserGuide/EN-10.png)
+![img](../../static/img/TestnetUserGuide/EN-11.png)
+![img](../../static/img/TestnetUserGuide/EN-12.png)
+![img](../../static/img/TestnetUserGuide/EN-13.png)
+![img](../../static/img/TestnetUserGuide/EN-14.png)
+![img](../../static/img/TestnetUserGuide/EN-15.png)
 
 ### 3. 如何移除流动性
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
@@ -243,8 +245,8 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - d. 移除流动性完成；（目前约等待5秒至2分钟完成流动性移除的确认（取决于L2交易状况，交易越多则确认越快）；
   - e. 在流动性页面可以看到已添加过流动性的资金池显示 ，下拉展开已添加流动性列表，点击【增加】可以添加流动性的份额。
 
-![img](../../static/img/TestnetUserGuide/CH-14.png)
-![img](../../static/img/TestnetUserGuide/CH-15.png)
-![img](../../static/img/TestnetUserGuide/CH-16.png)
-![img](../../static/img/TestnetUserGuide/CH-17.png)
-![img](../../static/img/TestnetUserGuide/CH-18.png)
+![img](../../static/img/TestnetUserGuide/EN-16.png)
+![img](../../static/img/TestnetUserGuide/EN-17.png)
+![img](../../static/img/TestnetUserGuide/EN-18.png)
+![img](../../static/img/TestnetUserGuide/EN-19.png)
+![img](../../static/img/TestnetUserGuide/EN-20.png)
