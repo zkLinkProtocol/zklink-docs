@@ -57,11 +57,11 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
   c. 将模版中0x....地址改为自己的钱包公钥地址，并发布推特
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
 
   d. 找到转发的推特，点击转发-复制该条推特地址
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/7-1.png)
 
   e. 回到Rinkeby水龙头网站，复制推特地址领取ETH测试币
 

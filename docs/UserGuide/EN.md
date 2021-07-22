@@ -62,11 +62,11 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
   c. Change the 0x... address to your Ethereum address and tweet it.
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
 
   d. Find the tweet and copy the link to tweet.
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/7-1.png)
 
   e. Go to Rinkeby. Paste the link and claim ETH test token.
 
