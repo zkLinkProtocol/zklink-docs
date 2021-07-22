@@ -9,8 +9,6 @@ sidebar_position: 1
 ### 1. Configure Metamask for testnets
 Please configure your Metamask for our four testnets: Rinkeby, Goerli, HECO Testnet, and Polygon Testnet.
 
-#### - Heco Testnet
-
 a. Set up Metamask on your browser, click "expand view" to open web version.
 
 ![img](../../static/img/TestnetUserGuide/1.png)

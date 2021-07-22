@@ -8,8 +8,6 @@ sidebar_position: 2
 
 ### 1. Metamask钱包添加测试网RPC
 
-#### - Heco Tset
-
 a. 浏览器安装metamask插件钱包，点击三个点，选择expand view打开网页版
 
 ![img](../../static/img/TestnetUserGuide/1.png)
