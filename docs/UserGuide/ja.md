@@ -231,6 +231,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 ### 2. 流動性追加
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   a.【Add Liquidity】をクリックします。
 
   b. 両方のトークンを選択して、その中の一つの数量を入力したら、残りの一つの数量は自動的に入力できます。そして、【Supply】をクリックします。
@@ -251,6 +252,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 ### 3. 流動性を除くこと
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   a. 既に追加した流動性の中に、一つを選択して、【Remove】をクリックします。
 
   b. 除きたいパーセントを確認て、【Remove】をクリックします。

@@ -51,7 +51,7 @@ c. Agregar manualmente HECO Testnet como se muestra a continuación.
 
 
 #### - Rinkeby
-  a. Cambiar la red de Metamask a la de Rinkeby，y abrir el sitio web: https://faucet.rinkeby.io/
+  a. Cambiar la red de Metamask a la de Rinkeby, y abrir el sitio web: https://faucet.rinkeby.io/
 
   b. Hacer clic en la URL para abrir Twitter.
 
@@ -81,7 +81,7 @@ c. Agregar manualmente HECO Testnet como se muestra a continuación.
 
 
 #### - Polygon
-  a. Cambiar la red de Metamask a la de Mumbai Testnet，y abrir el sitio web: https://faucet.matic.network/
+  a. Cambiar la red de Metamask a la de Mumbai Testnet, y abrir el sitio web: https://faucet.matic.network/
 
   b. Copiar la dirección, hacer clic en “Submit” y luego en “Confirm”.
 
@@ -92,7 +92,7 @@ c. Agregar manualmente HECO Testnet como se muestra a continuación.
 
 #### - HECO
 
-  a. Cambiar la red de Metamask a la de test HECO，y abrir el sitio web: https://scan-testnet.hecochain.com/faucet
+  a. Cambiar la red de Metamask a la de test HECO, y abrir el sitio web: https://scan-testnet.hecochain.com/faucet
 
 ![img](../../static/img/TestnetUserGuide/11.png)
 
