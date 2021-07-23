@@ -9,8 +9,6 @@ sidebar_position: 1
 ### 1. Configure Metamask for testnets
 Please configure your Metamask for our four testnets: Rinkeby, Goerli, HECO Testnet, and Polygon Testnet.
 
-#### - Heco Testnet
-
 a. Set up Metamask on your browser, click "expand view" to open web version.
 
 ![img](../../static/img/TestnetUserGuide/1.png)
@@ -62,11 +60,11 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
   c. Change the 0x... address to your Ethereum address and tweet it.
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
 
   d. Find the tweet and copy the link to tweet.
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/7-1.png)
 
   e. Go to Rinkeby. Paste the link and claim ETH test token.
 
@@ -123,6 +121,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
   - Polygon Test （QUICK, KRILL）
   - Heco Test（COW, MDX）
 
+![img](../../static/img/TestnetUserGuide/1000.png)
 
 ### 2. Add 10 test tokens to Metamask
 [![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")
