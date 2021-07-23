@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 # 如何参与zkLink测试（中文）
 
@@ -47,6 +47,7 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 ### 2. 领取测试网络的Gas费
 [![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
+
 
 #### - Rinkeby
   a. Metamask网络切换到Rinkeby，打开水龙头领取测试币网址: https://faucet.rinkeby.io/
