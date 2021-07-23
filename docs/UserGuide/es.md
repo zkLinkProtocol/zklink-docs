@@ -252,6 +252,7 @@ c. Agregar manualmente HECO Testnet como se muestra a continuación.
 
 ### 3. Cómo eliminar liquidez
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   a. Hacer clic en el fondo de liquidez que desea eliminar y hacer clic en "eliminar".
 
   b. Confirmar el porcentaje de la cantidad de eliminación - hacer clic en"eliminar". (se necesitan de 5 segundos a 2 minutos para que confirme el eliminación, y eso depende del estado de L2)

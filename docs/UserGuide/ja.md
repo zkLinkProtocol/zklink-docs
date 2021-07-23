@@ -108,6 +108,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 ### 1. テストコインを受け取ること
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   a. テストネットワークに一定額のガス料が持ってることを確認します。
 
   b. MetamaskネットワークとzkLinkネットワークが一貫するように設定します。
@@ -194,6 +195,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 ### 3. 出金
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   a.【Withdraw】をクリックして、出金ページに入ります。
 
   b. 出金先のアドレスを入力して、トークンを選択して、数量を入力して、 ネットワークを選択して、【Withdraw】をクリックします。
@@ -256,7 +258,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
   c. MetaMaskで確認します。
 
   d. 流動性を除くことが完成できます。
-  
+
   e. 既に追加した流動性の中に、流動性を除くことができるだけではありません、同じの流動性を追加することもできます。
 
 ![img](../../static/img/TestnetUserGuide/EN-16.png)

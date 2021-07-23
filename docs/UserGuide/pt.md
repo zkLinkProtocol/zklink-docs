@@ -107,6 +107,7 @@ c. Adicione manualmente HECO Testnet conforme abaixo.
 
 ### 1. Reivindique tokens de teste
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   a. Certifique-se de ter reivindicado as taxas de Gas da testnet.
 
   b. Mude sua rede para o testnet correspondente.
@@ -187,6 +188,7 @@ c. Adicione manualmente HECO Testnet conforme abaixo.
 
 ### 3. Retirar
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   - Passo 1. Clique em " Withdraw " na página inicial.
   - Passo 2. Insira o endereço de destino --- selecione um token --- insira o valor --- selecione uma rede e clique em " Withdraw ".
   - Passo 3. Confirme e faça login na sua carteira.
@@ -213,6 +215,7 @@ c. Adicione manualmente HECO Testnet conforme abaixo.
 
 ### 2. Adicione liquidez
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   - Passo 1. Clique em " L2 Liquidity " na barra lateral.
   - Passo 2. Selecione dois tokens que deseja adicionar liquidez. Insira o valor de um token e o valor do outro token necessário será preenchido automaticamente. Em seguida, clique em " Supply ".
   - Passo 3. Confirme e faça login na sua carteira.
@@ -228,6 +231,7 @@ c. Adicione manualmente HECO Testnet conforme abaixo.
 
 ### 3. Remova a liquidez
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   - Passo 1. Clique na carteira de liquidez que deseja remover e clique em " remove ".
   - Passo 2. Deslize e escolha a porcentagem que deseja remover e clique em " approve ".
   - Passo 3. Confirme e faça login em sua carteira.

@@ -107,6 +107,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ### 1. Claim test tokens
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   a. Make sure that you have claimed testnet gas fees.
 
   b. Switch your network to the corresponding testnet.
@@ -188,6 +189,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ### 3. Withdraw to Layer1
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   - Step 1. Click "Withdraw" from the home page.
   - Step 2. Enter the target address --- select a token --- enter the amount --- select a network, and click "Withdraw".
   - Step 3. Confirm and sign in your wallet.
@@ -214,6 +216,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ### 2. Add liquidity
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   - Step 1. Click "L2 Liquidity" from the sidebar.
   - Step 2. Select two tokens you want to add liquidity. Enter the amount of one token, and the amount of the another token required will be filled automatically. Then click "Supply".
   - Step 3. Confirm and sign in the your wallet.
@@ -229,6 +232,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ### 3. Remove liquidity
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   - Step 1. Click the liquidity pool that you want to remove, and click "remove".
   - Step 2. Slide and choose a percentage that you want to remove, and click "approve".
   - Step 3. Confirm and sign in your wallet.

@@ -105,6 +105,7 @@ c. Вручную добавьте тестовую сеть HECO, как пок
 
 ### 1. Получите тестовые жетоны
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   а. Убедитесь, что вы указали плату за газ Testnet.
 
   b. Переключите вашу сеть на соответствующую тестовую сеть.
@@ -185,6 +186,7 @@ c. Вручную добавьте тестовую сеть HECO, как пок
 
 ### 3. Перейдите на уровень
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   - Шаг 1. На главной странице нажмите «Снять».
   - Шаг 2. Введите целевой адрес --- выберите токен --- введите сумму --- выберите сеть и нажмите "Снять".
   - Шаг 3. Подтвердите и войдите в свой кошелек.
@@ -211,6 +213,7 @@ c. Вручную добавьте тестовую сеть HECO, как пок
 
 ### 2. Добавьте ликвидность
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   - Шаг 1. Нажмите «L2 Liquidity» на боковой панели.
   - Шаг 2. Выберите два токена, которым вы хотите добавить ликвидность. Введите количество одного токена, и количество другого необходимого токена будет заполнено автоматически. Затем нажмите «Поставка».
   - Шаг 3. Подтвердите и войдите в свой кошелек.
@@ -226,6 +229,7 @@ c. Вручную добавьте тестовую сеть HECO, как пок
 
 ### 3. Убрать ликвидность
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   - Шаг 1. Щелкните пул ликвидности, который вы хотите удалить, и нажмите «удалить».
   - Шаг 2. Сдвиньте и выберите процент, который вы хотите удалить, и нажмите «утвердить».
   - Шаг 3. Подтвердите и войдите в свой кошелек.

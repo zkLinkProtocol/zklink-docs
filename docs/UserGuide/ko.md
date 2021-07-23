@@ -108,6 +108,7 @@ c. 아래와 같이 [HECO Testnet] 추가
 
 ### 1. 테스트 토큰 클레임
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
+
   a. 테스트 gas fee 받았는지 확인
 
   b. 해당 테스트 네트워크로 전환한지 확인
@@ -189,6 +190,7 @@ XVS를 예로 들어 같은 방법으로 다른 토큰을 추가할 수 있습�
 
 ### 3. 로 출급
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
+
   - Step 1. 홈페이지에서 [Withdraw] 클릭
   - Step 2.목표 주소 입력한 다음 [select a token] --- [enter the amount] --- [select a network]--[Withdraw] 클릭
   - Step 3. 지갑 확인하고 로그인
@@ -215,6 +217,7 @@ XVS를 예로 들어 같은 방법으로 다른 토큰을 추가할 수 있습�
 
 ### 2. 유통성 공급하기
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
+
   - Step 1. 사이드바에서 [L2 Liquidity] 클릭
   - Step 2. 유동성을 공급하려는 토큰 2개 선택하여 한 토큰의 양을 입력하면 필요한 다른 토큰의 양이 자동으로 채워진 다음 [Supply] 클릭
   - Step 3. 지갑을 확인하고 로그인
@@ -230,6 +233,7 @@ XVS를 예로 들어 같은 방법으로 다른 토큰을 추가할 수 있습�
 
 ### 3. 유통성 제거
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
+
   - Step 1. 제거하려는 유동성 풀을 클릭하고 [Remove]를 클릭
   - Step 2. 제거하려는 비율을 밀어서 선택하고 [Apply] 클릭
   - Step 3. 지갑을 확인하고 로그인
