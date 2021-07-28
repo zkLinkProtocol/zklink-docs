@@ -59,17 +59,43 @@ c. Agregar manualmente HECO Testnet como se muestra a continuación.
 
   c. Cambiar la dirección 0x.... a su dirección Ethereum y hacer un tweet.
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
   d. Buscar el tweet y "copy link to Tweet".
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
   e. Volver a Rinkeby, copiar la dirección de tweet para recibir los test tokens de ETH.
 
 ![img](../../static/img/TestnetUserGuide/8.png)
 
 #### - Goerli
+
+##### Método de recolección 1
+a. Cambiar la red de Metamask a la de Goerli，y abrir el sitio web: https://faucet.goerli.mudit.blog/
+
+b. Hacer clic en la URL para abrir Twitter.
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+c. Cambiar la dirección 0x.... a su dirección Ethereum y hacer un tweet.
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+d. Buscar el tweet y "copy link to Tweet".
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+e. Volver a Goerli, copiar la dirección de tweet para recibir los test tokens de ETH.
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### Método de recolección 2
 
   a. Cambiar la red de Metamask a la de Goerli, y abrir el sitio web: https://goerli-faucet.slock.it/
 

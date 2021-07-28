@@ -51,7 +51,7 @@ c. 아래와 같이 [HECO Testnet] 추가
 
 
 #### - Rinkeby
-  a. Metamask의 네트워크를 Linkeby로 전환하고 https://faucet.rinkby io/웹사이트 열림
+  a. Metamask의 네트워크를 Rinkeby로 전환하고 https://faucet.rinkby.io/ 웹사이트 열림
 
   b. Twitter로 리디렉
 
@@ -59,17 +59,42 @@ c. 아래와 같이 [HECO Testnet] 추가
 
   c. 0x... 주소로 변경한 다음 트윗함
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
   d. 트윗을 찾아 트윗에 링크 복사
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
   e. Rinkeby로 가서 링크를 붙여넣고 ETH 테스트 토큰 클레임
 
 ![img](../../static/img/TestnetUserGuide/8.png)
 
 #### - Goerli
+##### 수집 방법 1
+  a. Metamask의 네트워크를 Goerli로 전환하고 https://faucet.goerli.mudit.blog/ 웹사이트 열림
+
+  b. Twitter로 리디렉
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+  c. 0x... 주소로 변경한 다음 트윗함
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+  d. 트윗을 찾아 트윗에 링크 복사
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+  e. Goerli로 가서 링크를 붙여넣고 ETH 테스트 토큰 클레임
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### 수집 방법 2
 
   a. Metamask의 Goerli로 전환하고 https://goerli-faucet.slock.it/웹사이트 열림
 

@@ -49,9 +49,8 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 [![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
 
-
 #### - Rinkeby
-  a. Switch network on Metamask to Rinkeby, and open the website: https://faucet.rinkeby.io/
+  a. MetamaskネットワークがRinkebyに切り替わり、蛇口のURLを開いて、テストコインが受け取れます: https://faucet.rinkeby.io/
 
   b. URLをクリックしてリンクを開き、Twitterにジャンプします
 
@@ -59,11 +58,13 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
   c. テンプレートの0x ....アドレスを自分のウォレット公開鍵アドレスに変更し、Twitterに投稿します
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
   d. ツイートを見つけ、「ツイートのリンクをコピー」をクリックします
-
-![img](../../static/img/TestnetUserGuide/7.png)
+  
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
   e. Rinkeby蛇口のWebサイトに戻り、Twitterアドレスをコピーして、ETHテストコインを受け取れます。
 
@@ -71,6 +72,29 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 
 #### - Goerli
 
+##### 収集方法1
+  a. MetamaskネットワークがGoerliに切り替わり、蛇口のURLを開いて、テストコインが受け取れます: https://faucet.goerli.mudit.blog/
+
+  b. URLをクリックしてリンクを開き、Twitterにジャンプします
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+  c. テンプレートの0x ....アドレスを自分のウォレット公開鍵アドレスに変更し、Twitterに投稿します
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+  d. ツイートを見つけ、「ツイートのリンクをコピー」をクリックします
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+  e. Goerli蛇口のWebサイトに戻り、Twitterアドレスをコピーして、ETHテストコインを受け取れます。
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### 収集方法2
   a. MetamaskネットワークがGoerliに切り替わり，蛇口のURLを開いて: https://goerli-faucet.slock.it/
 
 ![img](../../static/img/TestnetUserGuide/9.png)

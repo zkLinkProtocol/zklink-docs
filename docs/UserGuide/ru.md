@@ -52,24 +52,50 @@ c. Вручную добавьте тестовую сеть HECO, как пок
 #### - Rinkeby
   a. Переключите сеть на Metamask на Rinkeby и откройте сайт: https://faucet.rinkeby.io/
 
-  b. RedПеренаправить в Twitter.
+  b. Перенаправить в Twitter.
 
 ![img](../../static/img/TestnetUserGuide/5.png)
 
   c. Измените адрес 0x ... на свой адрес Ethereum и напишите его в Твиттере.
 
-![img](../../static/img/TestnetUserGuide/6.png)
+![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
   d. Найдите твит и скопируйте ссылку на твит.
 
-![img](../../static/img/TestnetUserGuide/7.png)
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
-  e. Иди к Ринкеби. Вставьте ссылку и получите тестовый токен ETH.
+  e. Иди к Rinkeby. Вставьте ссылку и получите тестовый токен ETH.
 
 ![img](../../static/img/TestnetUserGuide/8.png)
 
+
 #### - Goerli
 
+##### Метод сбора первый
+  a. Переключите сеть на Metamask на Goerli и откройте сайт: https://faucet.goerli.mudit.blog/
+
+  b. Перенаправить в Twitter.
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+  c. Измените адрес 0x ... на свой адрес Ethereum и напишите его в Твиттере.
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+  d. Найдите твит и скопируйте ссылку на твит.
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+  e. Иди к Goerli. Вставьте ссылку и получите тестовый токен ETH.
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### Второй метод сбора
   a. Переключите сеть на Goerli на Metamask и откройте сайт: https://goerli-faucet.slock.it/
 
 ![img](../../static/img/TestnetUserGuide/9.png)

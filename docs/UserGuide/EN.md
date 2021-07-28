@@ -58,19 +58,45 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
 ![img](../../static/img/TestnetUserGuide/5.png)
 
-  c. Change the 0x... address to your Ethereum address and tweet it.
+  c. Change the 0x... address to the public key of your wallet and tweet it.
 
 ![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
-  d. Find the tweet and copy the link to tweet.
+  d. Find the tweet, click "Copy link to Tweet".
 
-![img](../../static/img/TestnetUserGuide/7-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
   e. Go to Rinkeby. Paste the link and claim ETH test token.
 
 ![img](../../static/img/TestnetUserGuide/8.png)
 
 #### - Claim ETH test tokens on Goerli testnet
+##### Method 1
+  a. Switch network on Metamask to Goerli, and open the website: https://faucet.goerli.mudit.blog/
+
+  b. Redirect to Twitter.
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+  c. Change the 0x... address to the public key of your wallet and tweet it.
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+
+  d. Find the tweet, click "Copy link to Tweet".
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+  e. Go to Goerli. Paste the link and claim ETH test token.
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### Method 2
 
   a. Switch network to Goerli on Metamask, and open the website: https://goerli-faucet.slock.it/
 

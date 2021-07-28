@@ -57,10 +57,12 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
   c. 将模版中0x....地址改为自己的钱包公钥地址，并发布推特
 
 ![img](../../static/img/TestnetUserGuide/6-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
-  d. 找到转发的推特，点击转发-复制该条推特地址
+  d. 找到转发的推特，点击分享按钮，点击“复制该条推特地址”
 
-![img](../../static/img/TestnetUserGuide/7-1.png)
+![img](../../static/img/TestnetUserGuide/rinkeby4.png)
+![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
   e. 回到Rinkeby水龙头网站，复制推特地址领取ETH测试币
 
@@ -69,6 +71,31 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 #### - Goerli
 
+##### 方法一
+
+  a. Metamask网络切换到Goerli，打开水龙头领取测试币网址: https://faucet.goerli.mudit.blog/
+
+  b. 点击URL打开链接并跳转至推特
+
+![img](../../static/img/TestnetUserGuide/goerli1.png)
+
+  c. 将模版中0x....地址改为自己的钱包公钥地址，并发布推特
+
+![img](../../static/img/TestnetUserGuide/goerli2.png)
+![img](../../static/img/TestnetUserGuide/goerli3.png)
+
+  d. 找到转发的推特，点击分享按钮，点击“复制该条推特地址”
+
+![img](../../static/img/TestnetUserGuide/goerli4.png)
+![img](../../static/img/TestnetUserGuide/goerli5.png)
+
+  e. 回到Goerli水龙头网站，复制推特地址领取ETH测试币
+
+![img](../../static/img/TestnetUserGuide/goerli6.png)
+
+
+##### 方法二
+
   a. Metamask网络切换到Goerli，打开Goerli水龙头: https://goerli-faucet.slock.it/
 
 ![img](../../static/img/TestnetUserGuide/9.png)
@@ -76,7 +103,6 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
   b. 复制地址，进行人机验证，然后点击【REQUEST 0.05 GOETH】
 
   c. 领取完成等1分钟左右可以在钱包查看ETH测试币是否到账
-
 
 
 #### - Polygon
