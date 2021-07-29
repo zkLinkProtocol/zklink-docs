@@ -62,7 +62,7 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
 ![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
   d. ツイートを見つけ、「ツイートのリンクをコピー」をクリックします
-  
+
 ![img](../../static/img/TestnetUserGuide/rinkeby4.png)
 ![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
@@ -142,34 +142,41 @@ c. 対応する値を順番に入力すると、テストネットが追加で�
   d. Metamaskでサインして、テストコインの到着を確認します。
 
 **現在サポートされているテストコイン：**
-  - Rinkeby （XVS, AUTO, UNI, SUSHI）
-  - Goerli （SRM, RAY）
-  - Polygon Test （QUICK, KRILL）
-  - Heco Test（COW, MDX）
+  - Rinkeby （XVS, AUTO, UNI, SUSHI, USDT, USDC）
+  - Goerli （SRM, RAY, USDT, BUSD)
+  - Polygon Test （QUICK, KRILL, USDT）
+  - Heco Test（COW, MDX, USDT, HUSD）
 
 
 ### 2. Metamaskでテストコインアドレスを追加すること
 [![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")
 
-#### - Rinkeby testnet (XVS, AUTO, UNI, SUSHI)
+#### - Rinkeby testnet（XVS, AUTO, UNI, SUSHI, USDT, USDC）
 
   - XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - AUTO ：0x5122fa43c7D6dA72Ecf423F4955A0cC38753dab2
   - UNI  ：0x8Dc5CA19e64ade17aEEB4F8c52BF8ff220eD17dE
   - SUSHI ：0xFced6f29c8BE8C1A679fBc7Ebb0AC1D3298e775e
+  - USDT：0xa689352b7c1CaD82864bEb1D90679356d3962f4d
+  - USDC：0xe583769738b6dd4E7CAF8451050d1948BE717679
 
-#### - Goerli testnet (SRM, RAY)
+#### - Goerli testnet（SRM, RAY, USDT, BUSD)
 
   - SRM ：0x80101F4da93A2912DC41b8eDBB30b98d428b8C43
   - RAY：0xd42b3eebb2e86ef83f78eFB7d5432912D5F9259c
+  - USDT：0xe583769738b6dd4E7CAF8451050d1948BE717679
+  - BUSD：0xb809b9B2dc5e93CB863176Ea2D565425B03c0540
 
-#### - HECO testnet (COW, MDX)
+#### - HECO testnet（COW, MDX, USDT, HUSD）
   - COW ：0x1A508809A119Eee6F4b7ADeef3f2a9b4479608Ac
   - MDX ：0xe583769738b6dd4E7CAF8451050d1948BE717679
+  - USDT：0x100fFDF20A0a105C83174F28b74dBA13625b54Dd
+  - HUSD：0x934988A757a543C2ECCf39F6eFf398C62A0D9Fd6
 
-#### - Polygon testnet (QUICK, KRILL）
+#### - Polygon testnet（QUICK, KRILL, USDT）
   - QUICK ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
   - KRILL ：0x5122fa43c7D6dA72Ecf423F4955A0cC38753dab2
+  - USDT：0xe583769738b6dd4E7CAF8451050d1948BE717679
 
 
 #### 例えば、RinkebyでXVSを追加したいなら、 まずは対応するネットワークに切り替える必要があります。
