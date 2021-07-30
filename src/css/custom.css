@@ -121,13 +121,23 @@
 }
 
 .navbar {
+  justify-content: center;
   font-size: 22px;
   height: 80px;
   box-shadow: 0 2px 2px 1px rgb(0 0 0 / 5%);
 }
 
+.navbar .navbar__inner {
+  max-width: 1440px;
+}
+
 .navbar .navbar__brand {
   height: auto
+}
+
+.docs-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .navbar img {
@@ -136,4 +146,83 @@
 
 .nav-link-btn {
   font-size: 20px;
+}
+
+.menu {
+  background: rgba(245, 247, 249, 1)
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background: rgba(3, 212, 152, 0.6);
+  border-radius: 8px;
+}
+
+.menu::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.menu::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.menu__list-item {
+  position: relative;
+  margin: .7rem 0;
+}
+
+.menu__link--active {
+  color: #000000
+}
+
+.menu__link--active.active {
+  color: #919ba7
+}
+
+.menu > .menu__list > .menu__list-item > a {
+  padding-left: 32px;
+}
+
+.menu > .menu__list > .menu__list-item::before {
+  content: '😀';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  /* background: url('https://uploads-ssl.webflow.com/5f7178312623813d346b8936/5f71ac95352e4b334a6edccf_loom.svg') no-repeat center;
+  background-size: cover; */
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(2):before {
+  content: '👏'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(3):before {
+  content: '😎'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(4):before {
+  content: '🧭'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(5):before {
+  content: '🤩'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(6):before {
+  content: '📔'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(7):before {
+  content: '🧐'
+}
+
+/* .menu__list .menu__list > .menu__list-item::before {
+  background-image: url('https://uploads-ssl.webflow.com/5f7178312623813d346b8936/5f71ac9b3c67c7f239875746_typeform.png')
+} */
+
+.container {
+  padding-left: 50px;
 }
