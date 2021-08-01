@@ -137,7 +137,7 @@
 
 .docs-wrapper {
   max-width: 1440px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .navbar img {
@@ -148,8 +148,24 @@
   font-size: 20px;
 }
 
+.nav-github::before {
+  content: '';
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background: url(../../static/img/github.svg) no-repeat center;
+}
+
+html[data-theme=dark] .nav-github::before {
+  background-image: url(../../static/img/github-dark.svg);
+}
+
 .menu {
-  background: rgba(245, 247, 249, 1)
+  background: rgba(245, 247, 249, 1);
+}
+
+html[data-theme=dark] .menu {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .menu::-webkit-scrollbar-thumb {
@@ -168,31 +184,55 @@
 
 .menu__list-item {
   position: relative;
-  margin: .7rem 0;
 }
-
+/* 
 .menu__link--active {
   color: #000000
-}
+} */
 
 .menu__link--active.active {
   color: #919ba7
 }
 
+.menu .menu__list .menu__list-item a {
+  font-size: 14px;
+  padding: .7rem 0 .7rem 48px;
+}
+
 .menu > .menu__list > .menu__list-item > a {
+  font-size: 16px;
   padding-left: 32px;
+  font-weight: 600;
+}
+
+.menu__list .menu__list {
+  margin-left: 0;
+}
+
+.menu__link--sublist:after {
+  width: .6rem;
+  position: relative;
+  top: 0;
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu:hover {
+  overflow-y: auto;
+  /* padding-right: 0 !important; */
 }
 
 .menu > .menu__list > .menu__list-item::before {
   content: '😀';
   position: absolute;
   left: 6px;
-  top: 6px;
+  top: 0;
   display: block;
   width: 20px;
   height: 20px;
-  /* background: url('https://uploads-ssl.webflow.com/5f7178312623813d346b8936/5f71ac95352e4b334a6edccf_loom.svg') no-repeat center;
-  background-size: cover; */
+  line-height: 44px;
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(2):before {
@@ -219,10 +259,19 @@
   content: '🧐'
 }
 
-/* .menu__list .menu__list > .menu__list-item::before {
-  background-image: url('https://uploads-ssl.webflow.com/5f7178312623813d346b8936/5f71ac9b3c67c7f239875746_typeform.png')
-} */
-
 .container {
   padding-left: 50px;
+}
+
+h1 {
+  font-size: 32px !important;
+  margin-bottom: 16px !important;
+}
+
+h2 {
+  font-size: 24px !important;
+}
+
+h3 {
+  font-size: 20px !important;
 }

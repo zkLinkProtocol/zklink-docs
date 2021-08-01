@@ -10,6 +10,7 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'zkLink-docs', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: 'zkLink',
       logo: {
@@ -34,13 +35,13 @@ module.exports = {
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/zklinkprotocol',
-          label: 'GitHub',
+          label: ' ', //GitHub
           position: 'right',
-          className: 'nav-link-btn'
+          className: 'nav-link-btn nav-github'
         }
       ],
     },
-    footer: {
+    xfooter: {
       style: 'dark',
       links: [
         {
@@ -88,6 +89,17 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} zkLink, Inc. Built with Docusaurus.`,
+    },
+    algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+      // Optional: see doc section below
+      contextualSearch: true,
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+      // Optional: Algolia search parameters
+      searchParameters: {},
+      //... other Algolia params
     },
   },
   presets: [
