@@ -119,3 +119,21 @@
 .user-guide-tac {
   text-align: center;
 }
+
+.navbar {
+  font-size: 22px;
+  height: 80px;
+  box-shadow: 0 2px 2px 1px rgb(0 0 0 / 5%);
+}
+
+.navbar .navbar__brand {
+  height: auto
+}
+
+.navbar img {
+  width: 40px;
+}
+
+.nav-link-btn {
+  font-size: 20px;
+}

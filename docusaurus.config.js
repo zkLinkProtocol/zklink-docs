@@ -21,20 +21,23 @@ module.exports = {
           href: 'https://zk.link',
           label: 'Home',
           position: 'left',
-          target: '_self'
+          target: '_self',
+          className: 'nav-link-btn'
         },
         {
           type: 'doc',
           docId: 'Introduction',
           position: 'left',
           label: 'docs',
+          className: 'nav-link-btn'
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/zklinkprotocol',
           label: 'GitHub',
           position: 'right',
-        },
+          className: 'nav-link-btn'
+        }
       ],
     },
     footer: {
