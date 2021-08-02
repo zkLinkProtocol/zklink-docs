@@ -136,8 +136,9 @@
 }
 
 .docs-wrapper {
+  width: 100%;
   max-width: 1440px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .navbar img {
@@ -145,7 +146,7 @@
 }
 
 .nav-link-btn {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-github::before {
@@ -196,7 +197,7 @@ html[data-theme=dark] .menu {
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: .7rem 0 .7rem 48px;
+  padding: .5rem 0 .5rem 48px;
 }
 
 .menu > .menu__list > .menu__list-item > a {
@@ -265,7 +266,7 @@ html[data-theme=dark] .menu {
 
 h1 {
   font-size: 32px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 32px !important;
 }
 
 h2 {
@@ -274,4 +275,15 @@ h2 {
 
 h3 {
   font-size: 20px !important;
+}
+
+hr {
+  transform: scaleY(.7);
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+.markdown img {
+  display: block;
+  margin: 0 auto;
 }

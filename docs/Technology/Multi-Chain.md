@@ -10,7 +10,7 @@ sidebar_position: 1
 
 The Layer2 network will generate zero-knowledge proofs of the off-chain state on a regular basis and upload them to respective Layer1 contracts for verification. In this way, data security of assets and transactions is guaranteed by pure mathematics than game model and economic models.
 
-![coss-chain](../../static/img/coss-chain.png)
+![coss-chain](../../static/img/coss-chain-light.png)
 
 ** More specified technical models for multi-chain asset interoperability will be disclosed at a future date.
 
@@ -19,7 +19,7 @@ The Layer2 network will generate zero-knowledge proofs of the off-chain state on
 
 zkLink supports one-click swapping with assets on different chains. For example, users can swap UNI on Ethereum for CAKE on BSC via zkLink with only one click, and can withdraw targeted tokens to respective chains to make full use of capital. All intermediate steps are performed behind the scene: it means that users do not need to go through these steps by themselves, saving much trouble, time and money. Through zkLink, users can switch assets easily among disconnected chains.
 
-![swap with multi-chain assets](../../static/img/swap-with.png)
+![swap with multi-chain assets](../../static/img/swap-with-light.png)
 
 
 #### Provide liquidity with multi-chain assets

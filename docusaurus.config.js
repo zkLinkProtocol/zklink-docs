@@ -10,7 +10,6 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'zkLink-docs', // Usually your repo name.
   themeConfig: {
-    hideableSidebar: true,
     navbar: {
       title: 'zkLink',
       logo: {

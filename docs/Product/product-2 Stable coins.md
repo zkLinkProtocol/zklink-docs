@@ -13,4 +13,4 @@ For example, on zkLink's Layer2 network, users can not only transfer their USDT 
 
 
 <!-- mirror img -->
-![mirror](../../static/img/mirror.png)
+![mirror](../../static/img/mirror-light.png)
