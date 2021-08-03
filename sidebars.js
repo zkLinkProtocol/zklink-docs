@@ -28,6 +28,11 @@ module.exports = {
       label: 'introduction'
     },
     {
+      type: 'doc',
+      id: 'Background',
+      label: 'Background'
+    },
+    {
       type: 'category',
       label: 'Product',
       collapsed: false,
