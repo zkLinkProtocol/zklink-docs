@@ -1,25 +1,24 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
-# 如何参与zkLink测试（中文）
+# 如何參與zkLink測試？ （繁體中文）
 
 ---
-## 一、准备工作
+## 一、準備工作
 
-### 1. Metamask钱包添加测试网RPC
+### 1. Metamask錢包添加測試網RPC
 
-a. 浏览器安装metamask插件钱包，点击三个点，选择expand view打开网页版
+a. 瀏覽器安裝metamask插件錢包，點擊三個點，選擇expand view打開網頁版
 
 ![img](../../static/img/TestnetUserGuide/1.png)
 
-
-b. 点击网络设置，选择自定义RPC
+b. 點擊網絡設置，選擇自定義RPC
 
 ![img](../../static/img/TestnetUserGuide/2.png)
 
-c. 按照顺序输入对应的数值，即可添加完成测试网
+c. 按照順序輸入對應的數值，即可添加完成測試網
 
-  - heco测试网
+  - heco測試網
     - networkName: Test heco
     - RPC Url: https://http-testnet.huobichain.com
     - chainId: 256
@@ -29,7 +28,7 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 ![img](../../static/img/TestnetUserGuide/3.png)
 
-  - Polygon
+  - Polygon測試網
     - networkName: Mumbai Testnet
     - RPC Url: https://rpc-mumbai.maticvigil.com
     - chainId: 80001
@@ -37,111 +36,111 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
     - explorerUrl: https://explorer-mumbai.maticvigil.com
 
 
-  - Rinkeby & Goerli  
-    Rinkeby & Goerli 测试网默认存在，无需添加
+  - Rinkeby & Goerli 測試網
+    Rinkeby & Goerli 測試網默認存在無需添加
 
 ![img](../../static/img/TestnetUserGuide/4.png)
 
 
-### 2. 领取测试网络的Gas费
+### 2. 領取測試網絡的Gas費
 [![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
 
 
 #### - Rinkeby
-  a. Metamask网络切换到Rinkeby，打开水龙头领取测试币网址: https://faucet.rinkeby.io/
+  a. Metamask網絡切換到Rinkeby，打開水龍頭領取測試幣網址： https://faucet.rinkeby.io/
 
-  b. 点击URL打开链接并跳转至推特
+  b. 點擊URL打開鏈接並跳轉至推特
 
 ![img](../../static/img/TestnetUserGuide/5.png)
 
-  c. 将模版中0x....地址改为自己的钱包公钥地址，并发布推特
+  c. 將模版中0x....地址改為自己的錢包公鑰地址，並發布推特
 
 ![img](../../static/img/TestnetUserGuide/6-1.png)
 ![img](../../static/img/TestnetUserGuide/rinkeby3.png)
 
-  d. 找到转发的推特，点击分享按钮，点击“复制该条推特地址”
+  d. 找到轉發的推特，點擊【分享】按鈕，點擊【Copy link to Tweet】
 
 ![img](../../static/img/TestnetUserGuide/rinkeby4.png)
 ![img](../../static/img/TestnetUserGuide/rinkeby5.png)
 
-  e. 回到Rinkeby水龙头网站，复制推特地址领取ETH测试币
+  e. 回到Rinkeby水龍頭網站，複製推特地址領取ETH測試幣
 
 ![img](../../static/img/TestnetUserGuide/8.png)
 
 
 #### - Goerli
 
-##### 方法一
+##### 領取方式一
 
-  a. Metamask网络切换到Goerli，打开水龙头领取测试币网址: https://faucet.goerli.mudit.blog/
+  a. Metamask網絡切換到Goerli，打開水龍頭領取測試幣網址: https://faucet.goerli.mudit.blog/
 
-  b. 点击URL打开链接并跳转至推特
+  b. 點擊下圖【tweet】打開鏈接並跳轉至推特
 
 ![img](../../static/img/TestnetUserGuide/goerli1.png)
 
-  c. 将模版中0x....地址改为自己的钱包公钥地址，并发布推特
+  c. 將模版中0x....地址改為自己的錢包公鑰地址，並發布推特
 
 ![img](../../static/img/TestnetUserGuide/goerli2.png)
 ![img](../../static/img/TestnetUserGuide/goerli3.png)
 
-  d. 找到转发的推特，点击分享按钮，点击“复制该条推特地址”
+  d. 找到轉發的推特，點擊【分享】按鈕，點擊【Copy link to Tweet】
 
 ![img](../../static/img/TestnetUserGuide/goerli4.png)
 ![img](../../static/img/TestnetUserGuide/goerli5.png)
 
-  e. 回到Goerli水龙头网站，复制推特地址领取ETH测试币
+  e. 回到Goerli水龍頭網站，複製推特地址領取ETH測試幣
 
 ![img](../../static/img/TestnetUserGuide/goerli6.png)
 
 
-##### 方法二
+##### 領取方式二
 
-  a. Metamask网络切换到Goerli，打开Goerli水龙头: https://goerli-faucet.slock.it/
+  a. Metamask網絡切換到Goerli，打開Goerli水龍頭: https://goerli-faucet.slock.it/
 
 ![img](../../static/img/TestnetUserGuide/9.png)
 
-  b. 复制地址，进行人机验证，然后点击【REQUEST 0.05 GOETH】
+  b. 複製地址，進行人機驗證，然後點擊【REQUEST 0.05 GOETH】
 
-  c. 领取完成等1分钟左右可以在钱包查看ETH测试币是否到账
+  c. 領取完成等1分鐘左右可以在錢包查看ETH測試幣是否到賬
 
 
 #### - Polygon
-  a. Metamask网络切换Mumbai Testnet，打开matic水龙头: https://faucet.matic.network/
+  a. Metamask網絡切換Mumbai Testnet，打開matic水龍頭: https://faucet.matic.network/
 
-  b. 复制地址，点击【Submit】，然后点击【Confirm】
+  b. 複製地址，點擊【Submit】，然後點擊【Confirm】
 
-  c. 领取完成等1分钟左右可以在钱包查看Matic测试币是否到账
+  c. 領取完成等1分鐘左右可以在錢包查看Matic測試幣是否到賬
 
 ![img](../../static/img/TestnetUserGuide/10.png)
 
 
 #### - Heco
 
-  a. Metamask网络切换到test Heco，打开heco水龙头: https://scan-testnet.hecochain.com/faucet
+  a. Metamask網絡切換到test Heco，打開heco水龍頭: https://scan-testnet.hecochain.com/faucet
 
 ![img](../../static/img/TestnetUserGuide/11.png)
 
-  b. 链接github账号，没有的用户需要提前注册github账户
+  b. 鏈接github賬號，沒有的用戶需要提前註冊github賬戶
 
 ![img](../../static/img/TestnetUserGuide/12.png)
 
-  c. 领取完成等1分钟左右可以在钱包查看HT测试币是否到账
+  c. 領取完成等1分鐘左右可以在錢包查看HT測試幣是否到賬
 
 
-## 二、在Metamask添加测试币
+## 二、如何領取zkLink測試網代幣
 
-### 1. 领取测试币
+### 1. 領取測試幣
 [![How to claim test tokens](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169809/video_to_markdown/images/youtube--2TarxFau0Cw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=2TarxFau0Cw&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=2 "How to claim test tokens")
 
-  a. 保证自己测试网有一定量的Gas费
+  a. 保證自己測試網有一定量的Gas費  
 
-  b. 切换到对应的测试网，设置Metamask和zkLink的网络一致。以Rinkeby测试网领取UNI为例
+  b. 切換到對應的測試網，設置Metamask和zkLink的網絡一致。以Rinkeby測試網領取UNI為例：
 
-  c. 导航栏选择【Faucet】，选择UNI，点击Get
+  c. 導航欄選擇【Faucet】，選擇UNI，點擊Get
 
-  d. 在Metamask钱包签名，在钱包查看测试币到账
+  d. 在Metamask錢包簽名，在錢包查看測試幣到賬
 
-#### 目前支持领取的测试币：
+#### 目前支持領取的測試幣：
 
   - Rinkeby （XVS、AUTO、UNI、SUSHI、USDT、USDC）
   - Goerli （SRM、RAY、USDT、BUSD）
@@ -151,10 +150,10 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 ![img](../../static/img/TestnetUserGuide/1000.png)
 
 
-### 2. 在钱包里添加测试币
+### 2. 在Metamask添加測試幣地址
 [![Add test tokens to Metamask](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169889/video_to_markdown/images/youtube--jApPhVQa_BY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=jApPhVQa_BY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=3 "Add test tokens to Metamask")
 
-#### 测试代币合约地址：
+#### 測試代幣合約地址：
 
 #### - Rinkeby testnet（XVS, AUTO, UNI, SUSHI, USDT, USDC）
 
@@ -186,80 +185,80 @@ c. 按照顺序输入对应的数值，即可添加完成测试网
 
 #### 如何添加
 
-这里以Rinkeby添加XVS为例。添加代币需先切换到对应网络，其他同理:
+這里以Rinkeby添加XVS為例。添加代幣需先切換到對應網絡，其他同理：
 
-a. 选择Rinkeby测试网
+a. 選擇Rinkeby測試網
 
-b. 点击【Add token】
+b. 點擊【Add token】
 
 ![img](../../static/img/TestnetUserGuide/13.png)
 
-c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A）到 Token Contract Address，点击【Next】即可添加完成
+c. 複製代幣合約地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A）到 Token Contract Address，點擊【Next】即可添加完成
 
 ![img](../../static/img/TestnetUserGuide/14.png)
 
 
-## 三、如何进行充提和转账
+## 三、如何進行充提和轉賬
 
 ### 1. 充值
 [![Deposit-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170035/video_to_markdown/images/youtube--qCgDTI413Dg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=qCgDTI413Dg&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=4 "Deposit-test")
 
-  - a. 点击首页【充值】,进入充值页面；
-  - b. 在充值页面，选择想要充值代币并输入充值金额，点击【充值】；
-  - c. MetaMask会将显示一个弹出窗口以确认交易。您可以在此处调整 GAS 费用（GAS费视当时L1主网平均手续费而定），点击确认；
-  - d. 充值提交完成：需要等待L1主链区块确认后，充值进zkLink的代币才会到账，具体时间基于L1主链网络情况而定。到账后将会在L2钱包资产明细中显示；
-  - e. 可在充值记录查看充值明细，点击可以跳转至zkLink浏览器充值查看详情。
+  - a. 點擊首頁【充值】,進入充值頁面
+  - b. 在充值頁面，選擇想要充值代幣並輸入充值金額，點擊【充值】
+  - c. MetaMask會將顯示一個彈出窗口以確認交易。您可以在此處調整 GAS 費用（GAS費視當時L1主網平均手續費而定），點擊確認
+  - d. 充值提交完成：需要等待L1主鏈區塊確認後，充值進zkLink的代幣才會到賬，具體時間基於L1主鍊網絡情況而定。到賬後將會在L2錢包資產明細中顯示
+  - e. 可在充值記錄查看充值明細，點擊可以跳轉至zkLink瀏覽器充值查看詳情
 
 ![img](../../static/img/TestnetUserGuide/EN-1.png)
 ![img](../../static/img/TestnetUserGuide/EN-2.png)
 
-### 2. 转账
+### 2. 轉賬
 [![How to transfer assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170342/video_to_markdown/images/youtube--uMo9p97Hx0g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=uMo9p97Hx0g&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=8 "How to transfer assets")
 
-  - a. 点击首页【转账】,进入转账页面；
-  - b. 输入转账地址（其他 zkLinkSwap layer2 钱包地址），选择代币并输入转账金额，点击【转账】；
-  - c. MetaMask会自动弹窗，点击签名完成转账；
-  - d. 可在转账记录查看转账明细，点击可以跳转至zkLink浏览器查看详情。
+  - a. 點擊首頁【轉賬】,進入轉賬頁面
+  - b. 輸入轉賬地址（其他 zkLinkSwap layer2 錢包地址），選擇代幣並輸入轉賬金額，點擊【轉賬】
+  - c. MetaMask會自動彈窗，點擊簽名完成轉賬
+  - d. 可在轉賬記錄查看轉賬明細，點擊可以跳轉至zkLink瀏覽器查看詳情
 
 ![img](../../static/img/TestnetUserGuide/EN-3.png)
 ![img](../../static/img/TestnetUserGuide/EN-4.png)
 
-### 3. 提现
+### 3. 提現
 [![How to withdraw assets](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170378/video_to_markdown/images/youtube--4o7dJkU8FOI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=4o7dJkU8FOI&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=9 "How to withdraw assets")
 
-  - a. 点击首页【提现】,进入提现页面；
-  - b. 输入提现地址 - 选择要提现的币种 - 输入提现金额 - 选择提现网络 - 点击【提现】；
-  - c. MetaMask会自动弹窗，点击签名完成提现；
-  - d. 提现提交完成（预计1-3分钟提现交易会发送至L1网络，具体到账时间取决于L1网络状况，可以跳转至浏览器查看进度）；
-  - e. 可在提现记录查看提现明细，点击可以跳转至zkLink浏览器查看详情。
+  - a. 點擊首頁【提現】,進入提現頁面
+  - b. 輸入提現地址 - 選擇要提現的幣種 - 輸入提現金額 - 選擇提現網絡 - 點擊【提現】
+  - c. MetaMask會自動彈窗，點擊簽名完成提現
+  - d. 提現提交完成（預計1-3分鐘提現交易會發送至L1網絡，具體到賬時間取決於L1網絡狀況，可以跳轉至瀏覽器查看進度）
+  - e. 可在提現記錄查看提現明細，點擊可以跳轉至zkLink瀏覽器查看詳情
 
 ![img](../../static/img/TestnetUserGuide/EN-5.png)
 ![img](../../static/img/TestnetUserGuide/EN-6.png)
 
 
-## 四、如何交换和提供流动性
+## 四、如何交換和提供流動性
 
-### 1. 交换代币
+### 1. 交換代幣
 [![Swap-test](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170088/video_to_markdown/images/youtube--YQcbHayPRgQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YQcbHayPRgQ&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=5 "Swap-test")
 
-  - a. 点击L2交换；
-  - b. 选择输入的代币种类和数量-选择输出的代币种类；
-  - c. 在上角设置滑点-点击兑换；
-  - d. MetaMask 弹窗显示即将执行的对话交易 - 点击签名；
-  - e. 兑换完成提交：（目前约等待5秒至2分钟完成兑换确认，取决于L2交易状况，交易越多则确认越快）。
+  - a. 點擊L2交換
+  - b. 選擇輸入的代幣種類和數量-選擇輸出的代幣種類
+  - c. 在上角設置滑點-點擊兌換
+  - d. MetaMask 彈窗顯示即將執行的對話交易 - 點擊簽名
+  - e. 兌換完成提交：（目前約等待5秒至2分鐘完成兌換確認，取決於L2交易狀況，交易越多則確認越快）
 
 ![img](../../static/img/TestnetUserGuide/EN-7.png)
 ![img](../../static/img/TestnetUserGuide/EN-8.png)
 ![img](../../static/img/TestnetUserGuide/EN-9.png)
 
-### 2. 如何添加流动性
+### 2. 如何添加流動性
 [![How to add liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170137/video_to_markdown/images/youtube--YK_0__qMoIY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YK_0__qMoIY&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=6 "How to add liquidity")
 
-  - a. 左边导航栏选择L2流动性，点击【添加流动性】；
-  - b. 选择添加流动性的两种代币，输入其中一种代币数量，系统会自动生成需要添加的另一种的代币数量 - 点击【供应】；
-  - c. MetaMask 弹窗显示即将执行的交易 - 点击签名；
-  - d. 添加流动性完成；（目前约等待5秒至2分钟完成添加确认，取决于L2交易状态，交易越多则确认越快）；
-  - e. 在流动性页面可以看到已添加过流动性的资金池显示 ，下拉展开已添加流动性列表，点击【增加】可以添加流动性的份额。
+  - a. 左邊導航欄選擇L2流動性，點擊【添加流動性】
+  - b. 選擇添加流動性的兩種代幣，輸入其中一種代幣數量，系統會自動生成需要添加的另一種的代幣數量 - 點擊【供應】
+  - c. MetaMask 彈窗顯示即將執行的交易 - 點擊簽名
+  - d. 添加流動性完成；（目前約等待5秒至2分鐘完成添加確認，取決於L2交易狀態，交易越多則確認越快）
+  - e. 在流動性頁面可以看到已添加過流動性的資金池顯示 ，下拉展開已添加流動性列表，點擊【增加】可以添加流動性的份額
 
 ![img](../../static/img/TestnetUserGuide/EN-10.png)
 ![img](../../static/img/TestnetUserGuide/EN-11.png)
@@ -268,14 +267,14 @@ c. 复制代币合约地址（XVS  ：0xAAC36C620E2f52AeC3EeEd2b89A2eA19BAbB132A
 ![img](../../static/img/TestnetUserGuide/EN-14.png)
 ![img](../../static/img/TestnetUserGuide/EN-15.png)
 
-### 3. 如何移除流动性
+### 3. 如何移除流動性
 [![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")
 
-  - a. 左边导航栏选择L2流动性，点击已添加过流动性资金池，点击【移除】按钮；
-  - b. 拉动按钮确认移除金额的百分比 - 点击【移除】；（目前约等待5秒至2分钟完成移除确认，取决于L2交易状况，交易越多则确认越快）；
-  - c. MetaMask 自动弹窗显示即将执行的交易 - 点击“签名”；
-  - d. 移除流动性完成；（目前约等待5秒至2分钟完成流动性移除的确认（取决于L2交易状况，交易越多则确认越快）；
-  - e. 在流动性页面可以看到已添加过流动性的资金池显示 ，下拉展开已添加流动性列表，点击【增加】可以添加流动性的份额。
+  - a. 左邊導航欄選擇L2流動性，點擊已添加過流動性資金池，點擊【移除】按鈕
+  - b. 拉動按鈕確認移除金額的百分比 - 點擊【移除】；（目前約等待5秒至2分鐘完成移除確認，取決於L2交易狀況，交易越多則確認越快）
+  - c. MetaMask 自動彈窗顯示即將執行的交易 - 點擊“簽名”
+  - d. 移除流動性完成；（目前約等待5秒至2分鐘完成流動性移除的確認（取決於L2交易狀況，交易越多則確認越快）
+  - e. 在流動性頁面可以看到已添加過流動性的資金池顯示 ，下拉展開已添加流動性列表，點擊【增加】可以添加流動性的份額
 
 ![img](../../static/img/TestnetUserGuide/EN-16.png)
 ![img](../../static/img/TestnetUserGuide/EN-17.png)
