@@ -197,7 +197,7 @@ html[data-theme=dark] .menu {
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: .5rem 0 .5rem 48px;
+  padding: 8px 0 8px 48px;
 }
 
 .menu > .menu__list > .menu__list-item > a {
@@ -229,11 +229,11 @@ html[data-theme=dark] .menu {
   content: '😀';
   position: absolute;
   left: 6px;
-  top: 0;
+  top: 8px;
   display: block;
   width: 20px;
   height: 20px;
-  line-height: 44px;
+  line-height: 20px;
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(2):before {
