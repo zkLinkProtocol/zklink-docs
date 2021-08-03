@@ -42,7 +42,11 @@ module.exports = {
       label: 'Technology',
       collapsed: false,
       items: [
-        'Technology/Multi-Chain'
+        'Technology/Multi-Chain',
+        'Technology/State&Operation',
+        'Technology/UniswapV3',
+        'Technology/ZK-Rollup',
+        'Technology/zkLink-Protocol',
       ],
     },
   ]
