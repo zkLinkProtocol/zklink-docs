@@ -196,23 +196,21 @@ html[data-theme=dark] .menu {
   color: #000000
 } */
 
-.menu__link {
-  color: #1F242B
-}
-
-.menu__link--active.active {
-  color: #919ba7
+.menu .menu__list .menu__list-item a.menu__link--active.active {
+  color: rgb(37, 194, 160)
 }
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: 5px 0 5px 48px;
+  padding: 2px 0 2px 48px;
+  color: #919ba7
 }
 
 .menu > .menu__list > .menu__list-item > a {
   font-size: 16px;
   padding: 10px 0 10px 32px;
   font-weight: 600;
+  color: #1F242B
 }
 
 .menu__list .menu__list {
@@ -296,7 +294,7 @@ hr {
   color: #424D57
 }
 
-html[data-theme=dark] .menu__link, html[data-theme=dark] .markdown, html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
+html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-theme=dark] .markdown, html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
   color: rgb(218, 221, 225)
 }
 
