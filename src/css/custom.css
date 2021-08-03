@@ -186,7 +186,7 @@ html[data-theme=dark] .menu {
 .menu__list-item {
   position: relative;
 }
-/* 
+/*
 .menu__link--active {
   color: #000000
 } */
@@ -286,4 +286,8 @@ hr {
 .markdown img {
   display: block;
   margin: 0 auto;
+}
+.highlight {
+  color: #25c2a0;
+  font-weight: 700;
 }
