@@ -129,6 +129,7 @@
 
 .navbar .navbar__inner {
   max-width: 1440px;
+  margin: 0 40px;
 }
 
 .navbar .navbar__brand {
@@ -137,8 +138,12 @@
 
 .docs-wrapper {
   width: 100%;
+  justify-content: center;
+}
+
+.docs-wrapper > div {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 40px;
 }
 
 .navbar img {
@@ -191,18 +196,22 @@ html[data-theme=dark] .menu {
   color: #000000
 } */
 
+.menu__link {
+  color: #1F242B
+}
+
 .menu__link--active.active {
   color: #919ba7
 }
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: 8px 0 8px 48px;
+  padding: 5px 0 5px 48px;
 }
 
 .menu > .menu__list > .menu__list-item > a {
   font-size: 16px;
-  padding-left: 32px;
+  padding: 10px 0 10px 32px;
   font-weight: 600;
 }
 
@@ -282,6 +291,19 @@ hr {
   border-width: 0;
   border-bottom-width: 1px;
 }
+
+.markdown {
+  color: #424D57
+}
+
+html[data-theme=dark] .menu__link, html[data-theme=dark] .markdown, html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
+  color: rgb(218, 221, 225)
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1F242B;
+}
+
 
 .markdown img {
   display: block;
