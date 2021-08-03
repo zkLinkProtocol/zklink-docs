@@ -43,11 +43,41 @@ module.exports = {
       collapsed: false,
       items: [
         'Technology/Multi-Chain',
-        'Technology/State&Operation',
-        'Technology/UniswapV3',
-        'Technology/ZK-Rollup',
         'Technology/zkLink-Protocol',
+        'Technology/State&Operation',
+        'Technology/ZK-Rollup',
+        'Technology/UniswapV3',
       ],
     },
+    {
+      type: 'category',
+      label: 'Testnet User Guide',
+      collapsed: true,
+      items: [
+        'UserGuide/EN',
+        'UserGuide/es',
+        'UserGuide/pt',
+        'UserGuide/ru',
+        'UserGuide/ko',
+        'UserGuide/ja',
+        'UserGuide/zh-TW',
+        'UserGuide/zh-CN',
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'Token Economy',
+      label: 'Token Economy'
+    },
+    {
+      type: 'doc',
+      id: 'Smart Contract',
+      label: 'Smart Contract'
+    },
+    {
+      type: 'doc',
+      id: 'FAQ',
+      label: 'FAQ'
+    }
   ]
 };
