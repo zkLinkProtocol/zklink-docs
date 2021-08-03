@@ -185,7 +185,7 @@ html[data-theme=dark] .menu {
 .menu__list-item {
   position: relative;
 }
-/* 
+/*
 .menu__link--active {
   color: #000000
 } */
@@ -274,4 +274,9 @@ h2 {
 
 h3 {
   font-size: 20px !important;
+}
+
+.highlight {
+  color: #25c2a0;
+  font-weight: 700;
 }
