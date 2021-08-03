@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Multi-chain
+# Fast Cross Chain Swap
 
 ---
 

@@ -23,14 +23,14 @@ module.exports = {
   // ],
   tutorialSidebar: [
     {
-      type: 'doc',
-      id: 'Introduction',
-      label: 'introduction'
-    },
-    {
-      type: 'doc',
-      id: 'Background',
-      label: 'Background'
+      type: 'category',
+      label: 'Welcome',
+      collapsed: false,
+      items: [
+        'Introduction',
+        'Background',
+        'Cross-chain Pairs',
+      ],
     },
     {
       type: 'category',
@@ -38,7 +38,7 @@ module.exports = {
       collapsed: false,
       items: [
         'Product/Overview',
-        'Product/product-1 multi-chain',
+        'Product/fastswap',
         'Product/product-2 Stable coins',
       ],
     },
