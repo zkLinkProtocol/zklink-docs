@@ -30,7 +30,7 @@ For those whose demand is merely cross-chain swapping instead of participating o
 
 </div>
 
-<div className="cancel-md-margin cancel-img">
+<div className="cancel-md-margin cancel-img2">
 
 When users enjoying "one-click" cross-chain swapping, there are actually several procedures behind the scene:
 ![zkLink Layer2 Network](../../static/img/fastswapdia.png)
