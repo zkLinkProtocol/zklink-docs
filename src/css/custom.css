@@ -206,7 +206,7 @@ html[data-theme=dark] .menu {
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: 5px 0 5px 48px;
+  padding: 2px 0 2px 48px;
 }
 
 .menu > .menu__list > .menu__list-item > a {

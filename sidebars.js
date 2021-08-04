@@ -37,6 +37,7 @@ module.exports = {
       label: 'Product',
       collapsed: false,
       items: [
+        'Product/swap',
         'Product/Overview',
         'Product/fastswap',
         'Product/product-2 Stable coins',
