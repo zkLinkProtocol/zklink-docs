@@ -213,7 +213,7 @@ html[data-theme=dark] .nav-github::before {
 
 .menu > .menu__list > .menu__list-item > a {
   font-size: 16px;
-  padding: 10px 0 10px 32px;
+  padding: 4px 0 4px 32px;
   font-weight: 600;
   color: #1F242B
 }
@@ -241,7 +241,7 @@ html[data-theme=dark] .nav-github::before {
   content: '😀';
   position: absolute;
   left: 6px;
-  top: 8px;
+  top: 4px;
   display: block;
   width: 20px;
   height: 20px;
@@ -346,4 +346,8 @@ html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-them
 
 .cancel-img img {
   width: 80%;
+}
+
+.cancel-img2 img {
+  width: 50%;
 }
