@@ -40,7 +40,7 @@ module.exports = {
         'Product/Overview',
         'Product/swap',
         'Product/fastswap',
-        'Product/product-2 Stable coins',
+        'Product/StableSwap',
       ],
     },
     {

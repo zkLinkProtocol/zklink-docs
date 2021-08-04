@@ -15,3 +15,9 @@ For those whose demand is merely cross-chain swapping instead of participating o
 - In virtue of Fast Withdraw technology, zkLink has managed to call Layer2 liquidity pool on Layer1 for a user-friendly experience.
 
 ![zkLink Layer2 Network](../../static/img/fastswap.png)
+## Mechanism
+When users enjoying "one-click" cross-chain swapping, there are actually several procedures behind the scene:
+![zkLink Layer2 Network](../../static/img/fastswapdia.png)
+1. Deposit: initial tokens will be automatically deposited to zkLink Layer2 network.
+2. Swap: on zkLink Layer2 network, initial tokens will be directly swapped into target tokens on corresponding AMM-based liquidity pool.
+3. Fast withdraw: once the swap is confirmed, target tokens will go to a dealer's Layer2 wallet, who will then transit right amount of target tokens to the user's Layer1 wallet from its Layer1 wallet. In this case, zkLink manages to save users even more time by avoiding the process of withdrawal from Layer2 to Layer1.
