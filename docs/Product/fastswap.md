@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ---
 
-zkLink provides fast cross-chain transaction service for popular tokens from different chains, where **traders can enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance**.
+zkLink provides fast cross-chain transaction service for popular tokens from different chains, where **traders can enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 network in advance**.
 
 For those whose demand is merely cross-chain swapping instead of participating on layer2 eco scenarios such as farming and loaning, they can simply achieve their goals via Fast Cross Chain Swap on Layer1. Target tokens will be on their layer1 wallet within only a few blocks' time.
 
