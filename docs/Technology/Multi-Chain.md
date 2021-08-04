@@ -8,12 +8,13 @@ sidebar_position: 1
 
 **zkLink** connects separate Layer1 networks with a single Layer2 network, so that tokens belonging to different ecosystems can be directly swapped with each other freely on this second layer, without an intermediate token. Users will see the pairs that have never been seen before, such as: CAKE-SUSHI, BNB-HT, BUNNY-COW, etc.
 
+<div className="cancel-img">
+
 The Layer2 network will generate zero-knowledge proofs of the off-chain state on a regular basis and upload them to respective Layer1 contracts for verification. In this way, data security of assets and transactions is guaranteed by pure mathematics than game model and economic models.
-
 ![coss-chain](../../static/img/coss-chain-light.png)
-
 ** More specified technical models for multi-chain asset interoperability will be disclosed at a future date.
 
+</div>
 
 #### Swap with multi-chain assets
 

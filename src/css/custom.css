@@ -139,6 +139,19 @@
 .docs-wrapper {
   width: 100%;
   justify-content: center;
+  background: rgba(245, 247, 249, 1);
+}
+
+html[data-theme=dark] .docs-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  background: #ffffff;
+}
+
+html[data-theme=dark] main {
+  background: rgba(0, 0, 0, 0);
 }
 
 .docs-wrapper > div {
@@ -164,14 +177,6 @@
 
 html[data-theme=dark] .nav-github::before {
   background-image: url(../../static/img/github-dark.svg);
-}
-
-.menu {
-  background: rgba(245, 247, 249, 1);
-}
-
-html[data-theme=dark] .menu {
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .menu::-webkit-scrollbar-thumb {
@@ -248,7 +253,7 @@ html[data-theme=dark] .menu {
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(3):before {
-  content: '😎'
+  content: '🎮'
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(4):before {
@@ -256,7 +261,7 @@ html[data-theme=dark] .menu {
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(5):before {
-  content: '🤩'
+  content: '🛎'
 }
 
 .menu > .menu__list > .menu__list-item:nth-child(6):before {
@@ -265,6 +270,18 @@ html[data-theme=dark] .menu {
 
 .menu > .menu__list > .menu__list-item:nth-child(7):before {
   content: '🧐'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(8):before {
+  content: '🚀'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(9):before {
+  content: '🏝'
+}
+
+.menu > .menu__list > .menu__list-item:nth-child(10):before {
+  content: '🗓'
 }
 
 .container {
@@ -313,4 +330,20 @@ html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-them
 .highlight {
   color: #25c2a0;
   font-weight: 700;
+}
+
+.cancel-md-margin blockquote, .cancel-md-margin p {
+  margin: 0;
+}
+
+.cancel-md-margin blockquote p {
+  margin-bottom: 20px;
+}
+
+.cancel-md-margin h2 {
+  color: rgb(37, 194, 160);
+}
+
+.cancel-img img {
+  width: 80%;
 }

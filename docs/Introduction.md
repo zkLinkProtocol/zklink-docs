@@ -6,14 +6,29 @@ sidebar_position: 1
 ---
 
 ## What is zkLink？
+
 zkLink is a trustless **chain-to-chain DEX** based on zero-knowledge technology.
 
 As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other.
 
+<div className="cancel-md-margin">
+
 > **🥇** Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers will be provided with zkLink SDK for their users to enjoy fast cross chain swapping without leaving their platforms: this all happens in **a secure, fast, cost-friendly experience**, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
 
+</div>
+
+<div className="cancel-md-margin cancel-img">
+
 ![zkLink Layer2 Network](../static/img/swap1.png)
+
+</div>
+
+<div className="cancel-md-margin">
+
 ## How does zkLink stands out?
+
+</div>
+
 The competitive edges of zkLink are achieved by: "Fast Cross Chain Swap" and "Zero Knowledge Technology".
 
   - <span className="highlight">Sleekest token cross-chain experience</span>
