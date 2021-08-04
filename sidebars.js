@@ -41,6 +41,7 @@ module.exports = {
         'Product/swap',
         'Product/fastswap',
         'Product/StableSwap',
+        'Product/widget',
       ],
     },
     {
@@ -84,6 +85,11 @@ module.exports = {
       type: 'doc',
       id: 'FAQ',
       label: 'FAQ'
+    },
+    {
+      type: 'doc',
+      id: 'community',
+      label: 'community'
     }
   ]
 };

@@ -18,15 +18,15 @@ The competitive edges of zkLink are achieved by: "Fast Cross Chain Swap" and "Ze
 
   - <span className="highlight">Sleekest token cross-chain experience</span>
 
-    + Traders can now directly exchange one token to any kinds from any chains, with only "one click".
-    + Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, saving much time & effort.  
-    + Friendly user experience in aspects of learning cost, mental cost, time cost, and monetary cost.
+    + Traders can now directly exchange one token to any kinds from any chains, with only "**one click**".
+    + Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, **saving much time & effort**.  
+    + **Friendly user experience** in aspects of learning cost, mental cost, time cost, and monetary cost.
 
   - <span className="highlight">Security and validity</span>
 
-    + zkLink achieves the same security level as Ethereum Layer1.
-    + Zero knowledge guarantees that nobody, including the platform, can play maliciously and users can retrieve tokens losslessly in any extreme cases, and that cross-chain transactions are always valid.
-    + Even the total data loss of zkLink can not endanger capital safety when users can roll back account states based on Layer1 data.
+    + zkLink achieves the same **security level** as Ethereum Layer1.
+    + Zero knowledge guarantees that nobody, including the platform, can play maliciously and users can retrieve tokens losslessly in any extreme cases, and that **cross-chain transactions are always valid**.
+    + Even the total data loss of zkLink can not endanger capital safety when users can always **roll back** their account states based on Layer1 data under all circumstances.
 
   - <span className="highlight">Decentralization and non-custody</span>
 
