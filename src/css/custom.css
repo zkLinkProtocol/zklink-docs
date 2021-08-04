@@ -324,6 +324,10 @@ html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-them
   margin: 0;
 }
 
+.cancel-md-margin blockquote p {
+  margin-bottom: 20px;
+}
+
 .cancel-md-margin h2 {
   color: rgb(37, 194, 160);
 }

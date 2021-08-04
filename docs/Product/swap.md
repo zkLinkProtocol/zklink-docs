@@ -13,8 +13,6 @@ zkLink supports **direct swapping** with assets which are **native for projects 
 - Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.
 - No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.
 
-
-
 On zkLink Layer2 network, there will be no boundary between two ecos, and local assets can be easily traded globally. For example, users are able to swap UNI on Ethereum for CAKE on BSC via zkLink with only one click, and can withdraw targeted tokens to respective chains to make full use of capital.
 
 ![What is zkLink](../../static/img/welcome.png)
