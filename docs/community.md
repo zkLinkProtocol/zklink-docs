@@ -4,13 +4,7 @@ sidebar_position: 7
 
 # Community
 
-As an open and DAO-oriented protocol, zkLink applaud for any voice. Questions and feedback are more than welcomed and 
-
-If you have any questions and feedback. We'd love to hear your ideas for how we can make O3 Swap better. You can contact us via email or main social media.
-
-
-
-A. We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach our to us via the following links:
+As an open and DAO-oriented community, zkLink applauds for any voice. Questions and feedback are more than welcomed, please do not hesitate to reach out via zkLink official social media. Join our community and share your ideas!
 
 Web: https://zk.link/
 
