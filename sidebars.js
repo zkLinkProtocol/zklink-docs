@@ -89,7 +89,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'community',
-      label: 'community'
+      label: 'Community'
     }
   ]
 };

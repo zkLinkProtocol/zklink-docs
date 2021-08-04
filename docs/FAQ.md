@@ -53,7 +53,7 @@ A. Yes. All of zkLink's code and smart contracts are audited by Certik. Please c
 
 ##### Q. What is ZKL?
 
-A. ZKL is the governance token of zkLink, and is an ERC-20 token. The total supply of ZKL is 1,000,000,000. More details about token economy will be released at a later time. 
+A. ZKL is the governance token of zkLink, and is an ERC-20 token. The total supply of ZKL is 1,000,000,000. More details about token economy will be released at a later time.
 
 ##### Q. How can users acquire ZKL
 
@@ -89,7 +89,7 @@ A. Currently, users can connect MetaMask to zkLink, and zkLink will support more
 
 ##### Q. How can I join zkLink's community
 
-A. We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach our to us via the following links:
+A. We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach out to us via the following links:
 
 Web: https://zk.link/
 
