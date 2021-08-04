@@ -88,6 +88,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'Audits',
+      label: 'Audits'
+    },
+    {
+      type: 'doc',
       id: 'community',
       label: 'Community'
     }

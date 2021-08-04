@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
 ---
-# 如何参与zkLink测试（中文）
+# 如何参与zkLink测试（简体中文）
 
 ---
 ## 一、准备工作

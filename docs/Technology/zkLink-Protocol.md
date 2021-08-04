@@ -20,8 +20,4 @@ zkLink system consists of 4 parts: **Multi-Chain Rollup Contract**, **ZK Prove S
 
 **Layer2 Service System**: it consists of Web Service, State Manage, Memory Pool and Layer1 Monitor. The Layer2 transactions are stored in the Memory Pool and the Data System via the Web Service. After a period of time, the transactions in the Memory Pool will be batched into a new Layer2 Block and the State Tree will be updated. ZK Prove System will generate the corresponding zero-knowledge proofs and release them to the corresponding Layer1 Monitor to be published in the on-chain rollup contracts.
 
-
-
-
-
-
+![protocol](../../static/img/zkL_proto.png)
