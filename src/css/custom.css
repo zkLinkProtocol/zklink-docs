@@ -294,14 +294,17 @@ hr {
   color: #424D57
 }
 
-html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-theme=dark] .markdown, html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
+html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-theme=dark] .markdown, html[data-theme=dark] .markdown > h1,  html[data-theme=dark] .markdown strong, html[data-theme=dark] .markdown > h2 {
   color: rgb(218, 221, 225)
 }
 
-h1, h2, h3, h4, h5, h6 {
+.markdown > h1, .markdown strong {
   color: #1F242B;
 }
 
+.markdown > h2 {
+  color: rgb(37, 194, 160);
+}
 
 .markdown img {
   display: block;
