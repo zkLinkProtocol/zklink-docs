@@ -8,6 +8,6 @@ zkLink attaches top priority to security. In virtue of zero knowledge technology
 
 ## Audit Report
 
-| Description | Auditor | Audit Type | Audit Type |
+| Description | Auditor | Audit Type | Time |
 | :----:| :----: | :----: | :----: |
 | [v.1.0 Protocol](https://github.com/zkLinkProtocol/zklink-audit-report) | CertiK | Smart Contract | Jun. 2021 |

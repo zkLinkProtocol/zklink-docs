@@ -202,12 +202,13 @@ html[data-theme=dark] .nav-github::before {
 } */
 
 .menu .menu__list .menu__list-item a.menu__link--active.active {
-  color: rgb(37, 194, 160)
+  color: rgb(37, 194, 160);
+  background: #ffffff;
 }
 
 .menu .menu__list .menu__list-item a {
   font-size: 14px;
-  padding: 2px 0 2px 48px;
+  padding: 3px 0 3px 48px;
   color: #919ba7
 }
 
@@ -230,6 +231,20 @@ html[data-theme=dark] .nav-github::before {
 
 .menu {
   overflow: hidden;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 750px) {
+  .docs-wrapper > div, .navbar .navbar__inner {
+    margin: 0
+  }
+  .container {
+    padding-left: 2rem !important;
+  }
+  .menu {
+    padding-right: .5rem !important;
+  }
 }
 
 .menu:hover {
@@ -350,4 +365,28 @@ html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-them
 
 .cancel-img2 img {
   width: 50%;
+}
+
+table {
+  width: 100%;
+  border-right: 1px solid #d9d1d1;
+  border-bottom: 1px solid #d9d1d1;
+}
+
+table thead, table tr, table tbody {
+  display: block;
+  width: 100%;
+}
+
+table tr {
+  border-top: 0;
+}
+
+table th, table td {
+  display: inline-block;
+  width: 25%;
+  border-right: 0;
+  text-align: center;
+  border-bottom: 0;
+  border-right: 0;
 }
