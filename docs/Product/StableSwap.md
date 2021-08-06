@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# L2 StableSwap
+# L2 Mirror (Stable Swap)
 
 ---
 
@@ -14,7 +14,7 @@ For example, on zkLink's Layer2 network, users can not only transfer their USDT 
 <div className="cancel-md-margin cancel-img">
 
 > **🥇** <span className="highlight">Features</span>
-- A stablecoin-specialized AMM curve, refering to Curve.fi.
+- A stablecoin-specialized AMM curve, referring to Curve.fi.
 - Lower slippage, extremely friendly for large transactions.
 
 </div>

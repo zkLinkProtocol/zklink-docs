@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Swap
+# L2 Swap
 
 ---
 
