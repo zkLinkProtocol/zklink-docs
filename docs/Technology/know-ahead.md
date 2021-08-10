@@ -9,7 +9,7 @@ Regarding chain interoperation solutions, here is a list of questions you might 
 
 - <span className="highlight">Security</span>: in the current blockchain world, security is alway the top priority. Liquidity providers should be convinced that their funds are safe, while traders need to know that they can acquire the right amount of tokens.
 
-  - Read more on [zkLink security assumptions](/docs/Technology/About-Security#secirity-assumptions)
+  - Read more on [zkLink security assumptions](/docs/Technology/About-Security#security-assumptions)
   - Read more on [zkLink anti-attack capability](/docs/Technology/About-Security#zklink-is-equipped-with-stronger-anti-attack-capability)
 
 - <span className="highlight">Service Stability</span>: generally speaking, there is not much to concern for pure smart contracts. As for cross-chain projects with auxiliary off-chain systems, the system stability is always a big deal.
