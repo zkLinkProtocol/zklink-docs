@@ -46,14 +46,14 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Technology',
+      label: 'Protocol',
       collapsed: false,
       items: [
-        'Technology/Multi-Chain',
-        'Technology/zkLink-Protocol',
-        'Technology/State&Operation',
-        'Technology/ZK-Rollup',
-        'Technology/UniswapV3',
+        'Technology/know-ahead',
+        'Technology/Overview',
+        'Technology/Technology',
+        'Technology/About-Security',
+        'Technology/Roadmap',
       ],
     },
     {
