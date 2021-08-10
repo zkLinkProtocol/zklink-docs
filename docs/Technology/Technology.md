@@ -34,7 +34,7 @@ The classic ZK-Rollup solution generally consists of 3 stages (referring to the 
 Thanks to MatterLabs for their contributions, otherwise the implementation of multi-chain ZK-Rollup will be more difficult than expected.
 
 ## How does zkLink's multi-chain AMM work?
-![AMM](../../static/img/AMM.jpeg)
+![AMM](../../static/img/amm.jpeg)
 
 In the current zkLink V1, multi-chain AMM is achieved by partial-LP as shown in the figure. The two halves of one pair are stored in the two parallel states.
 
