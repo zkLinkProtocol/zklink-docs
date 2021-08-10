@@ -20,5 +20,5 @@ At the current stage, zkLink supports L2 Swap, L2 Mirror (Stable-coin Swap), L2 
 - Read more on [Product](/docs/Product/Overview)
 - For technology implementation, read more on [Technical Solution](/docs/Technology/Technology)
 
-## Common Liquidity
+## Shared Liquidity
 Based on ZK-Rollup, zkLink has achieved to call Layer2 liquidity pool on Layer1, so that traders do not need to "deposit to zkLink" and zkLink smart contracts only require the access to Layer1 assets. For liquidity providers, providing a voucher token such as crv3pool, is equivalent to providing liquidity for Layer2 pools.

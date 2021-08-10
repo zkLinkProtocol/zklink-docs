@@ -30,7 +30,7 @@ Once the recursive proof is executed, the two independent systems will be having
 ## How does zkLink guarantee the authencity of cross-chain data?
 There is no need for zkLink to verify every details from the massive amounts of data. The recursive ZK-SNARKs endow the data and the final_root with an unidirectional causality like a hash function. Once the final_root is settled, there would be no person or organization capable of faking the source data of this final_root.
 
-What an exciting feature - it signifies that we have turned a complicated and uncertain problem into a extremely simple task - comparing whether the two or more final_roots are uniform or not.
+What an exciting feature - it signifies that we have turned a complicated and uncertain problem into an extremely simple task - comparing whether the two or more final_roots are uniform or not.
 
 We utilize an oracle for data transmission, letting the smart contract to testify the consistency of final_roots. There are a number of oracles to choose from thanks to the development of DeFi-verse.
 
@@ -74,4 +74,4 @@ In addition, extra consensus does not equal to absolute security. In the securit
 
 - chain interoperation is complicated and unforeseeable. With the help of zero-knowledge technology, zkLink simplifies the process to a degree that everyone can understand and supervise it.
 
-- Less is more. The conciseness of POW has made today's Bitcoin
+- Less is more. The conciseness of POW has made today's Bitcoin.

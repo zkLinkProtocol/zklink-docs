@@ -5,22 +5,10 @@ sidebar_position: 1
 # Technology
 
 ## About zkRollup
-- A thorough elaboration of Rollup from Vitalik Buterin
-
-  - https://vitalik.ca/general/2021/01/05/rollup.html
-
-- Matter Labs' ZK-Rollup talk at Zcon1 (video)
-
-  - https://www.youtube.com/watch?v=QyM9qdFKsEA
-
-- Validity proofs (ZK-Rolluo) vs. fraud proofs
-
-  - https://medium.com/starkware/validity-proofs-vs-fraud-proofs-4ef8b4d3d87a
-
-- zkSNARKs in a nutshell
-
-  - https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/
-
+- [A thorough elaboration of Rollup from Vitalik Buterin](https://vitalik.ca/general/2021/01/05/rollup.html)
+- [Matter Labs' ZK-Rollup talk at Zcon1 (video)](https://www.youtube.com/watch?v=QyM9qdFKsEA)
+- [Validity proofs (ZK-Rolluo) vs. fraud proofs](https://medium.com/starkware/validity-proofs-vs-fraud-proofs-4ef8b4d3d87a)
+- [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
 
 ## The difference between a multi-chain ZK-Rollup and a classic ZK-Rollup
 ![Contract](../../static/img/contract.jpeg)

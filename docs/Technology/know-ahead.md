@@ -20,7 +20,7 @@ Regarding chain interoperation solutions, here is a list of questions you might 
 
 - <span className="highlight">Liquidity aggregation</span>: the continuously emerging public chains and scaling solutions are isolating the liquidity of DeFi-verse as a whole, forming numerous asset silos. If a chain interoperation protocol could aggregate the fragmented liquidity from separated chains and Layer2 networks, it could provide a more user-friendly trading environment, creating huge values.
 
-  - Read more on [Common Liquidity](/docs/Technology/Overview#common-liquidity)
+  - Read more on [Shaded Liquidity](/docs/Technology/Overview#shared-liquidity)
 
 - <span className="highlight">Composability</span>: in the process of DeFi prosperity, composability gets the credit. A middleware to connect isolated chains oughts to be equipped with the capability to interact with other DeFi projects. zkLink V1 supports FastCrossChainSwap which achieves fast and secure L1 to L1 cross-chain solutions; zkLink will provide turing-complete cross-chain VM, solving multi-chain assets fragmentation problem thoroughly.
 
@@ -32,6 +32,6 @@ Regarding chain interoperation solutions, here is a list of questions you might 
 
   - Read more on [ZK-Rollup](/docs/Technology/Technology#about-zkrollup)
 
-- <span className="highlight">Simple extra consensus</span>: an additional consensus mechanism is a necessary component in chain-to-chain communication to guarantee the reliability of sending/receiving data from other chains. The whole process is supposed to be transparent enough for community members to monitor and find out unusual status, and to be simple enough to prevent inconsistent communication.
+- <span className="highlight">Extra consensus</span>: an additional consensus mechanism is a necessary component in chain-to-chain communication to guarantee the reliability of sending/receiving data from other chains. The whole process is supposed to be transparent enough for community members to monitor and find out unusual status, and to be simple enough to prevent inconsistent communication.
 
   - Read more on [How does zkLink guarantee the authenticity of cross-chain data](/docs/Technology/About-Security#how-does-zklink-guarantee-the-authencity-of-cross-chain-data)
