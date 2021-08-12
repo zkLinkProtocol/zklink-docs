@@ -205,6 +205,10 @@ html[data-theme=dark] .nav-github::before {
   color: #000000
 } */
 
+.menu a {
+  text-decoration: none;
+}
+
 .menu .menu__list .menu__list-item a.menu__link--active.active {
   color: rgb(37, 194, 160);
   background: #ffffff;
