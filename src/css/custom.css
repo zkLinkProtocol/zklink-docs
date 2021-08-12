@@ -205,7 +205,7 @@ html[data-theme=dark] .nav-github::before {
   color: #000000
 } */
 
-.menu a {
+.navbar a, .menu a, .table-of-contents a, .pagination-nav a {
   text-decoration: none;
 }
 
