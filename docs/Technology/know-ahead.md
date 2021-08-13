@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Something you want to know
+# Highlights of chain-to-chain interoperability
 
 ---
 Regarding chain interoperation solutions, here is a list of questions you might be interested in - click and be navigated to the answer.

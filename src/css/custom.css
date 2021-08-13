@@ -29,6 +29,10 @@
   margin-bottom: 20px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .fields a {
   color: #000000;
   font-size: 22px;
@@ -200,6 +204,10 @@ html[data-theme=dark] .nav-github::before {
 .menu__link--active {
   color: #000000
 } */
+
+.navbar a, .menu a, .table-of-contents a, .pagination-nav a {
+  text-decoration: none;
+}
 
 .menu .menu__list .menu__list-item a.menu__link--active.active {
   color: rgb(37, 194, 160);
