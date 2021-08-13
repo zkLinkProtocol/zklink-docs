@@ -20,7 +20,7 @@ The security of zkLink system is under the assumptions below:
 - zkLink team will never conspire with Chainlink or other oracles.
 
 ## How does zkLink support direct interaction of multi-chains?
-![recursive](../../static/img/recursive.jpeg)
+![recursive](../../static/img/tech/recursive.png)
 Zero-knowledge can turn the verification of a complicated logic into a simple proposition - it is one of the fundamental characteristics of ZK technology, and zkLink makes full use of it.
 
 Based on the classic ZK-Rollup design, zkLink conducts an additional `recursive proof`, whose data comes from the two chains interacting with each other. After a valid recursive proof, the current states of different chains are interrelated mathematically, which is constrained by the circuit. We will open up the circuit related to zero-knowledge for third parties to verify it easily.
@@ -34,7 +34,7 @@ What an exciting feature - it signifies that we have turned a complicated and un
 
 We utilize an oracle for data transmission, letting the smart contract to testify the consistency of final_roots. There are a number of oracles to choose from thanks to the development of DeFi-verse.
 
-![oracles](../../static/img/oracles.jpeg)
+![oracles](../../static/img/tech/oracles.png)
 ** According to the features of each Layer1 network, the choice of oracle can be different.
 
 
