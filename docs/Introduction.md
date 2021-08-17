@@ -13,7 +13,7 @@ As the bridging component among isolated chains and layer2 networks, zkLink make
 
 <div className="cancel-md-margin">
 
-> **🥇** Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers will be provided with zkLink SDK for their users to enjoy fast cross chain swapping without leaving their platforms: this all happens in **a secure, fast, cost-friendly experience**, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
+> **🥇** Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers will be provided with zkLink SDK for their users to enjoy fast cross chain swapping without leaving their platforms: this all happens with **a secure, fast, cost-friendly experience**, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
 
 </div>
 

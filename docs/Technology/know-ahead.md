@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Highlights of chain-to-chain interoperability
+# Highlights of Chain-to-chain Interoperability
 
 ---
 Regarding chain interoperation solutions, here is a list of questions you might be interested in - click and be navigated to the answer.

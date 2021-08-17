@@ -9,7 +9,7 @@ There has been a lot of discussion around the purpose of zkLink, here we only fo
   1. <span className="highlight">the correctness of computation</span>
   2. <span className="highlight">the authenticity of cross-chain data</span>
 
-Most cross-chain solutions are indifferent to the their distinction, since these two aspects are tend to be covered by the same subjects. zkLink, however, are designed to be extremely secure for that matter, since we customized separate schemes for them: zero-knowledge technology assures correctness of computation, while the validity of the verification process relies on a network composed with multiple oracles similar to a multi-sig organization.
+Most cross-chain solutions are indifferent to the their distinction, since these two aspects are tend to be covered by the same party. zkLink, however, are designed to be extremely secure for that matter, since we customized separate schemes for them: zero-knowledge technology assures correctness of computation, while the validity of the verification process relies on a network composed with multiple oracles similar to a multi-sig organization.
 
 - Read more on [How does zkLink support direct interaction of multi-chains](/docs/Technology/About-Security#how-does-zklink-support-direct-interaction-of-multi-chains)
 

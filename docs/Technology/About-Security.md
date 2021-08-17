@@ -2,12 +2,12 @@
 sidebar_position: 6
 ---
 
-# About Security
+# Security
 
 ---
 
 
-zklink uses a unified off-chain L2 state to record the information transmitted between separate chains.
+zklink uses a unified off-chain L2 state to monitor and record the information transmitted between separate chains and Layer2 networks.
 
 Inherited from classic ZK-Rollup, all L2 state changes will be uploaded to the corresponding Layer1 network. From the perspective of a single chain, zero-knowledge is capable to ensures that all state changes are the result of accurately running the circus. However, when it comes to cross-chain transactions, zero-knowledge fails to testify whether cross-chain data (data coming from the other chain) is authentic - even if it might satisfy the constraints of circuit, it is not necessarily TRUE. So how does zklink solve this problem of data authenticity?
 
