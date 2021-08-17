@@ -11,7 +11,7 @@ sidebar_position: 1
 - [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
 
 ## The difference between a multi-chain ZK-Rollup and a classic ZK-Rollup
-![Contract](../../static/img/contract.jpeg)
+![Contract](../../static/img/tech/offchain.png)
 
 The classic ZK-Rollup solution generally consists of 3 stages (referring to the implementation of Matter Labs): commit, prove, and execute. In order to achieve chain interoperation in a more secure manner, zkLink inserts a 'Consensus' stage to this cycle based on the classic solution.
 1. <span className="highlight">Commit</span>: Transactions happening on Layer2, including single-chain transaction and related cross-chain transactions, are batched into one transit and would be uploaded to the smart contract on Layer1, which effectively fulfills data availability so that transaction can be retrospected and account states can be recovered when something goes wrong on Layer2 network.
@@ -22,7 +22,7 @@ The classic ZK-Rollup solution generally consists of 3 stages (referring to the 
 Thanks to MatterLabs for their contributions, otherwise the implementation of multi-chain ZK-Rollup will be more difficult than expected.
 
 ## How does zkLink's multi-chain AMM work?
-![AMM](../../static/img/amm.jpeg)
+![AMM](../../static/img/tech/chains-amm.png)
 
 In the current zkLink V1, multi-chain AMM is achieved by partial-LP as shown in the figure. The two halves of one pair are stored in the two parallel states.
 
