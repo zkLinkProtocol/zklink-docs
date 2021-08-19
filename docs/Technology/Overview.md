@@ -6,8 +6,8 @@ sidebar_position: 1
 
 There has been a lot of discussion around the purpose of zkLink, here we only focus on technical details in chain interoperability. The two major concerns during chain-to-chain data transmission are:
 
-  1. <span className="highlight">the correctness of computation</span>
-  2. <span className="highlight">the authenticity of cross-chain data</span>
+  1. **[The correctness of computation](/docs/Technology/About-Security#in-the-computation-process)**
+  2. **[The authenticity of cross-chain data](/docs/Technology/About-Security#consensus-attack)**
 
 Most cross-chain solutions are indifferent to the their distinction, since these two aspects are tend to be covered by the same party. zkLink, however, are designed to be extremely secure for that matter, since we customized separate schemes for them: zero-knowledge technology assures correctness of computation, while the validity of the verification process relies on a network composed with multiple oracles similar to a multi-sig organization.
 

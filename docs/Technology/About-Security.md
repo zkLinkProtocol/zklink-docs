@@ -55,18 +55,30 @@ For more information regarding the security of ZK technology, please refer to  *
 
 ## zkLink is equipped with stronger anti-attack capability
 
-As mentioned above, zkLink is operated by the zkLink team. Diving deeper into the recent cross-chain security incidents, we can conclude that all of them are resulted by coding bugs or system failure, instead of their consensus mechanism. From this point of view, zkLink, in virtue of ZK-Rollup, is equipped with stronger anti-attack capability comparing to other open-source systems, in the way that we adopts more traditional web security defense techniques.
+In crypto world, most attacks can be attributed to two major factors: security vulnerabilities in computation process, or in consensus mechanism.
 
-
-In addition, extra consensus does not equal to absolute security. In the security incident happening on polynetwork on Aug 10, 2021, a bug on consensus was thought to blame. What will happen if the same thing occurs on zkLink? Nothing - at most the service would be shut down for some time. No harm would be done for tokens, since in zkLink system, it is pure mathematics that has the right to decide what will happen, instead of the validators, who can only convey a "yes" or "no".
-
-#### Recent attack cases:
+### In the Computation Process
+Diving deeper into the recent cross-chain security incidents, we can conclude that most of them are resulted by coding bugs or system failure, i.e., the correctness of computation, rather than consensus mechanism. Here are some of the cases:
 
 * [Umbrella Network — Update on Chainswap Hack](https://medium.com/umbrella-network/umbrella-network-update-on-chainswap-hack-628d1aaaa873)
 * [Anyswap Multichain Router V3 Exploit Statement](https://anyswap.medium.com/anyswap-multichain-router-v3-exploit-statement-6833f1b7e6fb)
 * [First attack on THORChain](https://www.reddit.com/r/THORChain/comments/oa0kss/first_attack_on_thorchain_fixed_already/)
 * ['Critical Issues' With Thorchain After 2nd Hack in a Week](https://decrypt.co/76694/critical-issues-with-thorchain-after-2nd-hack-week)
-* [PolyNetwork Suffers Record-Breaking $600.3 Million Hack](https://decrypt.co/78163/polynetwork-suffers-record-breaking-600-3m-hack)
+
+zkLink, guarded by zero-knowledge technology, is robust to this kind of attack comparing to other open-source systems. Before Layer2 transactions being uploaded to respective Layer1 smart contract, an extra recursive proof with data derived from both chains will be conducted on the basis of the traditional ZK-Rollup solution. The result of this execution is a mutual final_root of the two interacting chains, which guarantees that the new state is the consequence of circuit being correctly computed. Of course, zkLink circuit will be opened up for public supervision sooner than mainnet launch.
+
+When zkLink faces the same kind of attacks above, the improper data would be blocked out by the validator, i.e., zkLink team, who adopts more sophisticated traditional web security defense techniques than personal validators.
+
+### Consensus Attack
+But what if hackers have managed to break through the authentication of validator? Reviewing the most recent [PolyNetwork Hack](https://decrypt.co/78163/polynetwork-suffers-record-breaking-600-3m-hack) where a bug on consensus was thought to blame, we now know that extra consensus does not equal to absolute security, in the way that private key of consensus members might be compromised and malicious behavior from the latter.
+
+What will happen if the same thing occurs to zkLink? Nothing - at most the service would be shut down for some time. The authority of zkLink consensus community (a network composed of multiple third-party oracles similar to a multi-sig organization in other projects) is limited to minimum, as explained in (overview). Even if the identity of consensus community is stolen, hackers can never "fake a transaction", instead the only damage they can ever cause is rejecting the transaction requests from Layer2 to Layer1, doing no harm at all to assets or account status.
+
+### The Stable Triangle
+The highlight of zkLink security lies in the idea of "Checks and Balances" by analogy with the three branches of the U.S. government: executive, judicial and legislative branches, respectively being the validator, oracle network, and DAO. The validator transmits the result of running the circuit to Layer1 smart contracts, while the oracle network has the power to approve or halt it. On top of it, the change of members in each oracle network or the validator can be voted on by zkLink DAO.
+
+Such separation of powers is well designed to guard against economic attack from both outside hackers and inside governors, by ensuring that no branch would grab too much power. In this fashion, zkLink is equipped with higher security level and stronger anti-attack capability. we guarantee that traders can retrieve tokens losslessly under any extreme circumstances.
+
 
 ## Highlights
 
