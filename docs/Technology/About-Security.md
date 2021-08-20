@@ -9,7 +9,7 @@ sidebar_position: 6
 
 zklink uses a unified off-chain L2 state to monitor and record the information transmitted between separate chains and Layer2 networks.
 
-Inherited from classic ZK-Rollup, all L2 state changes will be uploaded to the corresponding Layer1 network. From the perspective of a single chain, zero-knowledge is capable to ensures that all state changes are the result of accurately running the circus. However, when it comes to cross-chain transactions, zero-knowledge fails to testify whether cross-chain data (data coming from the other chain) is authentic - even if it might satisfy the constraints of circuit, it is not necessarily TRUE. So how does zklink solve this problem of data authenticity?
+Inherited from classic ZK-Rollup, all L2 state changes will be uploaded to the corresponding Layer1 network. From the perspective of a single chain, zero-knowledge is capable to ensures that all state changes are the result of accurately running the circuit. However, when it comes to cross-chain transactions, zero-knowledge fails to testify whether cross-chain data (data coming from the other chain) is authentic - even if it might satisfy the constraints of circuit, it is not necessarily TRUE. So how does zklink solve this problem of data authenticity?
 
 Read more on [How does zkLink guarantee the authenticity of cross-chain data?](/docs/Technology/About-Security#how-does-zklink-guarantee-the-authencity-of-cross-chain-data)
 
@@ -17,7 +17,7 @@ Read more on [How does zkLink guarantee the authenticity of cross-chain data?](/
 The security of zkLink system is under the assumptions below:
 
 - The proper operation of public chains and VM-compatible scaling protocols connected. The purpose of zkLink is to connect chains together, wherein the "bucket effect" exists in zkLink systemic risk, which means that the minimum commitment of zkLink security is determined by the one with the lowest security level among the many chains connected. Of course, the decision on connecting or removing a chain should be seriously considered and made collectively by the community.
-- zkLink team will never conspire with Chainlink or other oracles.
+- zklink, Chainlink and other oracles are obligated to the DeFi community by acting in good faith in all decisions taken, and will reject and report any bad action.
 
 ## How does zkLink support direct interaction of multi-chains?
 ![recursive](../../static/img/tech/recursive.png)
@@ -48,7 +48,7 @@ You may think of zkLink as a centralized project, but you are only partly right 
 
 On the security side, zkLink system is `COMPLETELY` decentralized, eliminating the risk of malicious behavior from operators or validators - not because they don't want to, but because they are not able to - thanks to zero knowledge technology.
 
-Under the premise of open-source circus, every off-chain execution must comply with the circuit's specifications. Just like the regulatory framework of a company, circuit is how zkLink world functions. Any illegal operations would be exposed during `zk verify`, which is processed by the smart contract with the verify key stored in. Both the algorithm of `zk verify` and `verify key` will be published online. As long as the circuit has been rigorously audited without any malicious logic, the ZK-based system can be considered as safe and sound.
+Under the premise of open-source circuit, every off-chain execution must comply with the circuit's specifications. Just like the regulatory framework of a company, circuit is how zkLink world functions. Any illegal operations would be exposed during `zk verify`, which is processed by the smart contract with the verify key stored in. Both the algorithm of `zk verify` and `verify key` will be published online. As long as the circuit has been rigorously audited without any malicious logic, the ZK-based system can be considered as safe and sound.
 
 For more information regarding the security of ZK technology, please refer to  *An Incomplete Guide to Rollups* by Vitalik Buterin (https://vitalik.ca/general/2021/01/05/rollup.html).
 
@@ -75,7 +75,7 @@ But what if hackers have managed to break through the authentication of validato
 What will happen if the same thing occurs to zkLink? Nothing - at most the service would be shut down for some time. The authority of zkLink consensus community (a network composed of multiple third-party oracles similar to a multi-sig organization in other projects) is limited to minimum, as explained in [overview](/docs/Technology/Overview). Even if the identity of consensus community is stolen, hackers can never "fake a transaction", instead the only damage they can ever cause is rejecting the transaction requests from Layer2 to Layer1, doing no harm at all to assets or account status.
 
 ### The Stable Triangle
-The highlight of zkLink security lies in the idea of "Checks and Balances" by analogy with the three branches of the U.S. government: executive, judicial and legislative branches, respectively being the sequencer, oracle network, and DAO. The sequencer transmits the result of running the circuit to Layer1 smart contracts, while the oracle network has the power to approve or halt it. On top of it, the change of members in each oracle network or the sequencer can be voted on by zkLink DAO.
+The highlight of zkLink security lies in the idea of "Checks and Balances" by analogy with the three wings of a functioning government: executive, judicial and legislative, respectively being the sequencer, oracle network, and DAO. The sequencer transmits the result of running the circuit to Layer1 smart contracts, while the oracle network has the power to approve or halt it. On top of it, the change of members in each oracle network or the sequencer can be voted on by zkLink DAO.
 
 Such separation of powers is well designed to guard against economic attack from both outside hackers and inside governors, by ensuring that no branch would grab too much power. In this fashion, zkLink is equipped with higher security level and stronger anti-attack capability. We guarantee that traders can retrieve tokens losslessly under any extreme circumstances.
 

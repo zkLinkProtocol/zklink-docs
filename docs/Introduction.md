@@ -9,11 +9,11 @@ sidebar_position: 1
 
 zkLink is a trustless **chain-to-chain DEX** based on zero-knowledge technology.
 
-As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other.
+As a middleware to connect isolated chains and layer2 networks, zkLink approaches the cross chain liquidity problem differently: we use ZK-Rollup as a solution for tokens and liquidity on separate chains to communicate with each other.
 
 <div className="cancel-md-margin">
 
-> **🥇** Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers will be provided with zkLink SDK for their users to enjoy fast cross chain swapping without leaving their platforms: this all happens with **a secure, fast, cost-friendly experience**, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
+> **🥇** Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers are able to leverage zkLink SDK as a built-in solution for their cross chain liquidity transfer: this all happens with **a secure, fast, cost-friendly experience**, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
 
 </div>
 
@@ -25,13 +25,13 @@ As the bridging component among isolated chains and layer2 networks, zkLink make
 
 <div className="cancel-md-margin">
 
-## How does zkLink stands out?
+## zkLink Uniqueness
 
 </div>
 
 The competitive edges of zkLink are achieved by: "Fast Cross Chain Swap" and "Zero Knowledge Technology".
 
-  - <span className="highlight">Sleekest token cross-chain experience</span>
+  - <span className="highlight">Easy token cross-chain experience</span>
 
     + Traders can now directly exchange one token to any kinds from any chains, with only "**one click**".
     + Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, **saving much time & effort**.  
