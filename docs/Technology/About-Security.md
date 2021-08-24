@@ -82,8 +82,8 @@ Such separation of powers is well designed to guard against economic attack from
 
 ## Highlights
 
-- zero-knowledge technology guarantees the correctness of computation, while the oracle networks achieves the consistency of multi-chain states.
+- Zero-knowledge technology guarantees the correctness of computation, while the oracle networks achieves the consistency of multi-chain states.
 
-- chain interoperation is complicated and unforeseeable. With the help of zero-knowledge technology, zkLink simplifies the process to a degree that everyone can understand and supervise it.
+- Chain interoperation is complicated and unforeseeable. With the help of zero-knowledge technology, zkLink simplifies the process to a degree that everyone can understand and supervise it.
 
-- Less is more. The conciseness of POW has made today's Bitcoin.
+- A simple extra consensus would benefit public supervision, which, in  the long run, will fulfill a higher degree of security and privacy. Less is more, the conciseness of Bitcoin's POW is the best proof.
