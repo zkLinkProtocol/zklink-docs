@@ -4,7 +4,7 @@
 ---
 
 
-Fast Bridge is multi-chain token mapping instrument on top of zkLink's high-performance and secure chain-to-chain infrastructure, boosting DeFi projects with their multi-chain deployment. Zero-knowledge technology guards the security of multi-chain tokens from being maliciously minted. Different from those controlled by a multi-sig community, new offering request would only be executed once it passes ZK verification.
+Fast Bridge is a multi-chain token mapping instrument on top of zkLink's high-performance and secure chain-to-chain infrastructure, boosting DeFi projects with their multi-chain deployment. Zero-knowledge technology guards the security of multi-chain tokens from being maliciously minted. Different from those controlled by a multi-sig community, new offering request would only be executed once it passes ZK verification.
 
 
 
