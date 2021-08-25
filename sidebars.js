@@ -37,11 +37,19 @@ module.exports = {
       label: 'Product',
       collapsed: false,
       items: [
-        'Product/Overview',
-        'Product/swap',
         'Product/fastswap',
-        'Product/StableSwap',
-        'Product/widget',
+        'Product/bridge',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Functionality',
+      collapsed: false,
+      items: [
+        'functionality/Overview',
+        'functionality/swap',
+        'functionality/StableSwap',
+        'functionality/widget',
       ],
     },
     {
