@@ -19,7 +19,7 @@ Most cross-chain solutions are indifferent to the their distinction, since these
 
 ## Functionalities of zkLink
 At the current stage, zkLink supports L2 Swap, L2 Mirror (Stable-coin Swap), L2 Liquidity, Fast Withdraw, and FastCrossChainSwap (L1-L1).
-- Read more on [Product](/docs/Product/Overview)
+- Read more on [Product](/docs/functionality/Overview)
 - For technology implementation, read more on [Technical Solution](/docs/Technology/Technology)
 
 ## Shared Liquidity
