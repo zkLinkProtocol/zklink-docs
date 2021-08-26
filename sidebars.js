@@ -49,6 +49,8 @@ module.exports = {
         'functionality/Overview',
         'functionality/swap',
         'functionality/StableSwap',
+        'functionality/fastwithdraw',
+        'functionality/L2liquidity',
         'functionality/widget',
       ],
     },
