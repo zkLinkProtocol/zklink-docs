@@ -38,10 +38,20 @@ module.exports = {
       collapsed: false,
       items: [
         'Product/Overview',
-        'Product/swap',
         'Product/fastswap',
-        'Product/StableSwap',
-        'Product/widget',
+        'Product/bridge',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Functionality',
+      collapsed: false,
+      items: [
+        'functionality/swap',
+        'functionality/StableSwap',
+        'functionality/fastwithdraw',
+        'functionality/L2liquidity',
+        'functionality/widget',
       ],
     },
     {
