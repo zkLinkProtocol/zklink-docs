@@ -28,4 +28,4 @@ As soon as [zkLink's Layer2 engine](/docs/Technology/Overview#zklink-technologic
 
 When the ZK proof of this Layer2 transaction is verified, i.e., the final roots of both chains are consistent (normally it takes from 30 minutes to 1 hour), zkLink Layer1 contract will transit the right amount of tokens to the broker's Layer1 wallet.
 
-That is how the account balances of the trader, zkLink, and the broker achieve equilibrium, and end users can enjoy chain-to-chain transactions without having to wait for ZK verification process,
+That is how the account balances of the trader, zkLink, and the broker achieve equilibrium, and end users can enjoy chain-to-chain transactions without having to wait for ZK verification process.

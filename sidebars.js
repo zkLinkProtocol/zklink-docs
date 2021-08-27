@@ -37,6 +37,7 @@ module.exports = {
       label: 'Product',
       collapsed: false,
       items: [
+        'Product/Overview',
         'Product/fastswap',
         'Product/bridge',
       ],
@@ -46,7 +47,6 @@ module.exports = {
       label: 'Functionality',
       collapsed: false,
       items: [
-        'functionality/Overview',
         'functionality/swap',
         'functionality/StableSwap',
         'functionality/fastwithdraw',
