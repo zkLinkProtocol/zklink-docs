@@ -17,5 +17,3 @@ To provide an exponentially better user experience for traders, zkLink enables f
 
 
 zkLink v1 will support Ethereum, Polygon, Binance Smart Chain, Huobi ECO Chain (HECO), and in the foreseeable future, will also be connected with other smart chains and layer2 protocols such as Solana, Optimism, Fantom, etc.
-
-![Product](../../static/img/Layer2.jpg)
