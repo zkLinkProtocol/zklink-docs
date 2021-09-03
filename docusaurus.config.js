@@ -9,6 +9,13 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'zkLink-docs', // Usually your repo name.
+  scripts: [
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-70RD8PHWZ8',
+      async: true,
+    },
+    '/scripts/gtag.js'
+  ],
   themeConfig: {
     navbar: {
       title: 'zkLink',
