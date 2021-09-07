@@ -19,7 +19,7 @@ AMM-based, Layer2 liquidity pools composed of LP tokens from two separate chains
 
 ![zkLink Layer2 Network](../../static/img/prooverview.png)
 
-## Reaping twice with one staking
+## Reaping twice with one stake
 
 For some commonly used pairs, zkLink has created a "never-been-easier" process for players to provide liquidity on zkLink from Layer1 while earning double rewards.
 
@@ -30,4 +30,4 @@ Whenever liquidity is deposited into a pool, an unique NFT (ERC-721) which can b
 <div className="cancel-md-margin cancel-img">
 </div>
 
-![Provide Liquidity](../../static/img/liq-flow1.png)
+![Provide Liquidity](../../static/img/liq-flow.png)
