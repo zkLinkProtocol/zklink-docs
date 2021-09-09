@@ -49,3 +49,5 @@ When users enjoying "one-click" cross-chain swapping, there are actually several
 2. Deposit: initial tokens is automatically deposited to zkLink Layer2 network.
 3. L2 Swap: on zkLink Layer2 network, initial tokens will be directly swapped into target tokens on corresponding AMM-based liquidity pool.
 4. Fast withdraw: once the swap is confirmed, target tokens will go to a broker's Layer2 wallet, who will then transit right amount of target tokens to the user's Layer1 wallet from its Layer1 wallet. In this case, zkLink manages to save users even more time by avoiding the process of withdrawal from Layer2 to Layer1.
+
+![zkLink Layer2 Network](../../static/img/FastSwapUI.jpg)
