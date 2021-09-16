@@ -106,6 +106,25 @@ To get started, users need to firstly deposit tokens to their Layer2 address via
 
 Currently, users can connect MetaMask to zkLink, and we will support more wallets in the following version.
 
+
+> **Q. What are the rare events during *Fast Cross Chain Swap* and what should I do when it occurs?**
+
+The backstage logic of *Fast Cross Chain Swap* is quite complicated, thus there are several possible intermediate stages that could go wrong with super tiny probabilities, e.g., a too low slippage. DON'T WORRY! You can always retrieve your tokens. Here listed the situations, reasons to occur, and what you should do next:
+
+1. Fail to swap from source token to a Layer2-listed kind on zkLink Layer1 aggregator due to low slippage: you will receive your source token on your Layer1 wallet.
+2. Fail to swap on zkLink Layer2 AMM due to low slippage: you may receive an intermediate token on your Layer2 wallet. For example, when you try to swap from UNI to CAKE, in this case you will receive 3CRV. You can either WITHDRAW this intermediate (3CRV) to your Layer1 wallet on the source chain, or manually finish the rest steps: *L2 swap* (from 3CRV to 3EPS or any other tokens on BSC which is listed on zkLink Layer2 pools; [userguide](/docs/UserGuide/EN#1-swap)), *Withdraw* or *Fast Withdraw* ([userguide](/docs/UserGuide/EN#3-withdraw-to-layer1)), and then find a third-party to finally swap your 3EPS to CAKE.
+3. No broker available: in the case above, since we cannot find a proper broker to take the next step, you will still receive 3EPS but on your Layer1 wallet on BSC, and can direct swap 3EPS to CAKE in a third-party exchange since these two tokens are on the same chain.
+
+For the current status of your transaction, please refer to the corresponding blockchain browsers:
+
+- Ethereum: https://etherscan.io/
+- Polygon: https://polygonscan.com/
+- Binance Smart Chain: https://bscscan.com/
+- Huobi ECO Chain: https://hecoinfo.com/
+
+
+
+
 ## Community
 
 > **Q. How can I join zkLink's community?**
