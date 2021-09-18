@@ -62,4 +62,4 @@ Just like Loopring, zkSync, zkSwap, and other successful ZK-Rollup scaling solut
 
 Under the premise of open-source circuit, every off-chain execution must comply with the circuit's specifications. Just like the regulatory framework of a company, circuit is how zkLink protocol functions. Any illegal operations would be exposed during `zk verify`, which is processed by the smart contract with the `verify key` built in. Both the algorithm of `zk verify` and `verify key` will be published online. As long as the circuit has been rigorously audited without logical bugs, the ZK-based system can be considered as safe and sound.
 
-For more information regarding the security of ZK technology, please refer to  *An Incomplete Guide to Rollups* by Vitalik Buterin (https://vitalik.ca/general/2021/01/05/rollup.html).
+For more information regarding the security of ZK technology, please refer to  [*An Incomplete Guide to Rollups*](https://vitalik.ca/general/2021/01/05/rollup.html) by Vitalik Buterin.
