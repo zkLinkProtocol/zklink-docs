@@ -7,7 +7,9 @@ sidebar_position: 1
 ---
 As a chain-to-chain DEX, zkLink functions as a middleware to connect separate public chains and layer2 protocols, providing users with DEX scenarios with cross-chain assets in a time/monetary-cost friendly manner.
 
-zkLink supports **the connection between EVM-compatible public chains and EVM-incompatible chains**, where users can link to heterogeneous blockchain accounts and permanently enjoy chain interoperability with assets on Layer2 network with a user-experience similar to CEX.
+zkLink supports **the connection between EVM-compatible public chains and EVM-incompatible chains**, where users can link to heterogeneous blockchain accounts and permanently enjoy chain interoperability with a user-experience similar to CEX.
+
+At user end, you can play with two product modules from Layer1: [Fast Cross Chain Swap](/docs/Product/fastswap), and [Bridge](/docs/Product/bridge). With the former you **swap** a token from one chain to a different kind on another chain; while on Bridge, you **transport** the same token from one chain to the other.  
 
 ![zkLink Structure](../../static/img/ProductStructure1.jpg)
 

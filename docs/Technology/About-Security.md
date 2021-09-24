@@ -58,7 +58,7 @@ Such separation of powers is well designed to guard against economic attack from
 By studying the transaction processes of recent cross-chain security hacks, we find there are 2 scenarios where security vulnerabilities often occur: in the computation process, or in the consensus process. With a different logical design, zkLink mitigates risks in both scenarios.
 
 ### Vulnerability in the computation process
-Diving deeper into the recent cross-chain security incidents, we can conclude that most of them are resulted by Vulnerability in the computation process, i.e., the correctness of computation, rather than consensus mechanism. Here are some of the cases:
+Diving deeper into the recent cross-chain security incidents, we can conclude that most of them are caused by vulnerability in the computation process, i.e., the correctness of computation, rather than consensus mechanism. Here are some of the cases:
 
 * [Umbrella Network — Update on Chainswap Hack](https://medium.com/umbrella-network/umbrella-network-update-on-chainswap-hack-628d1aaaa873)
 * [Anyswap Multichain Router V3 Exploit Statement](https://anyswap.medium.com/anyswap-multichain-router-v3-exploit-statement-6833f1b7e6fb)
@@ -67,7 +67,7 @@ Diving deeper into the recent cross-chain security incidents, we can conclude th
 
 zkLink, guarded by zero-knowledge technology, is robust to this kind of attack comparing to other open-source systems. Before Layer2 transactions are approved and uploaded to respective Layer1 smart contract, an extra recursive proof with data derived from both chains will be generated based on established ZK-Rollup protocols.
 
-The result of this execution is a mutual `final_root` of the two interacting chains, which guarantees  the new state is the result of the circuit being correctly computed. Of course, zkLink circuit will be opened up for public supervision sooner than mainnet launch.
+The result of this execution is a mutual `final_root` of the two interacting chains, which guarantees the new state is the result of the circuit being correctly computed. Of course, zkLink circuit will be opened up for public supervision sooner than mainnet launch.
 
 If hackers try to manipulate data uploaded to Layer1,  it would be rejected by the sequencer. The zkLink dev team adopt a more sophisticated traditional web security defense technique than those open-source Layer1 protocols where the permission of validation is open through competition.
 
