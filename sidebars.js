@@ -77,8 +77,6 @@ module.exports = {
         'UserGuide/ru',
         'UserGuide/ko',
         'UserGuide/ja',
-        'UserGuide/zh-TW',
-        'UserGuide/zh-CN',
       ],
     },
     {
