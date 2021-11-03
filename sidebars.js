@@ -67,17 +67,9 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: 'Testnet User Guide',
-      collapsed: true,
-      items: [
-        'UserGuide/EN',
-        'UserGuide/es',
-        'UserGuide/pt',
-        'UserGuide/ru',
-        'UserGuide/ko',
-        'UserGuide/ja',
-      ],
+      type: 'doc',
+      id: 'UserGuide/Testnet2',
+      label: 'Testnet User Guide'
     },
     {
       type: 'doc',
