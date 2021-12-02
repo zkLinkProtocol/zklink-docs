@@ -6,9 +6,9 @@ sidebar_position: 6
 
 ---
 
-zklink constructs a off-chain L2 network to monitor and record the information transmitted between separate chains and Layer2 networks.
+zkLink constructs a off-chain L2 network to monitor and record the information transmitted between separate chains and Layer2 networks.
 
-Inherited from classic ZK-Rollup, all L2 state changes will be uploaded to the corresponding Layer1 network. For transactions within a single chain, zero-knowledge is capable of ensuring that all state changes are the result of accurately running the circuit. However, when it comes to cross-chain transactions, zero-knowledge fails to testify whether cross-chain states (Hash values of another chain) is valid - even if it might satisfy the constraints of circuit, it is not necessarily TRUE. So how does zklink solve this problem of data authenticity?
+Inherited from classic ZK-Rollup, all L2 state changes will be uploaded to the corresponding Layer1 network. For transactions within a single chain, zero-knowledge is capable of ensuring that all state changes are the result of accurately running the circuit. However, when it comes to cross-chain transactions, zero-knowledge fails to testify whether cross-chain states (Hash values of another chain) is valid - even if it might satisfy the constraints of circuit, it is not necessarily TRUE. So how does zkLink solve this problem of data authenticity?
 
 We will address this problem from the two perspectives mentioned in [the previous chapter](/docs/Technology/Overview#two-key-components-in-cross-chain-interoperability).
 
@@ -16,7 +16,7 @@ We will address this problem from the two perspectives mentioned in [the previou
 The security of zkLink system is under the assumptions below:
 
 - The security of public chains and VM-compatible scaling protocols connected. The purpose of zkLink is to connect chains together, wherein the "bucket effect" makes the minimum commitment of zkLink security is determined by the one with the lowest security level among the many chains connected. Of course, the decision on connecting or disconnecting a chain should be seriously considered and made collectively by the community.
-- zklink, Chainlink and other oracles are obligated to the DeFi community by acting in good faith in all decisions taken, and will reject and report any malicious action.
+- zkLink, Chainlink and other oracles are obligated to the DeFi community by acting in good faith in all decisions taken, and will reject and report any malicious action.
 
 ## The correctness of cross-chain computation
 ![recursive](../../static/img/tech/recursive.png)
