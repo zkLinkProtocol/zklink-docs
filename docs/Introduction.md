@@ -6,10 +6,9 @@ sidebar_position: 1
 ---
 
 ## What is zkLink？
+zkLink is an ultra **secure**, **chain-to-chain interoperability** protocol powered by **zero-knowledge** technology.
 
-zkLink is a trustless **chain-to-chain DEX** based on zero-knowledge technology.
-
-As a middleware to connect isolated chains and layer2 networks, zkLink approaches the cross chain liquidity problem differently: we use ZK-Rollup as a solution for tokens and liquidity on separate chains to communicate with each other.
+As a ”connector” among diverse ecosystems, zkLink cooperates with various public chains and Layer2 protocols to provide a more convenient and secure chain-to-chain trading environment, contributing to a more accessible and efficient DeFi ecosystem for everyone.
 
 <div className="cancel-md-margin">
 
@@ -25,32 +24,26 @@ As a middleware to connect isolated chains and layer2 networks, zkLink approache
 
 <div className="cancel-md-margin">
 
-## zkLink Uniqueness
-
 </div>
 
-The competitive edges of zkLink are achieved by: "Fast Cross Chain Swap" and "Zero Knowledge Technology".
+## Features
+### Zero-knowledge Proofs
+Zero-knowledge validity proofs are mathematically certified to guarantee only valid transactions are executed and cannot be manipulated or falsified, and hence ensure security of funds.
 
-  - <span className="highlight">Easy token cross-chain experience</span>
+- In virtue of ZK-Rollup's on-chain data availability, account states can always be rolled back in case of attacks, even when all the data on zkLink Layer2 Engine is lost.
+- Zero knowledge guarantees that nobody, including the platform itself, can play maliciously can upload fake zk_proof to the main chain.
 
-    + Traders can now directly exchange one token to any kinds from any chains, with only "**one click**".
-    + Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, **saving much time & effort**.  
-    + **Friendly user experience** in aspects of learning cost, mental cost, time cost, and monetary cost.
 
-  - <span className="highlight">Security and validity</span>
+### Trustless and Decentralized Security Schema
+With our ZK-Rollup protocols, DAO, and light oracle network, we offer a rigorous security schema with checks and balances, and a censorship-resistant network of provers and verifiers.
+- Such separation of powers is well designed to guard against economic attack from both external hackers and internal stakeholders, by ensuring no single branch has too much power.
 
-    + zkLink achieves the same **security level** as Ethereum Layer1.
-    + Zero knowledge guarantees that nobody, including the platform, can play maliciously and users can retrieve tokens losslessly in any extreme cases, and that **cross-chain transactions are always valid**.
-    + Even the total data loss of zkLink can not endanger capital safety when users can always **roll back** their account states based on Layer1 data under all circumstances.
 
-  - <span className="highlight">Decentralization and non-custody</span>
-
-    + Free from restriction or authentication.
-    + Users no longer have to "give out" the control of assets and private keys to exchanges instead they will have full custody over their funds: a true sense of "token ownership."
+### A Seamless and Easy-to-Use Trading Experience
+Multiple blockchains are linked together with liquidity aggregation, allowing direct cross-chain traders to tap into multiple liquidity pools, and successfully complete their trades with low slippage and guaranteed finality.
+- Traders can now directly exchange one token to another kinds from another chain, with **only a few clicks**.
+- Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, **saving much time & effort**.
 
 
 ## Developer Guides
-coming soon...
-
-## Reference Materials
 coming soon...

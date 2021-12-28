@@ -39,20 +39,14 @@ module.exports = {
       items: [
         'Product/Overview',
         'Product/fastswap',
-        'Product/bridge',
+        'Product/swap',
+        'Product/StableSwap',
       ],
     },
     {
-      type: 'category',
-      label: 'Functionality',
-      collapsed: false,
-      items: [
-        'functionality/swap',
-        'functionality/StableSwap',
-        'functionality/fastwithdraw',
-        'functionality/L2liquidity',
-        'functionality/widget',
-      ],
+      type: 'doc',
+      id: 'functionality/L2liquidity',
+      label: 'L2 Liquidity'
     },
     {
       type: 'category',

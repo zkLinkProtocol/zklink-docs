@@ -7,7 +7,7 @@ sidebar_position: 1
 ## Step 1. Set up your wallet & get ready
 
 ### 1. Configure Metamask for testnets
-Please configure your Metamask for our four testnets: Rinkeby, Goerli, HECO Testnet, and Polygon Testnet.
+Please configure your Metamask for our four testnets: Rinkeby, Goerli, AVAX Testnet, and Polygon Testnet.
 
   **a. Set up Metamask on your browser. Click "expand view" to open the web version.**
 
@@ -18,17 +18,17 @@ Please configure your Metamask for our four testnets: Rinkeby, Goerli, HECO Test
 
 ![img](../../static/img/TestnetUserGuide/2.png)
 
-  **c. Manually add HECO Testnet as shown below:**
+  **c. Manually add AVAX and Polygon Testnet as shown below:**
 
-  - HECO Testnet
-    - networkName: Test heco
-    - RPC Url: https://http-testnet.huobichain.com
-    - chainId: 256
-    - symbol: HT
-    - explorerUrl: https://testnet.hecoinfo.com
+  - AVAX Testnet
+    - networkName: Avalanche Fuji Testnet
+    - RPC Url: https://api.avax-test.network/ext/bc/C/rpc
+    - chainId: 43113
+    - symbol: AVAX
+    - explorerUrl: https://testnet.snowtrace.io/
 
 
-![img](../../static/img/TestnetUserGuide/3.png)
+![img](../../static/img/TestnetUserGuide/AVAX.png)
 
   - Polygon Testnet
     - networkName: Mumbai Testnet
@@ -46,9 +46,9 @@ Please configure your Metamask for our four testnets: Rinkeby, Goerli, HECO Test
 
 ### 2. Claim gas fee
 
-Claim test gas fees for the four testnets: Rinkeby, Goerli, HECO Testnet, and Polygon Testnet.
+**Claim test gas fees for the four testnets: Rinkeby, Goerli, AVAX Testnet, and Polygon Testnet.**
 
-[![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")
+<!---[![How to claim gas fee for testnet](https://res.cloudinary.com/marcomontalbano/image/upload/v1626169505/video_to_markdown/images/youtube--lPPJyz68e1s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lPPJyz68e1s&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=1 "How to claim gas fee for testnet")--->
 
 
 #### - Claim ETH test tokens on Rinkeby testnet
@@ -115,17 +115,15 @@ Claim test gas fees for the four testnets: Rinkeby, Goerli, HECO Testnet, and Po
 ![img](../../static/img/TestnetUserGuide/10.png)
 
 
-#### - Claim HT test tokens on HECO testnet
+#### - Claim AVAX test tokens on AVAX testnet
 
-  a. Switch the network to HECO Testnet on Metamask and open the website: https://scan-testnet.hecochain.com/faucet
+  a. Switch the network to AVAX Testnet on Metamask and open the website: https://faucet.avax-test.network/
 
-![img](../../static/img/TestnetUserGuide/11.png)
+  b. Copy and paste your wallet address (C-chain), and click "request".
 
-  b. You will be redirected to GitHub to verify the identity. A GitHub account is required to claim HT test tokens.
+![img](../../static/img/TestnetUserGuide/AVAX-2.png)
 
-![img](../../static/img/TestnetUserGuide/12.png)
-
-  c. Wait about 1 minute and then check the HT balance in your wallet.
+  c. Wait about 1 minute and then check the AVAX balance in your wallet.
 
 
 
@@ -141,6 +139,13 @@ Claim test gas fees for the four testnets: Rinkeby, Goerli, HECO Testnet, and Po
   b. Switch your network to the corresponding testnet, and choose the token that you want to claim.
 
   c. Click "Get".
+
+**Currently we support the following kinds of test tokens:**
+  - Rinkeby: XVS, AUTO, UNI, SUSHI, USDT, USDC
+  - Goerli: SRM, RAY, USDT, BUSD
+  - Polygon Testnet: QUICK, KRILL, USDT
+  - AVAX Testnet: AVAX, CRA, USDT
+
 
 ![img](../../static/img/TestnetUserGuide/2-1.png)
 ![img](../../static/img/TestnetUserGuide/2-2.png)
