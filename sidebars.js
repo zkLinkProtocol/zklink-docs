@@ -62,6 +62,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'Technology/Bridge-as-a-service',
+      label: 'Bridge-as-a-service'
+    },
+    {
+      type: 'doc',
       id: 'UserGuide/Testnet2',
       label: 'Testnet User Guide'
     },
