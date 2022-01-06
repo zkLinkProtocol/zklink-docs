@@ -6,15 +6,24 @@ sidebar_position: 7
 
 
 
-## About zkLink
+## General
 
 > **Q. What is zkLink?**
 
-zkLink is a trustless chain-to-chain DEX based on zero-knowledge technology.
+zkLink is an ultra secure chain-to-chain interoperability protocol powered by revolutionary zero-knowledge technology. We provide safe, fast, and easy cross-chain swaps between different blockchains and tokens.
 
-As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other.
+As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other, empowers traders to solve liquidity problems, and provides multi-chain deployment solutions for Dapps developers.
 
-Suppose that traders are able to swap from SRM on Solana for CAKE on BSC within 45 seconds, and developers will be provided with zkLink SDK for their users to enjoy fast cross chain swapping without leaving their platforms: this all happens in a secure, fast, cost-friendly experience, when zkLink adopts recursive SNARKs to guarantee the validity of cross-chain transactions.
+
+> **Q. What problems does zkLink solve?**
+
+In the current and future blockchain world with an inevitable multi-chain, multi-layer infrastructure is the inevitable future of blockchain in which users navigate among different chains to meet their diverse demands utilizing a mixed bag of crypto tokens.
+This vision, while creating huge value for DeFi, also presents a number of problems:
+1. Liquidity segmentation: As the next-generation ecosystems form their own heterogeneous silos with different consensus mechanisms, ledgers, and incompatible technologies, it is difficult for users to hold assets on or trade between separate chains by themselves, resulting in a low capital utilization rate. This, in turn, raises the cost for new chains to acquire users.
+2. The difficulty of navigation: Currently, when a trader wants to swap tokenA on chainA to tokenB on chainB, they usually have to first swap tokenA to a stablecoin in a local DEX and find a Bridge to transit it to chainB, before finally swapping the stablecoin to tokenB. This long process takes significant time and effort, involving multiple projects servers and gas fees. The poor user experience of cross-chain transactions often stunts the enthusiasm of users and traders to use innovative projects and applications.
+3. Cross-chain security: The biggest technical challenge in cross-chain transactions is guarding asset security during chain-to-chain communication, which is vulnerable to many potential hacks or errors. Most chain-interoperability protocols adopt a multi-sig community to verify both change-in-states and cross-chain status, which doubles the risk of attack.
+The zkLink protocol solves these problems by introducing cross-chain liquidity pairs composed of multi-chain tokens, a one-stop cross-chain swap experience with fewer clicks and shorter wait times, and crypto asset security verified by zero-knowledge cryptographic technology. 
+
 
 > **Q. What product features can zkLink offer?**
 
@@ -38,7 +47,7 @@ These two products are designed to meet different kinds of user needs.
 
 Users pay 0.3% of the sum as transaction fees: 0.25% goes directly to liquidity providers, and the rest are used for R&D. For ZKL holders, we will exempt part of transaction fees in forms of subsidies or direct discount. In addition, users pay the gas fee, which is typically very low for the following two reasons: firstly, since zkLink batches a certain number of transactions into one, and all users share this gas fee; secondly, the gas fee on Layer2 is 0.
 
-## About technology
+## Technology
 
 > **Q. How zkLink achieve chain interoperability.**
 

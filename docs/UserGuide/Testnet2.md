@@ -141,10 +141,10 @@ Please configure your Metamask for our four testnets: Rinkeby, Goerli, AVAX Test
   c. Click "Get".
 
 **Currently we support the following kinds of test tokens:**
-  - Rinkeby: XVS, AUTO, UNI, SUSHI, USDT, USDC
-  - Goerli: SRM, RAY, USDT, BUSD
-  - Polygon Testnet: QUICK, KRILL, USDT
-  - AVAX Testnet: AVAX, CRA, USDT
+  - Rinkeby: USDT, USDC, ZKL
+  - Goerli: USDT, BUSD, ZKL
+  - Polygon Testnet: USDT, ZKL
+  - AVAX Testnet: USDT, USDC, ZKL
 
 
 ![img](../../static/img/TestnetUserGuide/2-1.png)
