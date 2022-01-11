@@ -8,7 +8,7 @@ sidebar_position: 4
 <!-- 需要技术爸爸帮忙修改 -->
 
 
-The key of Layer2 is to handle transactions off the main chain (Layer1) to ease the burden of the latter since the only command that Layer1 needs to execute is the verification of transaction. On top of it, zkLink adopts ZK-Rollup technology to guarantee the correctness of off-chain compunation.
+The key of Layer2 is to handle transactions off the main chain (Layer1) to ease the burden of the latter since the only command that Layer1 needs to execute is the verification of transaction. On top of it, zkLink adopts ZK-Rollup technology to guarantee the correctness of off-chain computation.
 
 The essence of ZK-Rollup is to compress and represent user status like balance in a Merkle tree. When a collection of transactions are compressed into a batch (which also includes the previous state-root and the new state root) and sent to the main chain, the smart contract will check if the previous state root in the batch matches the current state root stored in the contract, and will update the Merkle root with a positive answer. In this way, data on Layer2 is uploaded to and stored on the main chain.
 

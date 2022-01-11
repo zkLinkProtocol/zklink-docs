@@ -15,7 +15,7 @@ Designed for high-frequency traders to trade securely across Layer 2 with very l
 - Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.
 - No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.
 
-On zkLink Layer2 Engine, there will be no boundary among different ecos, and local assets can be easily traded globally. For example, users are able to swap UNI on Ethereum for CAKE on BSC via zkLink Layer2 Engine with only one click, and can withdraw targeted tokens to respective chains to make the ull use of capital.
+On zkLink Layer2 Engine, there will be no boundary among different ecos, and local assets can be easily traded globally. For example, users are able to swap UNI on Ethereum for CAKE on BSC via zkLink Layer2 Engine with only one click, and can withdraw targeted tokens to respective chains to make the full use of capital.
 
 ![What is zkLink](../../static/img/welcome.png)
 

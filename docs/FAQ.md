@@ -16,7 +16,7 @@ As the bridging component among isolated chains and layer2 networks, zkLink make
 > **Q. What problems does zkLink solve?**
 
 1. Liquidity segmentation: As the next-generation ecosystems form their own heterogeneous silos with different consensus mechanisms, ledgers, and incompatible technologies, it is difficult for users to hold assets on or trade between separate chains by themselves, resulting in a low capital utilization rate. This, in turn, raises the cost for new chains to acquire users.
-2. The difficulty of navigation: Currently, when a trader wants to swap tokenA on chainA to tokenB on chainB, they usually have to first swap tokenA to a stablecoin in a local DEX and find a Bridge to transit it to chainB, before finally swapping the stablecoin to tokenB. This long process takes significant time and effort, involving multiple projects servers and gas fees. The poor user experience of cross-chain transactions often stunts the enthusiasm of users and traders to use innovative projects and applications.
+2. The difficulty of navigation: Currently, when a trader wants to swap tokenA on chainA to tokenB on chainB, they usually have to first swap tokenA to a stablecoin in a local DEX and find a Bridge to transit it to chainB, before finally swapping the stablecoin to tokenB. This long process takes significant time and effort, involving multiple projects and gas fees. The poor user experience of cross-chain transactions often stunts the enthusiasm of users and traders to use innovative projects and applications.
 3. Cross-chain security: The biggest technical challenge in cross-chain transactions is guarding asset security during chain-to-chain communication, which is vulnerable to many potential hacks or errors. Most chain-interoperability protocols adopt a multi-sig community to verify both change-in-states and cross-chain status, which doubles the risk of attack.
 
 The zkLink protocol solves these problems by introducing cross-chain liquidity pairs composed of multi-chain tokens, a one-stop cross-chain swap experience with fewer clicks and shorter wait times, and crypto asset security verified by zero-knowledge cryptographic technology.
@@ -24,18 +24,17 @@ The zkLink protocol solves these problems by introducing cross-chain liquidity p
 
 ## Product
 
-> **Q. What product features can zkLink offer?**
+> **Q. What product features does zkLink offer?**
 
-As a trustless chain-to-chain liquidity transfer station of DeFi-verse, zkLink functions as the "connector" between separate public chains, providing users with DEX scenarios utilizing cross-chain assets in a time/monetary-cost friendly manner. zkLink v1 has following features:
+As a trustless chain-to-chain liquidity transfer station of DeFi-verse, zkLink functions as the "connector" between separate public chains, providing users with DEX scenarios utilizing cross-chain assets in a time/monetary-cost friendly manner. zkLink v1 has the following features:
 
-1. **"one-click" swapping** with assets which are native for projects of separate ecological types and public chains. For example, users can swap UNI on Ethereum for CAKE on BSC via zkLink at one stop, and achieve instant finality of transactions.
-2. **L2 StableSwap**: "one-click" stablecoin swapping on different chains or of different kinds, with a stablecoin-specialized AMM curve and negligible slippage. For example, on zkLink's Layer2 network, users can not only transfer their USDT on Ethereum (ERC-20) to BSC (BEP-20), but also swap their USDT on Ethereum to USDC on BSC.
-3. **Fast Cross Chain Swap**: zkLink provides fast cross-chain transaction service for some pairs, where traders can enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance.
-4. **Widget & SDK**: a brand new deposit channel for third-party DeFi projects by offering visualization component, which developers can easily access. With zkLink widget settled, users can play with third-party DeFi with any kinds of assets from any public chains, such as Vaults, Lending, etc.
+1. **L1: Cross Chain Swap**: Easy cross-chain swaps in a single step, that complete in a few minutes, with easy navigation and fewer steps. Designed for everyone to trade supported tokens securely across different Layer1s and Layer2s with low costs.
+2. **L2: Instant Swap**: Instant cross-chain swaps on zkLink’s Layer 2 network that complete in a few seconds. Designed for high-frequency traders to trade securely across Layer 2 with very low costs.
+3. **L2: Stablecoin Mirror**: One-step stablecoin swaps across different chains and to other stablecoins, with negligible slippage. Designed for DeFi traders, offering lower slippage, and low costs especially for large transactions.
+4. **Bridge-as-a-Service**: zkLink provides Token Bridge, a token mapping instrument as a service for developers. It is designed for protocols with a multi-chain deployment strategy allowing their users to transport their native tokens from one Layer 1 chain to another.
 
-In addition, users can provide liquidity for cross-chain pairs to earn transaction fees.
 
-> **Q. How should I choose between *Swap* and *Fast Cross Chain Swap*?**
+> **Q. How should I choose between *L1: Cross Chain Swap* and *L2: Instant Swap*?**
 
 These two products are designed to meet different kinds of user needs.
 - If you are new to zkLink, or if you are in a rush but have no sufficient deposit on Layer2 wallet, ***Fast Cross Chain Swap*** would be a better choice, since it is more convenient (fewer steps) and much faster.

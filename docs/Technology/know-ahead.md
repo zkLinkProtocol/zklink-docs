@@ -28,7 +28,7 @@ Regarding chain interoperation solutions, here is a list of questions you might 
 
   - Read more on [Multy-Chain AMM](/docs/Technology/Technology#a-multi-chain-amm)
 
-- <span className="highlight">Compatibility</span>: most chain-ineroperation protocols support only EVM, whereas users are in need of a more compatible solution in a world with both EVM and other infrastructures. In virtue of ZK-Rollup, the only condition for a qualified chain connecting to zkLink is the capability of testifying zero-knowledge proves, meaning that zkLink is able to support any smart-contract-executable chains.
+- <span className="highlight">Compatibility</span>: most chain-interoperation protocols support only EVM, whereas users are in need of a more compatible solution in a world with both EVM and other infrastructures. In virtue of ZK-Rollup, the only condition for a qualified chain connecting to zkLink is the capability of testifying zero-knowledge proves, meaning that zkLink is able to support any smart-contract-executable chains.
 
   - Read more on [ZK-Rollup](/docs/Technology/Technology#about-zkrollup)
 

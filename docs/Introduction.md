@@ -31,10 +31,10 @@ As a ”connector” among diverse ecosystems, zkLink cooperates with various pu
 Zero-knowledge validity proofs are mathematically certified to guarantee only valid transactions are executed and cannot be manipulated or falsified, and hence ensure security of funds.
 
 - In virtue of ZK-Rollup's on-chain data availability, account states can always be rolled back in case of attacks, even when all the data on zkLink Layer2 Engine is lost.
-- Zero knowledge guarantees that nobody, including the platform itself, can play maliciously can upload fake zk_proof to the main chain.
+- Zero knowledge guarantees that nobody, including the platform itself, can upload fake zk_proof to the main chain.
 
 
-### Trustless and Decentralized Security Schema
+### A Trustless and Decentralized Security Schema
 With our ZK-Rollup protocols, DAO, and light oracle network, we offer a rigorous security schema with checks and balances, and a censorship-resistant network of provers and verifiers.
 - Such separation of powers is well designed to guard against economic attack from both external hackers and internal stakeholders, by ensuring no single branch has too much power.
 
