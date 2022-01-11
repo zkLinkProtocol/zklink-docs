@@ -37,8 +37,8 @@ As a trustless chain-to-chain liquidity transfer station of DeFi-verse, zkLink f
 > **Q. How should I choose between *L1: Cross Chain Swap* and *L2: Instant Swap*?**
 
 These two products are designed to meet different kinds of user needs.
-- If you are new to zkLink, or if you are in a rush but have no sufficient deposit on Layer2 wallet, ***Fast Cross Chain Swap*** would be a better choice, since it is more convenient (fewer steps) and much faster.
-- If your assets are already on Layer2 wallet, or if you wish to complete your cross-chain transaction at the lowest cost, *Swap* suits you well. It's also quite easy to operate comparing to other methods: you get your target tokens, and can withdraw your money to Layer1 within several minutes.
+- If you are new to zkLink, or if you are in a rush but have no sufficient deposit on Layer2 wallet, ***L1: Cross Chain Swap*** would be a better choice, since it is more convenient (fewer steps) and much faster.
+- If your assets are already on Layer2 wallet, or if you wish to complete your cross-chain transaction at the lowest cost, *L2: Instant Swap* suits you well. It's also quite easy to operate comparing to other methods: you get your target tokens, and can withdraw your money to Layer1 within several minutes.
 
 
 > **Q. What are the fees for using zkLink's cross-chain swapping?**
@@ -82,24 +82,6 @@ zkLink's layer2 could achieve the same security level as Ethereum Layer1, and th
 
 Yes. All of zkLink's smart contracts are audited by Certik. You can refer to [*zkLink V1 audit report*](https://github.com/zkLinkProtocol/zklink-audit-report) for complete audit report.
 
-## What is ZKL
-
-> **Q. What is ZKL?**
-
-ZKL (*unreleased yet*) is the governance token of zkLink, and is an ERC-20 token. The total supply of ZKL is 1,000,000,000. More details about token economy will be released at a later time.
-
-> **Q. How can users acquire ZKL?**
-
-1. Provide liquidity / become a staking node: user can provide liquidity to trading pairs, or pledge idle tokens on zkLink and get ZKL as rewards.
-2. Campaigns and community reward: users who offer constructive suggestions or make contribution to product design / community / resource referral will be rewarded with ZKL.
-3. Becoming a staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
-
-> **Q. How holders of ZKL benefit from it?**
-
-1. Better transaction fee offers: for ZKL holders, zkLink will exempt part of transaction fees in forms of subsidies or direct discount.
-2. Get airdrop: those who have been holding ZKL for a considerable time can expect irregularly airdrop as a reward.
-3. Proposal initiation and voting: users can participate in our DAO governance by holding ZKL, and can initiate a proposal by burning certain amount of ZKL.
-4. Becoming the staking node: users can compete for the role of the staking node by locking ZKL, and will win ZKL as rewards.
 
 ## How to setup and play with zkLink?
 
@@ -114,7 +96,7 @@ To get started, users need to firstly deposit tokens to their Layer2 address via
 Currently, users can connect MetaMask to zkLink, and we will support more wallets in the following version.
 
 
-> **Q. What are the rare events during *Fast Cross Chain Swap* and what should I do when it occurs?**
+> **Q. What are the rare events during *L1: Cross Chain Swap* and what should I do when it occurs?**
 
 The backstage logic of *Fast Cross Chain Swap* is quite complicated, thus there are several possible intermediate stages that could go wrong with super tiny probabilities, e.g., a too low slippage. DON'T WORRY! You can always retrieve your tokens. Here listed the situations, reasons to occur, and what you should do next:
 
