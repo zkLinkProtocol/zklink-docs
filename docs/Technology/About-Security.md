@@ -84,6 +84,6 @@ Reviewing the most recent [PolyNetwork Hack](https://decrypt.co/78163/polynetwor
 
 However, if the same thing happens on zkLink, at most, the service would be stopped for a short time.
 
-The authority of the zkLink consensus community (a network composed of multiple third-party oracles similar to a multi-sig group in other projects) is limited in it's authority to a minimum, as explained in [overview](/docs/Technology/Overview).
+The authority of the zkLink consensus community (a network composed of multiple third-party oracles similar to a multi-sig group in other projects) is limited in it's authority to a minimum, as explained in [zkLink's checks and balances design](/docs/Technology/About-Security#the-checks-and-balances-design).
 
 Even if hackers manage to spoof or steal the identity of the consensus community, they can never fake a transaction, instead the only damage they can ever cause is rejecting the transaction requests from Layer2 to Layer1, doing no harm at all to assets or account status.

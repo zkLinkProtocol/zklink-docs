@@ -24,7 +24,7 @@ There are two scenarios of Fast Withdraw:
 
 ![Fast Withdraw](../../static/img/fastwithdraw.png)
 
-As soon as [zkLink's Layer2 engine](/docs/Technology/Overview#zklink-technological-process) receives a Fast Withdraw request, it will notify the optimal broker, who will then initiate a transaction from its Layer1 wallet on the target chain to the one of the trader's, via zkLink smart contract deployed on Layer1 for the purpose of data storage. This process takes only one block interval of the target chain.
+As soon as zkLink's Layer2 engine receives a Fast Withdraw request, it will notify the optimal broker, who will then initiate a transaction from its Layer1 wallet on the target chain to the one of the trader's, via zkLink smart contract deployed on Layer1 for the purpose of data storage. This process takes only one block interval of the target chain.
 
 When the ZK proof of this Layer2 transaction is verified, i.e., the final roots of both chains are consistent (normally it takes from 30 minutes to 1 hour), zkLink Layer1 contract will transit the right amount of tokens to the broker's Layer1 wallet.
 
