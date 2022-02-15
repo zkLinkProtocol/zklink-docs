@@ -29,46 +29,45 @@ module.exports = {
       items: [
         'Introduction',
         'Background',
-        'Cross-chain Pairs',
       ],
     },
     {
       type: 'category',
-      label: 'Product',
-      collapsed: false,
-      items: [
-        'Product/Overview',
-        'Product/fastswap',
-        'Product/swap',
-        'Product/StableSwap',
-      ],
-    },
-    {
-      type: 'doc',
-      id: 'functionality/L2liquidity',
-      label: 'L2 Liquidity'
-    },
-    {
-      type: 'category',
-      label: 'Protocol',
+      label: 'Technology  & Design',
       collapsed: false,
       items: [
         'Technology/know-ahead',
-        'Technology/Overview',
         'Technology/Technology',
+        'Technology/PCD',
         'Technology/About-Security',
         'Technology/Roadmap',
       ],
     },
     {
+      type: 'category',
+      label: 'Use Cases & Applications',
+      collapsed: false,
+      items: [
+        'Product/Overview',
+        'Product/orderbook',
+        'Product/amm',
+        'Product/NFT',
+      ],
+    },
+    {
       type: 'doc',
-      id: 'Technology/Bridge-as-a-service',
-      label: 'Bridge-as-a-service'
+      id: 'developer',
+      label: 'Developer Guide'
+    },
+    {
+      type: 'doc',
+      id: 'Audits',
+      label: 'Audits'
     },
     {
       type: 'doc',
       id: 'UserGuide/Testnet2',
-      label: 'Testnet User Guide'
+      label: 'Testnet User Guide for AMM DEX Demo'
     },
     {
       type: 'doc',
@@ -79,16 +78,6 @@ module.exports = {
       type: 'doc',
       id: 'Smart Contract',
       label: 'Smart Contract'
-    },
-    {
-      type: 'doc',
-      id: 'FAQ',
-      label: 'FAQ'
-    },
-    {
-      type: 'doc',
-      id: 'Audits',
-      label: 'Audits'
     },
     {
       type: 'doc',
