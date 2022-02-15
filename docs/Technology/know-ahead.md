@@ -15,10 +15,10 @@ Regarding chain interoperation solutions, here is a list of questions you might 
 - <span className="highlight">Liquidity aggregation</span>: the continuously emerging public chains and scaling solutions are isolating the liquidity of DeFi-verse as a whole, forming numerous asset silos. If a chain interoperation protocol could aggregate the fragmented liquidity from separated chains and Layer2 networks, it could provide a more user-friendly trading environment, creating huge values.
 
   - Read more on [zkLink's PCD design](/docs/Technology/PCD#protocol-controlled-debt)
-  
+
 - <span className="highlight">Compatibility</span>: most chain-interoperation protocols support only EVM, whereas users are in need of a more compatible solution in a world with both EVM and other infrastructures. In virtue of ZK-Rollup, the only condition for a qualified chain connecting to zkLink is the capability of testifying zero-knowledge proves, meaning that zkLink is able to support any smart-contract-executable chains.
 
-  - Read more on [ZK-Rollup](/docs/Technology/Technology#about-zkrollup)
+  - Read more on [ZK-Rollup](/docs/Technology/Technology)
 
 - <span className="highlight">Service Stability</span>: generally speaking, there is not much to concern for pure smart contracts. As for cross-chain projects with auxiliary off-chain systems, the system stability is always a big deal.
 
