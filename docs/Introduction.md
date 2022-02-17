@@ -8,13 +8,12 @@ sidebar_position: 1
 ## What is zkLink？
 zkLink is a **multi-chain interoperability network** powered by **zero-knowledge** technology.
 
-By connecting various public chains and Layer2 protocols, zkLink's multi purpose protocol enables developers and traders to benefit from liquidity on separate ecosystems with a seamless multi-chain user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
+By connecting various public chains and Layer2 protocols, zkLink's unified, multi-purpose network protocol enables developers and traders to leverage liquidity from isolated chains and offer a seamless multi-chain user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
 
 
 <div className="cancel-md-margin">
 
-> **🥇** zkLink innovatively applies **[zero-knowledge](/docs/Technology/Technology)** technology to multi-chain interoperability with a trustless and decentralized **[separation of powers](/docs/Technology/About-Security)** design that push forward the security level to a next generation. Moreover, zkLink eliminates the disparity among stablecoins from different blockchains and of different types, achieving multi-chain liquidity aggregation via a unique **[protocol-controlled-debt (PCD)](/docs/Technology/PCD)** mechanism that creates a efficient, cost-friendly, and easy-to-use infrastructure.
-
+>**🥇** zkLink innovatively applies **[zero-knowledge](/docs/Technology/Technology)** technology to multi-chain interoperability with a trustless and decentralized **[separation of powers](/docs/Technology/About-Security)** design that safeguards the security of assets and trades. Moreover, zkLink eliminates the disparity among stablecoins from different blockchains and of different types, achieving multi-chain liquidity aggregation to form a massive stablecoin liquidity pool via a unique **[protocol-controlled-debt (PCD)](/docs/Technology/PCD)** mechanism, delivering a capital efficient, cost-friendly, and easy-to-access infrastructure.
 
 </div>
 
