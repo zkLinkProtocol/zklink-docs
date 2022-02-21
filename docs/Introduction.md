@@ -8,7 +8,7 @@ sidebar_position: 1
 ## What is zkLink？
 zkLink is a **unified, multi-chain L2 network** powered by **zero-knowledge** technology.
 
-By connecting various public chains and Layer2 protocols, zkLink's unified, multi-purpose network protocol enables developers and traders to leverage liquidity from isolated chains and offer a seamless multi-chain user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
+By connecting various blockchains and Layer2 protocols, zkLink's unified, multi-purpose network protocol enables developers and traders to leverage liquidity from isolated chains and offer a seamless multi-chain user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
 
 
 <div className="cancel-md-margin">

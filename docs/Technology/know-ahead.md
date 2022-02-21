@@ -12,7 +12,7 @@ Regarding chain interoperation solutions, here is a list of questions you might 
   - Read more on [zkLink security guarantee](/docs/Technology/About-Security)
   - Read more on [Preventing attacks on cross-chain trades](/docs/Technology/About-Security#preventing-attacks)
 
-- <span className="highlight">Liquidity aggregation</span>: the continuously emerging public chains and scaling solutions are isolating the liquidity of DeFi-verse as a whole, forming numerous asset silos. If a chain interoperation protocol could aggregate the fragmented liquidity from separated chains and Layer2 networks, it could provide a more user-friendly trading environment, creating huge values.
+- <span className="highlight">Liquidity aggregation</span>: the continuously emerging blockchains and scaling solutions are isolating the liquidity of DeFi-verse as a whole, forming numerous asset silos. If a chain interoperation protocol could aggregate the fragmented liquidity from separated chains and Layer2 networks, it could provide a more user-friendly trading environment, creating huge values.
 
   - Read more on [zkLink's PCD design](/docs/Technology/PCD#protocol-controlled-debt)
 
