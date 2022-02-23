@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# How to participate in zkLink testnet? (English)
+# How to use zkLink AMM DEX Demo? (English)
 
 ---
 ## Step 1. Set up your wallet & get ready
@@ -142,7 +142,7 @@ You should claim some test gas fee for the four testnets: Rinkeby, Goerli, HECO 
 
   d. Sign in your wallet.
 
-**We provide the following test tokens as followed**
+**We provide the following test tokens**
   - Rinkeby （XVS, AUTO, UNI, SUSHI, USDT, USDC）
   - Goerli （SRM, RAY, USDT, BUSD)
   - Polygon Test （QUICK, KRILL, USDT）

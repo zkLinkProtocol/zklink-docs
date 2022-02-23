@@ -66,6 +66,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'UserGuide/orderbook',
+      label: 'Testnet User Guide for Order Book DEX Demo'
+    },
+    {
+      type: 'doc',
       id: 'UserGuide/Testnet2',
       label: 'Testnet User Guide for AMM DEX Demo'
     },
