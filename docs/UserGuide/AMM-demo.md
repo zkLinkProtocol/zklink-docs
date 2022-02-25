@@ -6,17 +6,17 @@ sidebar_position: 1
 ---
 ## Case 1. L1 Cross Chain Swap
 
-  1. Switch the MetaMask network to your source chain.
+a. Switch the MetaMask network to your source chain.
 
-  2. Choose your target chain, source token, and target token.
+b. Choose your target chain, source token, and target token.
 
-  3. Enter the amount that you wish to swap.
+c. Enter the amount that you wish to swap.
 
-  4. Enter the wallet address where you wish to swap tokens. The default value is the same as your source address.
+d. Enter the wallet address where you wish to swap tokens. The default value is the same as your source address.
 
-  5. Confirm the transaction on your Metamask wallet.
+e. Confirm the transaction on your Metamask wallet.
 
-  6. You can view your transaction status in your "transaction history" as shown below:
+f. You can view your transaction status in your "transaction history" as shown below:
 
 ![img](../../static/img/TestnetUserGuide/crosschainswap.png)
 
@@ -49,6 +49,7 @@ a. Navigate to "Layer2 Wallet" on the top bar, and click "Transfer".
 
 b. Enter the address (another zkLink Layer2 address), then select a designated token, enter the amount, and then click
  "Transfer".
+ 
 c. Sign in your wallet.
 
 d. Submit the transaction.
@@ -88,7 +89,7 @@ d. Confirm and sign in your wallet.
 ![img](../../static/img/TestnetUserGuide/add-liquidity-2.jpg)
 
 
-### 6. Remove liquidity
+### 5. Remove liquidity
 <!---[![How to remove liquidity](https://res.cloudinary.com/marcomontalbano/image/upload/v1626170296/video_to_markdown/images/youtube--7GX6OH_xW38-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=7GX6OH_xW38&list=PL92WZahYyEBfVX51LNtHEPguusVEtQVGo&index=7 "How to remove liquidity")-->
 
 a. Navigate to "Use Case Demos" on the top bar, and click "AMM DEX".
@@ -102,7 +103,7 @@ d. Confirm and sign in your wallet.
 ![img](../../static/img/TestnetUserGuide/remove-liquidity.jpg)
 
 
-### 7. L2 Stablecoin Mirror
+### 6. L2 Stablecoin Mirror
 a. Navigate to "Use Case Demos" on the top bar, and click "AMM DEX".
 
 b. Choose "L2 Stablecoin Mirror" tab.
