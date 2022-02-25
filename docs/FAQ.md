@@ -42,6 +42,7 @@ Either way, we are keeping records of all the points accrued so far, which will 
 We will also have new incentives for developers to build new features on top of the zkLink L2 network.  
 <br/>
 
+
 ## Q: Will zkLink have a token sale?
 >The date and details of a potential token sale and whitelist campaign is yet to be determined.
 <br/>

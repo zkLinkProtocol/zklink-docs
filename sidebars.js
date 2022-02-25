@@ -65,14 +65,14 @@ module.exports = {
       label: 'Audits'
     },
     {
-      type: 'doc',
-      id: 'UserGuide/orderbook',
-      label: 'Testnet User Guide for Order Book DEX Demo'
-    },
-    {
-      type: 'doc',
-      id: 'UserGuide/Testnet2',
-      label: 'Testnet User Guide for AMM DEX Demo'
+      type: 'category',
+      label: 'User Guide',
+      collapsed: false,
+      items: [
+        'UserGuide/preparatory-work',
+        'UserGuide/orderbook',
+        'UserGuide/AMM-demo',
+      ],
     },
     {
       type: 'doc',
