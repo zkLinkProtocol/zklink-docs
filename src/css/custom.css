@@ -414,3 +414,26 @@ table th, table td {
   border-bottom: 0;
   border-right: 0;
 }
+.nav-link-btn span svg,.navbar__link span svg{
+  display: none;
+}
+.navbar__logo{
+  height: auto !important;
+}
+
+.menu >.menu__list >.menu__list-item .menu__link--sublist {
+  font-size: 16px;
+  padding: 4px 0 4px 32px;
+  font-weight: 600;
+  color: #1F242B !important;
+}
+html[data-theme=dark] .menu >.menu__list >.menu__list-item .menu__link--sublist {
+  color: rgb(218, 221, 225) ;
+}
+.menu >.menu__list >.menu__list-item .menu__link--active {
+  color: rgb(37, 194, 160);
+}
+.menu >.menu__list >.menu__list-item a {
+  font-size: 14px;
+  padding: 3px 0 3px 48px;
+}
