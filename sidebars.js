@@ -76,6 +76,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'FAQ',
+      label: 'FAQ'
+    },
+    {
+      type: 'doc',
       id: 'Token Economy',
       label: 'Token Economy'
     },
