@@ -4,130 +4,82 @@ sidebar_position: 7
 
 # FAQ
 
-## General
 
-> **Q. What is zkLink?**
+## Q. What is zkLink?
+>zkLink is a unified, multi-chain L2 network secured by zero-knowledge technology. We are building multi-chain, multi-purpose DeFi infrastructure for the blockchain industry.
+<br/>
+Future use cases built on top of zkLink include:
+<br/>
+- Multi-chain Order Book trading
+<br/>
+- Multi-chain AMM trading
+<br/>
+- NFT marketplace
+<br/>
+- LaunchPad
+<br/>
+- L2 Wallet
+<br/>
+- Derivatives trading
+<br/>
+- And more…
 
-zkLink is an ultra secure chain-to-chain interoperability protocol powered by revolutionary zero-knowledge technology. We provide safe, fast, and easy cross-chain swaps between different blockchains and tokens.
+## Q. Is zkLink still a cross-chain DEX?
+>zkLink will not directly offer a decentralized exchange service. Instead, you will see other DeFi projects utilize our technology. We believe zero-knowledge will be a game changer for the multi-chain DeFi-verse and will help deliver a new era of security, speed, and lower cost to the end user.
 
-As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other, empowers traders to solve liquidity problems, and provides multi-chain deployment solutions for Dapps developers.
+## Q: How will the testnet change?
+> The testnet is now a suite of demos to showcase use cases built upon our high-level APIs. Anyone is welcome to use our demos, and we are happy to receive feedback and ideas in our Discord community.
 
-
-> **Q. What problems does zkLink solve?**
-
-1. Liquidity segmentation: As the next-generation ecosystems form their own heterogeneous silos with different consensus mechanisms, ledgers, and incompatible technologies, it is difficult for users to hold assets on or trade between separate chains by themselves, resulting in a low capital utilization rate. This, in turn, raises the cost for new chains to acquire users.
-2. The difficulty of navigation: Currently, when a trader wants to swap tokenA on chainA to tokenB on chainB, they usually have to first swap tokenA to a stablecoin in a local DEX and find a Bridge to transit it to chainB, before finally swapping the stablecoin to tokenB. This long process takes significant time and effort, involving multiple projects and gas fees. The poor user experience of cross-chain transactions often stunts the enthusiasm of users and traders to use innovative projects and applications.
-3. Cross-chain security: The biggest technical challenge in cross-chain transactions is guarding asset security during chain-to-chain communication, which is vulnerable to many potential hacks or errors. Most chain-interoperability protocols adopt a multi-sig community to verify both change-in-states and cross-chain status, which doubles the risk of attack.
-
-The zkLink protocol solves these problems by introducing cross-chain liquidity pairs composed of multi-chain tokens, a one-stop cross-chain swap experience with fewer clicks and shorter wait times, and crypto asset security verified by zero-knowledge cryptographic technology.
-
-
-## Product
-
-> **Q. What product features does zkLink offer?**
-
-As a trustless chain-to-chain liquidity transfer station of DeFi-verse, zkLink functions as the "connector" between separate public chains, providing users with DEX scenarios utilizing cross-chain assets in a time/monetary-cost friendly manner. zkLink v1 has the following features:
-
-1. **L1: Cross Chain Swap**: Easy cross-chain swaps in a single step, that complete in a few minutes, with easy navigation and fewer steps. Designed for everyone to trade supported tokens securely across different Layer1s and Layer2s with low costs.
-2. **L2: Instant Swap**: Instant cross-chain swaps on zkLink’s Layer 2 network that complete in a few seconds. Designed for high-frequency traders to trade securely across Layer 2 with very low costs.
-3. **L2: Stablecoin Mirror**: One-step stablecoin swaps across different chains and to other stablecoins, with negligible slippage. Designed for DeFi traders, offering lower slippage, and low costs especially for large transactions.
-4. **Bridge-as-a-Service**: zkLink provides Token Bridge, a token mapping instrument as a service for developers. It is designed for protocols with a multi-chain deployment strategy allowing their users to transport their native tokens from one Layer 1 chain to another.
-
-
-> **Q. How should I choose between *L1: Cross Chain Swap* and *L2: Instant Swap*?**
-
-These two products are designed to meet different kinds of user needs.
-- If you are new to zkLink, or if you are in a rush but have no sufficient deposit on Layer2 wallet, ***L1: Cross Chain Swap*** would be a better choice, since it is more convenient (fewer steps) and much faster.
-- If your assets are already on Layer2 wallet, or if you wish to complete your cross-chain transaction at the lowest cost, *L2: Instant Swap* suits you well. It's also quite easy to operate comparing to other methods: you get your target tokens, and can withdraw your money to Layer1 within several minutes.
-
-
-> **Q. What are the fees for using zkLink's cross-chain swapping?**
-
-Users pay 0.3% of the sum as transaction fees: 0.25% goes directly to liquidity providers, and the rest are used for R&D. For ZKL holders, we will exempt part of transaction fees in forms of subsidies or direct discount. In addition, users pay the gas fee, which is typically very low for the following two reasons: firstly, since zkLink batches a certain number of transactions into one, and all users share this gas fee; secondly, the gas fee on Layer2 is 0.
-
-## Technology
-
-> **Q. How zkLink achieve chain interoperability.**
-
-zkLink connects separate Layer1 networks with a Layer2 network, so that tokens belonging to different ecosystems can be directly swapped with each other freely on this second layer, without an intermediate token. The Layer2 network will generate zero-knowledge proofs of the off-chain state on a regular basis and upload them to respective Layer1 contracts for verification. Users will see the pairs that have never been seen before, such as: CAKE-SUSHI, BNB-HT, BUNNY-COW, etc.
-
-*More technical details will be disclosed upon mainnet launch.*
-
-> **Q. What are the competitive edges of the technology zkLink applies.**
-
-The competitive edges of zkLink are achieved by: "Fast Cross Chain Swap" and "Zero Knowledge Technology".
-
-  - **Sleekest token cross-chain experience**
-
-    + Traders can now directly exchange one token to any kinds from any chains, with only "**one click**".
-    + Different from other chain-interoperation platforms where users get stable-coins or mapping assets on the target chain, on zkLink they receive their target tokens, **saving much time & effort**.  
-    + **Friendly user experience** in aspects of learning cost, mental cost, time cost, and monetary cost.
-
-  - **Security and validity**
-
-    + zkLink achieves the same **security level** as Ethereum Layer1.
-    + Zero knowledge guarantees that nobody, including the platform, can play maliciously and users can retrieve tokens losslessly in any extreme cases, and that **cross-chain transactions are always valid**.
-    + Even the total data loss of zkLink can not endanger capital safety when users can always **roll back** their account states based on Layer1 data under all circumstances.
-
-  - **Decentralization and non-custody**
-
-    + Free from restriction or authentication.
-    + Users no longer have to "give out" the control of assets and private keys to exchanges instead they will have full custody over their funds: a true sense of "token ownership."
-
-> **Q. How are security and privacy guaranteed when using zkLink.**
-
-zkLink's layer2 could achieve the same security level as Ethereum Layer1, and this is assured by the adoption of zero-knowledge. The Layer2 network will generate zero-knowledge proofs of the off-chain state on a regular basis and upload them to respective Layer1 contracts for verification, making sure that the transaction is correctly approved and signed by users and the account balance on Layer1 (the mainchain) is correctly updated. In this way, the security of assets and transactions is guaranteed by cryptography rather than game theory and economic models, meaning that nobody, including the platform itself, is able to jeopardize the security of assets, and users are able to withdraw tokens losslessly under extreme cases.
-
-> **Q. Are zkLink's smart contracts audited?**
-
-Yes. All of zkLink's smart contracts are audited by Certik. You can refer to [*zkLink V1 audit report*](https://github.com/zkLinkProtocol/zklink-audit-report) for complete audit report.
+## Q: What will be the utility of the points (Galaxy NFT points) accrued on the testnet demos?
+>Since zkLink will now no longer be operating a DEX, the original yield boost will no longer be usable on zkLink directly.   
+<br/>
+Instead, we plan to work with one of our ecosystem partners for zkLink Loyalty NFT rewards to boost yield farming on their platform.  
+<br/>
+<br/>
+Either way, we are keeping records of all the points accrued so far, which will be utilized at a later date.  
+<br/>
+<br/>
+We will also have new incentives for developers to build new features on top of the zkLink L2 network.  
+<br/>
 
 
-## How to setup and play with zkLink?
+## Q: Will zkLink have a token sale?
+>The date and details of a potential token sale and whitelist campaign is yet to be determined.
+<br/>
+Keep following our official social media channels - and ignore any rumors of any fake IDO/ICO/private sale notices.
+<br/>
 
-*For step-by-step instructions, please refer to zkLink userguide: https://docs.zk.link/docs/UserGuide/EN*
+<span className="highlight">Important: We do not yet have a token, so be aware of scams. All announcements will be made to @all at our official Telegram, Discord, and Twitter channels, and we will never contact any community member directly.</span>
 
-> **Q. Where should I start to use zkLink?**
+## Q: Will zkLink airdrop?
+>There was a one-time, small-scale reward in a previous campaign. We’ve recorded the wallet addresses of winners and we will make good on the promises in the future after the token generation event (TGE).
+<br/>
+We cannot commit on a time frame when this allocation will happen, as we are prioritizing the mainnet launch and partnerships.
+<br/>
 
-To get started, users need to firstly deposit tokens to their Layer2 address via MetaMask, since every execution will happen on Layer2. Then you can start swapping / transaction / providing liquidity on this second layer, and experience all product features, before you withdraw your tokens from Layer2 back to Layer1 (the main chain). During the whole process, users always hold their assets.
+## Q. What is the roadmap of zkLink going forward?
+- **Q1 2022**
+  - Launch Multi-Chain order book demo
+  - Connect Solana as an EVM-incompatible chain
+  - Support Atomic Swap & Optimize Circuit
 
-> **Q. What wallets does zkLink support?**
+- **Q2 2022**
+  - Connect additional chains
+  - Launch Mainnet
 
-Currently, users can connect MetaMask to zkLink, and we will support more wallets in the following version.
+- **Q3 2022**
+  - Support Decentralized ZK Proofs
+  - Integrate oracle on ZK L2
+  - Strengthen atomic swops to support more complex use cases
 
+## Q. Has there been a change in the zkLink team? Is zkLink hiring?
+> The team has not changed and we are in fact expanding! If you are a developer with experience in Solidity, Rust, or ZK-proofs, feel free to speak to us.
 
-> **Q. What are the rare events during *L1: Cross Chain Swap* and what should I do when it occurs?**
-
-The backstage logic of *Fast Cross Chain Swap* is quite complicated, thus there are several possible intermediate stages that could go wrong with super tiny probabilities, e.g., a too low slippage. DON'T WORRY! You can always retrieve your tokens. Here listed the situations, reasons to occur, and what you should do next:
-
-1. Fail to swap from source token to a Layer2-listed kind on zkLink Layer1 aggregator due to low slippage: you will receive your source token on your Layer1 wallet.
-2. Fail to swap on zkLink Layer2 AMM due to low slippage: you may receive an intermediate token on your Layer2 wallet. For example, when you try to swap from UNI to CAKE, in this case you will receive 3CRV. You can either WITHDRAW this intermediate (3CRV) to your Layer1 wallet on the source chain, or manually finish the rest steps: *L2 swap* (from 3CRV to 3EPS or any other tokens on BSC which is listed on zkLink Layer2 pools; [userguide](/docs/UserGuide/EN#1-swap)), *Withdraw* or *Fast Withdraw* ([userguide](/docs/UserGuide/EN#3-withdraw-to-layer1)), and then find a third-party to finally swap your 3EPS to CAKE.
-3. No broker available: in the case above, since we cannot find a proper broker to take the next step, you will still receive 3EPS but on your Layer1 wallet on BSC, and can direct swap 3EPS to CAKE in a third-party exchange since these two tokens are on the same chain.
-
-For the current status of your transaction, please refer to the corresponding blockchain browsers:
-
-- Ethereum: https://etherscan.io/
-- Polygon: https://polygonscan.com/
-- Binance Smart Chain: https://bscscan.com/
-- Huobi ECO Chain: https://hecoinfo.com/
-
-
-
-
-## Community
-
-> **Q. How can I join zkLink's community?**
-
-We welcome everyone with interest in zkLink / Layer2 Scaling / chain iinteroperability / ZK-Rollup to join our community. You can reach out to us via the following links:
-
-Web: https://zk.link/
-
-Twitter: https://twitter.com/zkLinkorg
-
-Telegram: https://t.me/zkLinkorg
-
-Discord: https://discord.gg/9GCwxN7xaJ
-
-Medium: https://zklinkdefi.medium.com
-
-Reddit: https://www.reddit.com/user/zkLink_
+## Q. Will you continue to maintain the zkLink community now that you are not running a DEX?
+>Yes! Community is core to everything we do at zkLink. We’ve seen the fast growth of our Telegram, Twitter, Discord, and testnet users, and we would like to thank everyone for their support so far; and hope you’ll continue with us into the future.
+<br/>
+Going forward, our community will be more technology focused, and we will have new developer-focused incentives and programs.
+<br/>
+<br/>
+Please reach out to us on Discord if you have any questions.
+<br/>
