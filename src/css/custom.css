@@ -391,26 +391,3 @@ html[data-theme=dark] .menu > .menu__list > .menu__list-item > a, html[data-them
   width: 50%;
 }
 
-table {
-  width: 100%;
-  border-right: 1px solid #d9d1d1;
-  border-bottom: 1px solid #d9d1d1;
-}
-
-table thead, table tr, table tbody {
-  display: block;
-  width: 100%;
-}
-
-table tr {
-  border-top: 0;
-}
-
-table th, table td {
-  display: inline-block;
-  width: 25%;
-  border-right: 0;
-  text-align: center;
-  border-bottom: 0;
-  border-right: 0;
-}
