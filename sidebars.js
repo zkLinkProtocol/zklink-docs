@@ -55,9 +55,13 @@ module.exports = {
       ],
     },
     {
-      type: 'doc',
-      id: 'developer',
-      label: 'Developer Guide'
+      type: 'category',
+      label: 'APIs',
+      collapsed: false,
+      items: [
+        'developer/API-AMM',
+        'developer/API-orderbook',
+      ],
     },
     {
       type: 'doc',
