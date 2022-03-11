@@ -56,6 +56,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'L2 Flows',
+      collapsed: false,
+      items: [
+        'flows/deposit',
+        'flows/withdraw',
+        'flows/transfer',
+        'flows/limit-order',
+      ],
+    },
+    {
+      type: 'category',
       label: 'APIs',
       collapsed: false,
       items: [
