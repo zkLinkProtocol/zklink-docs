@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Multi-Chain Liquidity Aggregation
 ---
-zkLink initiates the protocol-controlled-debt (PCD) in  multi-chain interoperability that aggregates the segmented liquidity from connected blockchains. The PCD mechanism is deployed via a contract on connected blockchains to safely mint any stablecoin / stablecoin LP into zUSD (a ERC-20 token), which is then directly mapped to the zkLink L2 network as vUSD (always pegged 1:1).
+zkLink initiates the [*protocol-controlled-debt (PCD)*](https://liquid.salon) in  multi-chain interoperability that aggregates the segmented liquidity from connected blockchains. The PCD mechanism is deployed via a contract on connected blockchains to safely mint any stablecoin / stablecoin LP into zUSD (a ERC-20 token), which is then directly mapped to the zkLink L2 network as vUSD (always pegged 1:1).
 
 ## Protocol Controlled Debt
 
