@@ -67,11 +67,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'APIs',
+      label: 'Developers',
       collapsed: false,
       items: [
         'developer/API-AMM',
         'developer/API-orderbook',
+        'developer/terminology',
       ],
     },
     {
