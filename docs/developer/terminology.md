@@ -59,7 +59,7 @@ The contract needs to verify the root hash on the other chains, comparing them w
 
 
 ## L2
-L2 (Layer2) in zkLink refers to ZK-Rollup service that includes a state machine. L1 events and L2 transactions will trigger the change in state on L2. L2 transactions refer to those from L2 APIs including Transfer, Withdraw, Swap, etc. L2 state changes are regularly pushed to L1, and the rollup operator generates a zero knowledge proof that includes transactions and state changes during a certain period of time, then the validator uploads the proof to L1.
+L2 (Layer2) in zkLink refers to ZK-Rollup service that includes a state machine. L1 events and L2 transactions will trigger the change in state on L2. L2 transactions refer to those from L2 APIs including Transfer, Withdraw, OrderMatching, etc. L2 state changes are regularly pushed to L1, and the rollup operator generates a zero knowledge proof that includes transactions and state changes during a certain period of time, then the validator uploads the proof to L1.
 
 ## Account
 
@@ -88,7 +88,11 @@ EOA account private key (L1) -> sign the specific message -> signature as the se
 ```
 A user can control the account by the private key of EOA account. The L2 private key can be created again if lost, and change the pubKeyHash that controls the account via ChangePubKey. If the EOA account private key is lost, the user can still control the account with L2 private key.
 
-If the address is a contract address, there is no way to transfer assets without a private key. But users can still withdraw tokens to L1 by ForcedExit.
+
+For a contract address, there are two scenarios:
+* If the address is created via create2 and complies with EIP-1271, assets on it can still be transferred or withdrawn by providing correct signature.
+* For other contract addresses without a private key, there is no way to transfer assets but users can still withdraw tokens to L1 by ForcedExit.
+
 
 The nonce of an account is to avoid double processing. Every L2 transaction is linked with a nonce that is consistent with the nonce of the according account. When the L2 transaction is finalized the account nonce will be added by 1.
 
@@ -126,8 +130,6 @@ Since the contract address of a token can be changed, zkLink allows Governor to 
 
 zkLink supports nonstandard ERC20 token, which refers to those that transaction fees might be charged to transfer-out or  transfer-in. For example, when Alice transfers 100 tokens to Bob, for nonstandard ERC20 tokens, 101 tokens might deducted from Alice's account (1% transaction fees included). In all cases the increase of L2 balance is subject to L1 contract: for example, Alice deposits 100 nonstandard ERC20 token but zkLink contract receives only 95, Alice's L2 account balance will be added by 95.
 
-If a token exists in zkLink L1 contract but is not recorded on L2, users can still deposit this token to L2 but can not transfer or swap, and can only Withdraw or ForcedExit this token to L1.
-
 The same kind of token on different chains is encoded with the same tokenId on L2, such as USDT on Ethereum and USDT on BSC, despite their different chains and contract address, they share the same L2 tokenId.
 
 
@@ -145,7 +147,7 @@ A `NewPriorityRequest` event is generated with a L1 transaction, when L2 receive
 
 zkLink will prioritize all L1 transactions, and guarantees that zkLink will rollup all transactions and upload them to L1 even if the transaction does not change account status. Otherwise when a L1 transaction times out the contract will be in Exodus mode.
 
-`totalOpenPriorityRequests` records the number of pending L1 transactions. On some public chains with high TPS and low gasPrice, a huge amount of invalid L1 transactions can be initiated that brings great pressure to L2 service since generating a Proof requires a certain computational cost. To avoid such DDOS attack, the amount of transactions is restricted on L1 that varies on different chains with the default value being 5096.
+`totalOpenPriorityRequests` records the number of pending L1 transactions. On some public chains with high TPS and low gasPrice, a huge amount of invalid L1 transactions can be initiated that brings great pressure to L2 service since generating a Proof requires a certain computational cost. To avoid such DDOS attack, the amount of transactions is restricted on L1 that varies on different chains with the default value being 4096.
 
 #### Deposit
 
@@ -256,7 +258,7 @@ There are 16 order slots in each sub-account, with each slot linked with a nonce
 |-------|-------|-------|-------|-------|-------|-------|-------|:----|:-------|
 | 0     | 2     | 4     | 0     | 7     | 9     | 23    | 1     |     | 122    |
 
-A user can choose any vacant slot to make an order. A vacant slot refers to the slot that is not taken by any oder. For example, if slot5 is vacant, the nonce of the order can be set as 5 (similar to account nonce). 16 slots means that a user can make up to 16 orders, which meets most users' needs.
+A user can choose any vacant slot to make an order. A vacant slot refers to the slot that is not taken by any order. For example, if slot5 is vacant, the nonce of the order can be set as 5 (similar to account nonce). 16 slots means that a user can make up to 16 orders, which meets most users' needs.
 
 To support partial fulfillment, each slot will record the current amount of the rest orders. For example, in slot5 the total amount of the current order is 1,000 USDT and 800 of them have been fulfilled. When other OrderMatching transactions match this oder, at most 200 USDT can be fulfilled.
 
