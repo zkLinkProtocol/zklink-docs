@@ -266,11 +266,7 @@ Apart from nonce and the rest amount, the slot also records the sig hash to the 
 
 
 #### Transaction Fees
-L2交易需要支付一定的手续费。需要补充的细节：
-
-* 哪些token可以作为手续费
-* 手续费率
-* 交易中由哪个账户支付手续费
+TBD
 
 
 
