@@ -108,7 +108,7 @@ module.exports = {
       appId: 'YOUR_APP_ID',
       // Optional: Algolia search parameters
       searchParameters: {},
-      //... other Algolia params
+      //... excludes Algolia params
     },*/
   },
   presets: [
