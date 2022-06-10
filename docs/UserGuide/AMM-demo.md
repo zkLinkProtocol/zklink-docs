@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: ' '
+
 ---
 # How to use zkLink's AMM DEX Demo
 

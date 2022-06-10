@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: ' '
+
 ---
 
 # Use Case 3: Multi-Chain NFT Marketplace
