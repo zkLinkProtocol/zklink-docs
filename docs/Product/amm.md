@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: ' '
+
 ---
 
 # Use Case 2: Multi-Chain AMM DEX

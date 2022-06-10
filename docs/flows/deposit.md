@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: ' '
+
 ---
 
 # Deposit to L2

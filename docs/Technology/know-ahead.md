@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: ' '
+
 ---
 
 # Highlights of Chain-to-chain Interoperability
