@@ -24,6 +24,10 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.aa-DetachedSearchButton{
+  border-radius: 20px !important;
+}
+
 .fields {
   display: flex;
   margin-bottom: 20px;

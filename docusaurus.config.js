@@ -16,6 +16,9 @@ module.exports = {
     },
     '/scripts/gtag.js'
   ],
+
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+
   themeConfig: {
     navbar: {
       title: 'zkLink',
@@ -96,7 +99,7 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} zkLink, Inc. Built with Docusaurus.`,
     },
-    algolia: {
+    /*algolia: {
       apiKey: 'YOUR_API_KEY',
       indexName: 'YOUR_INDEX_NAME',
       // Optional: see doc section below
@@ -105,8 +108,8 @@ module.exports = {
       appId: 'YOUR_APP_ID',
       // Optional: Algolia search parameters
       searchParameters: {},
-      //... other Algolia params
-    },
+      //... excludes Algolia params
+    },*/
   },
   presets: [
     [
