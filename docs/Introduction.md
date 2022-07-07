@@ -7,14 +7,14 @@ title: ' '
 ---
 
 ## What is zkLink？
-zkLink is a **unified, multi-chain L2 network** powered by **zero-knowledge** technology.
+zkLink is a **trading-focused multi-chain L2 network** with **unified liquidity** secured by **ZK-Rollups**.
 
-By connecting various blockchains and Layer2 protocols, zkLink's unified, multi-purpose network protocol enables developers and traders to leverage liquidity from isolated chains and offer a seamless multi-chain user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
+zkLink ecosystem connects various L1 chains and L2 networks that enables developers and traders to leverage unified liquidity from isolated chains with a secure and seamless user experience, contributing to a more accessible and efficient DeFi ecosystem for everyone.
 
 
 <div className="cancel-md-margin">
 
->**🥇** zkLink innovatively applies **[zero-knowledge](/docs/Technology/Technology)** technology to multi-chain interoperability with a trustless and decentralized **[separation of powers](/docs/Technology/About-Security)** design that safeguards the security of assets and trades. Moreover, zkLink eliminates the disparity among stablecoins from different blockchains and of different types, achieving multi-chain liquidity aggregation to form a massive stablecoin liquidity pool via a unique **[protocol-controlled-debt (PCD)](/docs/Technology/PCD)** mechanism, delivering a capital efficient, cost-friendly, and easy-to-access infrastructure.
+>**🥇** zkLink innovatively applies **[zero-knowledge](/docs/Technology/Technology)** technology to multi-chain interoperability with a trustless and decentralized **[separation of powers](/docs/Technology/About-Security)** design that safeguards the security of assets and trades as well as multi-chain data transits. Moreover, zkLink eliminates the disparity among stablecoins from different blockchains and of different types, achieving multi-chain liquidity aggregation to form a massive stablecoin liquidity pool via a unique **[protocol-controlled-debt (PCD)](/docs/Technology/PCD)** mechanism, delivering a capital efficient, cost-friendly, and easy-to-access infrastructure.
 
 </div>
 
@@ -42,8 +42,8 @@ A light oracle network independently ensures the consistency of multi-chain stat
 - The checks and balances design guards zkLink protocol against economic attack from both external hackers and internal stakeholders by assuring that no single branch has too much power.
 
 
-### Multi-chain Liquidity Aggregation
-With zkLink’s unique design of a protocol-controlled-debt (PCD) mechanism, stablecoins from different blockchains and of different types are safely and efficiently aggregated into one single coin.
+### Native Asset Aggregation From Multiple Chains
+dApps built on zkLink’s L2 network leverage seamless multi-chain liquidity, with rapid deployment solutions for decentralized and non-custodial order book, AMM, derivatives, and NFT exchanges.
 
 - A unified currency for all purposes on the zkLink L2 ecosystem.
 - No need of multiple wallets for separate chains.

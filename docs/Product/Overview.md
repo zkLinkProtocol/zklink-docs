@@ -7,7 +7,7 @@ title: ' '
 # Overview
 
 ---
-zkLink is a decentralized and trustless zero-knowledge protocol that connects isolated chains, solves liquidity problems, and provides a growing number of chain-agnostic L2 liquidity solutions for dApps developers with various use cases. On the zkLink L2 ecosystem, there will be no boundary between separate chains and segmented local liquidity is aggregated.
+zkLink is a trading-focus L2 ecosystem that solves liquidity problems, and provides a growing number of chain-agnostic L2 liquidity solutions for dApps developers with various use cases and easy-to-deploy APIs. On the zkLink L2 ecosystem, there will be no boundary between separate chains and segmented local liquidity is aggregated.
 
 ![zkLink Structure](../../static/img/protocol.png)
 

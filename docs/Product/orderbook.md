@@ -9,7 +9,7 @@ title: ' '
 ---
 > **🥇** <span className="highlight">A seamless, permissionless, and anti-censorship multi-chain trading experience</span>
 
-zkLink supports atomic swap for order book traders (both spot trading and margin trading). With massive liquidity formed by vUSD in the zkLink L2 network, we achieve limit orders and stop loss functions in a decentralized way for DeFi traders.
+zkLink supports atomic swap for order book traders (both spot trading and margin trading). With the unified massive liquidity on the zkLink L2 network, we achieve limit orders and stop loss functions in a decentralized way for DeFi traders.
 
 ### Simple CEX-like user experience
 - Partial fulfillment and multiple pending orders are supported;

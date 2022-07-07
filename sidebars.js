@@ -85,9 +85,8 @@ module.exports = {
       label: 'User Guide',
       collapsed: false,
       items: [
-        'UserGuide/preparatory-work',
-        'UserGuide/orderbook',
-        'UserGuide/AMM-demo',
+        'UserGuide/M5-pre',
+        'UserGuide/M5-L2',
       ],
     },
     {
