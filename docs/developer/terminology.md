@@ -7,19 +7,13 @@ title: ' '
 # Terminology
 
 ---
-zkLink is a zero-knowledge protocol that connects multiple chains to a unified L2 Rollup. Users can deposit tokens to this L2 from multiple chains, and the same kind of token from different chains is coded with one unique Token Id, which enable users to deposit from one chain and withdraw to the other - this is how cross-chain transactions are realized.
 
 ## L1
-Blockchains such as Ethereum, Binance Smart Chain, Solana, etc. zkLink smart contracts are deployed on L1s, which users interact with. L2 downloads events from L1 that include change-in-states, and Validator submits Block and Proof to smart contracts to sync L2 states with L1.
+Blockchains such as Ethereum, Binance Smart Chain, Solana, etc. zkLink smart contracts are deployed on L1s that users interact with. L2 downloads events from L1 that include change-in-states, and Validator submits Block and Proof to smart contracts to sync L2 states with L1.
 
-### Contract
-There are three kinds of smart contracts that zkLink deploys on L1s:
- * zkLink, that includes APIs such as deposit, withdraw, commitBlock
- * zkLinkPeriphery, that includes APIs such as acceptance
- * Governance, that includes APIs such as token listing
 
 ### Event
-An event on L1 that requires L2 to process is named as `NewPriorityRequest`, which includes the following information:
+A `NewPriorityRequest` is created on L1s that needs to be processed on L2s, including the following information:
 
 | Name              | Description                |
 |-----------------|-------------------|
@@ -27,21 +21,21 @@ An event on L1 that requires L2 to process is named as `NewPriorityRequest`, whi
 | pubData         | The content of Operation      |
 | expirationBlock | The expiration Block of Operation |
 
-A PriorityRequest is the request that needs L2 to prioritize. When L2 captures the prior request from L1, L2 will first execute requests with higher priority in the queue. The L1 contract will be into `Exodus` mode if the priority request is not processed after `expirationBlock` on L1.
+A PriorityRequest is the request that should be prioritized by L2. Requests sent via L2 interfaces by users are not PriorityRequest. When L2 captures a PriorityRequest from L1, L2 will first execute the PriorityRequest in the queue. The L1 contract will be into `Exodus` mode if the PriorityRequest is not processed after `expirationBlock` on L1.
 
 ### PendingBalance
-During block processing when the contract executes token exit requests such as FullExit, Withdraw, ForcedExit with token flow, if the transaction fails there would be pending balance information. For example, when the contract transits 100 USDT to Alice, if the transaction fails, `pendingBalance[Alice][USDT] += 100`. Failure causes might be:
+During block processing when the contract executes token exit requests such as FullExit, Withdraw, ForcedExit, if the transaction fails, pending balance information will be generated. For example, when the contract is requested to transit 100 USDT to Alice, if the transaction fails, `pendingBalance[Alice][USDT] += 100`. Failure causes might be:
 
  * the gas of the transaction exceeds 100,000. There is a gas limit for every transaction which is supposed to be more than enough for normal eth transactions and ERC20 token transactions.
  * transaction fails. For example, the contract address refuses eth transactions.
 
-Users may invoke `withdrawPendingBalance` and withdraw tokens.
+In these cases, Users may invoke `withdrawPendingBalance` and withdraw tokens.
 
 ### Exodus Mode
 
-When users' L1 priority request is not executed in time, `activeExodus` can be called to activate `Exodus` mode, when all L1 transactions, block executions from the Validator, and acceptance executions from the Accepter will be rejected.
+When users' L1 transactions（PriorityRequest) are not executed in time, `activeExodus` can be called to activate `Exodus` mode, when all L1 transactions, block executions from the Validator, and acceptance executions from the Accepter will be rejected.
 
-In `Exodus` mode, users can cancel their un-processed deposits by calling `cancelOutstandingDepositsForExodusMode`, and get the L2 balance information by calling `performExodus` and providing `exitProof` to the contract.
+In `Exodus` mode, users can cancel their un-processed `Deposit` by calling `cancelOutstandingDepositsForExodusMode`, and acquire L2 balance information by calling `performExodus` and providing `exitProof` to the contract.
 
 Since cross-chain Root Hash verification is needed in block execution, when a chain is in `Exodus` mode, the rest chains will enter `Exodus` mode in sequence because they are not able to execute blocks. The algorithm for the available token amount via `performExodus` on a specific chain is:
 
@@ -53,10 +47,37 @@ const userPercent = userAmount / allAmount;
 // userExodus[i] is number of tokens that the users is able to withdraw on chain_i
 const userExodus[i] = userPercent * chainAmount[i];
 ```
-For example, Alice holds 100 USDT on L2, and there are 4 chains connected to L2 whose sum of USDT is 1000 (among which Ethereum holds 500). Thus Alice owns 10% of the total USDT. When Alice calls `performExodus` on Ethereum she will get 50 USDT, and will have to call `performExodus` on the other three chains to withdraw the rest 50 USDT.
+For example, Alice holds 100 USDT on L2, and there are 4 chains connected to L2 whose sum of USDT is 1000 (among which there are 500 on Ethereum). Thus Alice owns 10% of the total USDT. When Alice calls `performExodus` on Ethereum she will get 50 USDT, and will have to call `performExodus` on the other three chains to withdraw the rest 50 USDT.
 
-### Cross-Chain Root Hash Verification
-The contract needs to verify the root hash on the other chains, comparing them with its Root Hash to guarantee the consistency. zkLink acquires the Root Hash on other chains via oracles.
+The algorithm for the merged token USD is slightly different: assuming USD includes USDC, BUSD, HUSD, and there are 100 USDT, 50 BUSD, and 50 HUSD. When Alice holds 20 USD, first the contract calculates the exit-able USD "package" proportionately for Alice, which is 10 USDC, 5 BUSD, and 5 HUSD; then calculates the amount of token on each chain that can be withdrawn following the above algorithm.
+
+### Cross-Chain Block Verification
+Before a block can be executed, proof must be finished, and syncHash must be verified as consistent as it on other chains. Only when the syncHash on all chains are all consistent can a block being executed. L1 contracts on different chains pass syncHash to each other via bridges such as LayerZero, Mutlichain.
+
+zkLink is responsible for cross-chain bridges management, and can ban those who cannot pass information in time or those with malicious behavior. This will make sure that cross-chain syncHash verification can be finished on time and avoid `Exodus` mode due to the contract fails to execute blocks.
+
+zkLink defines each chain with a `CHAIN_ID`. For example in zkLink testnet:
+
+| Network        | CHAIN_ID |
+| ----------- | -------- |
+| POLYGONTEST | 1        |
+| AVAXTEST    | 2        |
+| RINKEBY     | 3        |
+| GOERLI      | 4        |
+
+The result of every syncHash cross-chain verification is stored in the L1 contract, which is calculated by all the other `CHAIN_ID` moving 1 to the left (1 << CHAIN_ID - 1). For example, for the syncHash of a block, AVAXTEST and GOERLI pass the information via bridges that the syncHash is correct, the result of cross-chain verification on POLYGONTEST is:
+
+```
+1 << 0 | 1 << 1 | 1 << 3 = 11
+```
+
+When all chains have confirmed that the syncHash is correct, the result of the cross-chain verification should be:
+
+```
+1 << 0 | 1 << 1 | 1 << 2 | 1 << 3 = 15
+```
+
+Only when the result of the cross-chain verification on POLYGONTEST equals 15 will POLYGONTEST executes the block.
 
 
 
@@ -74,8 +95,8 @@ An account is a component of L2 state, that includes:
 | pubKeyHash  | the pubKeyHash set by ChangePubKey, not the pubKeyHash of the address |
 | nonce       | similar to the nonce of ETH address on L1 chains                               |
 | balanceTree | there are 8 balanceSubtree in a balanceTree that correspond to 8 sub accounts    |
-| orderTree   | there are 8 orderSubtree in an orderTree that correspond to 8 sub accounts|
-| pool_info   | record AMM and Curve pool related info                          |
+| orderTree   | the height of an orderTree is 4, referring to 16 order nonce|
+
 
 Two ways to create a new account:
   * Deposit from L1 and designate the target address
@@ -86,9 +107,9 @@ If the target address does not linked to any account, a new account will be crea
 L2 private key is derived from the private key of EOA address:
 
 ```
-EOA account private key (L1) -> sign the specific message -> signature as the seed to create L1 private key -> L2 private key -> L2pubKey -> pubKeyHash(L2address)
+EOA account private key (L1) -> sign the EIP-712 -> signature as the seed to create L1 private key -> L2 private key -> L2pubKey -> pubKeyHash(L2address)
 ```
-A user can control the account by the private key of EOA account. The L2 private key can be created again if lost, and change the pubKeyHash that controls the account via ChangePubKey. If the EOA account private key is lost, the user can still control the account with L2 private key.
+A user can control the account with the private key of EOA account. The L2 private key can be created again if lost, and change the pubKeyHash that controls the account via ChangePubKey. If the EOA account private key is lost, the user can still control the account with L2 private key.
 
 
 For a contract address, there are two scenarios:
@@ -112,7 +133,7 @@ Sub_account_0 is not tagged to any specific application, which anyone can send t
 Alice signs a sub_account_0 transaction -> the signed transaction is sent to zkLink -> sub_account_0 of Alice is updated
 ```
 
-It is worth noticing that the sub-account mechanism can only solve L2 concurrent operations, and users can still withdraw tokens in their sub-accounts from L2 via FullExit from L1. zkLink will notify the application operators of sub-accounts (except for sub_account_0) before FullExit request is processed.
+It is worth noticing that the sub-account mechanism can only solve L2 concurrent operations, and users can still withdraw tokens from their sub-accounts from L2 via FullExit from L1. zkLink will notify the application operators of sub-accounts (except for sub_account_0) before FullExit request is processed.
 
 
 ## Token
@@ -128,12 +149,22 @@ There are two concept in the definition of Token: Fungible Token(ERC20) and Non-
 
 > 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE is encoded as gas fees.
 
-Since the contract address of a token can be changed, zkLink allows Governor to change the contract address of tokens. zkLink allows Governor to forbid token deposit, but token withdrawal can be processed at any time.  
+zkLink allows Governor to forbid token deposit, but token withdrawal can be processed at any time.  
 
 zkLink supports nonstandard ERC20 token, which refers to those that transaction fees might be charged to transfer-out or  transfer-in. For example, when Alice transfers 100 tokens to Bob, for nonstandard ERC20 tokens, 101 tokens might deducted from Alice's account (1% transaction fees included). In all cases the increase of L2 balance is subject to L1 contract: for example, Alice deposits 100 nonstandard ERC20 token but zkLink contract receives only 95, Alice's L2 account balance will be added by 95.
 
 The same kind of token on different chains is encoded with the same tokenId on L2, such as USDT on Ethereum and USDT on BSC, despite their different chains and contract address, they share the same L2 tokenId.
 
+### Token Mapping
+Some stablecoins back by fiats such as USDC and BUSD are equivalent to USD. To aggregate the liquidity of these stablecoins, zkLink creates a virtual USD token. Users can choose to receive the same amount of USD on L2 while depositing USDC or BUSD, and can withdraw the same amount of USDC or BUSD while withdrawing USD.
+
+| TokenId  | Description                       |
+| -------- | -------------------------- |
+| 0        | illegal                     |
+| 1        | USD                        |
+| 2-16     | stablecoins tokenId that are merged as USD |
+| 17-31    | stablecoins tokenId            |
+| 32-65535 | other tokens                  |
 
 ## Transaction
 
@@ -193,7 +224,7 @@ If the to_address does not exist, a new account will be creased. Different sub0a
 
 #### Withdraw
 
-In an EOA address, L2 tokens in a sub-account can be withdrawn to L1 with a specified address and amount. zkLink will check if the amount of token exceeds the sum of L1 tokens. If yes, the transaction will be denied.
+For an EOA address, L2 tokens in a sub-account can be withdrawn to L1 with a specified address and amount. zkLink will check if the amount of token exceeds the sum of L1 tokens. If true, the transaction will be denied.
 
 There are two forms of withdraw transactions:
 * withdraw
@@ -268,17 +299,31 @@ Apart from nonce and the rest amount, the slot also records the sig hash to the 
 
 
 #### Transaction Fees
-TBD
+A fee for L2 transactions needs to be paid. Any token except for tokenId 2-16 can be accepted as transaction fees. The fees are for:
+* computational cost for zero knowledge proofs, determined by the computation of a certain type of transaction and also the price of the fee_token.
+* the gas fee for uploading the proof to L1s, determined by the amount of gas, gas_price, token_price of a certain chain, and the price of fee_token.
 
+Algorithm:
+* fee = zkp_fee + total_gas_fee
+* zkp_fee = zkp_cost_chunk_usd(usd cost of executing a zk proof) * op_chunks(op chunk number) * token_usd_risk(token that worths 1 usd)
+* total_gas_fee consists of the gas_fee on all chains of the transaction:
+  * gas_fee of a single chain = wei_price_usd_for_chain * tx_gas_amount * scale_gas_price (scale gas_price to prevent accidents) * token_usd_risk(token that worths 1 usd)
+  * wei_price_usd_for_chain: usd price of wei (the minimum unit of gas_coin on a certain chain); equals 0 if the chain_id of the transaction is not the according chain.
+  * tx_gas_amount: the total gas amount of a transaction to be uploaded to L1; calculated as tx_gas for uncompressed blocks on chains with uncompressed block commitment, or as tx_gas for compressed blocks on chains with compressed block commitment; equals 0 if the transaction is not uploaded to L1.
 
+The accounts charged with transaction fees are different for different transaction types:
+* transaction fees of OrderMatching are paid by submitters;
+* transaction fees of ForcedExit are paid by initiators;
+* transaction fees of the other transactions are paid by transaction initiators.
 
 
 ## Block(on-chain)
 
 A block contains all L1 and L2 transactions. The same block data is submitted to all chains connected, and the contract on each chain only needs to process transactions related only its chain. To reduce the cost for the Validator to submit blocks, zkLink will publish Rollup pubdata to the chain with minimum cost.
 
+The height of block must be continuous monotonic increasing. For example, if the height of the current block is 10, then the next can only be 11 instead of 12 or any bigger number. zkLink supports multiple chains, and block height of the first connected chains is 0. The height of a newly-connected chain starts from the current zkLink block height.
 
-Theoretically, anyone may submit a block, but to avoid status conflict, only the Validator can submit blocks.
+Theoretically, anyone may commit a block, but to avoid status conflict, block commitment is limited to Validators. There are two models of block commitment: compressed block commitment and uncompressed block commitment. Compressed block commitment can reduce the block size and gas cost for computation to a great extent.
 
 ### Structure
 | Field                    | type  | Length(bytes) | Remarks                                   |
@@ -292,11 +337,10 @@ Theoretically, anyone may submit a block, but to avoid status conflict, only the
 | public_data           | Bytes | flexible  | layer2 compressed transaction        |
 
 ### Block Commitment
-1. hash1 = *sha256*( **block_number** + **fee_account_id** )
-2. hash2 = *sha256*( hash1 + **old_state_hash** )
-3. hash3 = *sha256*( hash2 + **new_state_hash** )
-4. hash4 = *sha256*( hash3 + **timestamp** )
-5. ***blockCommitment*** = *sha256*( hash4 + **onchain_op_commitment** + **public_data** )
+
+```solidity
+blockCommitment = sha256( block_number + fee_account_id + old_state_hash + new_state_hash + timestamp+ sha256(public_data) + sha256(onchain_op_commitment))
+```
 
 ## Role
 ### User
@@ -318,11 +362,15 @@ A validator can call some of L1 APIs such as `commitBlocks`, `proveBlocks`, `rev
 
 ### Governor
 
-A governor can call some of L1 APIs such as `addToken`, `addTokens`, `setTokenPaused`, `setTokenAddress` to manage token list information, can manage validator list by calling `setValidator`, and can change the governor by calling `changeGovernor`.
+The right of a governor includes:
+* register and manage token information by calling interfaces such as `addToken`,`addTokens`,`setTokenPaused`;
+* add and manage validator list by calling `setValidator`;
+* change governors by calling `changeGovernor`;
+* add and manage bridges by `addBridge` and `updateBridge`.
 
-### Oracle
+### Bridger
 
-The oracle is used to pass multi-chain root hash to L1.
+Cross-chain bridges are responsible passing information among chains and syncing blocks.
 
 ### Service Operator
 
