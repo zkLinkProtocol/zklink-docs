@@ -305,9 +305,9 @@ A fee for L2 transactions needs to be paid. Any token except for tokenId 2-16 ca
 
 Algorithm:
 * fee = zkp_fee + total_gas_fee
-* zkp_fee = zkp_cost_chunk_usd(usd cost of executing a zk proof) * op_chunks(op chunk number) * token_usd_risk(token that worths 1 usd)
+* zkp_fee = zkp_cost_chunk_usd(usd cost of executing a zk proof) \* op_chunks(op chunk number) \* token_usd_risk(token that worths 1 usd)
 * total_gas_fee consists of the gas_fee on all chains of the transaction:
-  * gas_fee of a single chain = wei_price_usd_for_chain * tx_gas_amount * scale_gas_price (scale gas_price to prevent accidents) * token_usd_risk(token that worths 1 usd)
+  * gas_fee of a single chain = wei_price_usd_for_chain  \* tx_gas_amount  \* scale_gas_price (scale gas_price to prevent accidents) \* token_usd_risk(token that worths 1 usd)
   * wei_price_usd_for_chain: usd price of wei (the minimum unit of gas_coin on a certain chain); equals 0 if the chain_id of the transaction is not the according chain.
   * tx_gas_amount: the total gas amount of a transaction to be uploaded to L1; calculated as tx_gas for uncompressed blocks on chains with uncompressed block commitment, or as tx_gas for compressed blocks on chains with compressed block commitment; equals 0 if the transaction is not uploaded to L1.
 
