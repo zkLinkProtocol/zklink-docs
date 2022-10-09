@@ -73,6 +73,7 @@ module.exports = {
         'developer/API-AMM',
         'developer/API-orderbook',
         'developer/terminology',
+        'developer/Commit Block',
       ],
     },
     {
