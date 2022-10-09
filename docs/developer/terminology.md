@@ -17,11 +17,12 @@ A `NewPriorityRequest` is created on L1s that needs to be processed on L2s, incl
 
 | Name              | Description                |
 |-----------------|-------------------|
+| nextPriorityRequestId          | The Id of Operation   |
 | opType          | The type of Operation   |
 | pubData         | The content of Operation      |
 | expirationBlock | The expiration Block of Operation |
 
-A PriorityRequest is the request that should be prioritized by L2. Requests sent via L2 interfaces by users are not PriorityRequest. When L2 captures a PriorityRequest from L1, L2 will first execute the PriorityRequest in the queue. The L1 contract will be into `Exodus` mode if the PriorityRequest is not processed after `expirationBlock` on L1.
+A PriorityRequest is the request that should be prioritized by L2. Requests sent via L2 interfaces by users are not PriorityRequest. When L2 captures a PriorityRequest from L1, L2 will first execute the PriorityRequest in the queue. If the PriorityRequest is still not processed when L1 block number exceeds `expirationBlock`, the L1 contract will be into `Exodus` mode when
 
 ### PendingBalance
 During block processing when the contract executes token exit requests such as FullExit, Withdraw, ForcedExit, if the transaction fails, pending balance information will be generated. For example, when the contract is requested to transit 100 USDT to Alice, if the transaction fails, `pendingBalance[Alice][USDT] += 100`. Failure causes might be:
@@ -37,7 +38,7 @@ When users' L1 transactions（PriorityRequest) are not executed in time, `active
 
 In `Exodus` mode, users can cancel their un-processed `Deposit` by calling `cancelOutstandingDepositsForExodusMode`, and acquire L2 balance information by calling `performExodus` and providing `exitProof` to the contract.
 
-Since cross-chain Root Hash verification is needed in block execution, when a chain is in `Exodus` mode, the rest chains will enter `Exodus` mode in sequence because they are not able to execute blocks. The algorithm for the available token amount via `performExodus` on a specific chain is:
+Since cross-chain block verification is needed in block execution, when a chain is in `Exodus` mode, the rest chains will enter `Exodus` mode in sequence because they are not able to execute blocks anymore. The algorithm for the available token amount via `performExodus` on a specific chain is:
 
 ```
 // allAmount is the total amount of token on all chains
@@ -107,7 +108,7 @@ If the target address does not linked to any account, a new account will be crea
 L2 private key is derived from the private key of EOA address:
 
 ```
-EOA account private key (L1) -> sign the EIP-712 -> signature as the seed to create L1 private key -> L2 private key -> L2pubKey -> pubKeyHash(L2address)
+EOA account private key (L1) -> sign the EIP-712 -> signature as the seed to create L1 private key -> L2 private key -> L2pubKey -> pubKeyHash
 ```
 A user can control the account with the private key of EOA account. The L2 private key can be created again if lost, and change the pubKeyHash that controls the account via ChangePubKey. If the EOA account private key is lost, the user can still control the account with L2 private key.
 
@@ -135,6 +136,25 @@ Alice signs a sub_account_0 transaction -> the signed transaction is sent to zkL
 
 It is worth noticing that the sub-account mechanism can only solve L2 concurrent operations, and users can still withdraw tokens from their sub-accounts from L2 via FullExit from L1. zkLink will notify the application operators of sub-accounts (except for sub_account_0) before FullExit request is processed.
 
+### Special Account
+
+#### Validator Account
+For now, the validator account id is 0 in zkLink protocol and circuit.
+
+validator account is zklink collect-fee(network fee) account，fee will be added to the validator account during the execution of each op.
+
+#### Global Assets Account
+For now, the global assets account id is 1 in zkLink protocol and circuit.
+
+The global assets account is mainly used to keep L1 tokens on each chain, with chain_id equals the sub_account_id of this account. Transaction such as deposit, withdraw, forcedExit, fullExit will change this account status.
+
+chain_id equals the sub_account_id of the account, and in this account, the tokenId from 2-16 represents stablecoins deposited from L1 as USD such as USD-USDT, USD-USDC, etc; thus USD with tokenId=1 in this account and with tokenId from 2-16 in special accounts is illegal.
+
+
+The default address of this account is 0xffff.... , thus there is no private key to this account and changepubkey can not be processed. No one can control this account.
+
+![Global Assets](../../static/img/global_asset.png)
+
 
 ## Token
 
@@ -142,10 +162,13 @@ There are two concept in the definition of Token: Fungible Token(ERC20) and Non-
 
 
 | Name           | Description          |
-|--------------|-------------|
-| tokenId      | tokenId on L2  |
-| paused       | true encoded as 'not deposit-able' |
-| tokenAddress | token address     |
+| -------------- | ----------------------- |
+| tokenId        | L2 tokenId             |
+| paused         | true encoded as 'not deposit-able'     |
+| tokenAddress   | token contract address               |
+| decimals       | decimals of L1 token         |
+| standard       | whether it is standard erc20 token |
+| mappingTokenId | L2 mapping tokenId       |
 
 > 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE is encoded as gas fees.
 
@@ -154,6 +177,13 @@ zkLink allows Governor to forbid token deposit, but token withdrawal can be proc
 zkLink supports nonstandard ERC20 token, which refers to those that transaction fees might be charged to transfer-out or  transfer-in. For example, when Alice transfers 100 tokens to Bob, for nonstandard ERC20 tokens, 101 tokens might deducted from Alice's account (1% transaction fees included). In all cases the increase of L2 balance is subject to L1 contract: for example, Alice deposits 100 nonstandard ERC20 token but zkLink contract receives only 95, Alice's L2 account balance will be added by 95.
 
 The same kind of token on different chains is encoded with the same tokenId on L2, such as USDT on Ethereum and USDT on BSC, despite their different chains and contract address, they share the same L2 tokenId.
+
+### Token Decimals
+
+The decimal of each token on L2 is 18, but not all on L1; for example, the decimal of USDC on Ethereum is 6. In Deposit, token amount is improved by decimals. For example, A user deposit 5 USDC from Ethereum, the `amount` processed by zkLink contract is `5 * 10 ^ 6`, the amount in Deposit pubdata generated by zkLink contract is improved by decimals as `5 *  10 ^ 18`.
+
+On the contrary, in withdraw processes (Withdraw, FullExit, and ForcedExit）the decimal of `amount` in pubdata is resumed. For example, in a withdraw process of 5 USDC from L2 to Ethereum, the `amount` in pubdata is `5 * 10 ^ 18`, and the `amount` input of USDC transfer API is `5 * 10 ^ 6`.
+
 
 ### Token Mapping
 Some stablecoins back by fiats such as USDC and BUSD are equivalent to USD. To aggregate the liquidity of these stablecoins, zkLink creates a virtual USD token. Users can choose to receive the same amount of USD on L2 while depositing USDC or BUSD, and can withdraw the same amount of USDC or BUSD while withdrawing USD.
@@ -255,33 +285,36 @@ If an account address is a contract address and can not set up a pubKeyHash, tok
 OrderMatching is used for atomic exchange between two different accounts that includes the following information:
 
 
-| Name         | Description             |
-|------------|----------------|
-| submitter  | the account that submits the transaction        |
-| taker      | the information of the taker order           |
-| maker      | the information of the maker order           |
-| baseToken  | the base token of this transaction, such as BTC  |
-| quoteToken | the quote token of this transaction, such as USDT |
-| price      | the price in the transaction            |
-| amount     | the token amount in the transaction           |
+| Name                  | Description                                   |
+| --------------------- | -------------------------------------- |
+| submitterAccountId    | Id of the account that submits the transaction                         |
+| submitterSubAccountId | Id of the sub-account that submits the transaction                       |
+| taker                 | the information of the taker order                               |
+| maker                 | the information of the maker order                               |
+| expectBaseAmount      | the maximum value of the base token that the submitter expects to make |
+| expectQuoteAmount     | the maximum value of the quote token that the submitter expects to make |
+
+
 
 The submitter collects the order making information, matches taker and maker orders, and submits OrderMatching transactions. Any account can be a submitter. The submitter will be charged with L2 transaction fees.
 
+##### Order
 Maker and taker orders include the same information:
 
-| Name             | Description             |
-|----------------|----------------|
-| account_id     | the account id           |
-| sub_account_id | the sub-account id          |
-| slot_id        | the slot of the order         |
-| nonce          | the nonce of the order        |
-| base_token_id  | the token id of the base token     |
-| quote_token_id | the token id of the quote token     |
-| amount         | the amount of the base token |
-| price          | the base token price  |
-| is_sell        | whether it is a buy order or a sell order        |
-| time_range     | time range     |
-| signature      | signature      |
+| Name         | Description                    |
+| ------------ | ----------------------- |
+| accountId    | the account id                  |
+| subAccountId | the sub-account id                |
+| slotId       | the slot of the order                |
+| nonce        | the nonce of the order               |
+| baseTokenId  | the token id of the base token            |
+| quoteTokenId | the token id of the quote token            |
+| amount       | the amount of the base token        |
+| price        | the base token price         |
+| isSell       | whether it is a buy order or a sell order          |
+| feeRatio1    | the transaction fee ratio of taker |
+| feeRatio2    | the transaction fee ratio of maker |
+
 
 OrderMatching can realize order book transactions that supports multiple order making, cancellation, and partial fulfillment. If the nonce used during order making is the user's account nonce, only one order can be made and the user can only make the next order after the last one is fully fulfilled. To support multiple order making, zkLink introduces order nonce.
 
@@ -297,19 +330,56 @@ To support partial fulfillment, each slot will record the current amount of the 
 
 Apart from nonce and the rest amount, the slot also records the sig hash to the order for the purpose of cross check.
 
+The subAccountId of taker, maker, and submitter must be consistent (to guarantee that they are from the same application). zkLink does not support cross-sub-account ordermatching. The baseTokenId and quoteTokenId of maker and taker must be consistent as well, isSell must be opposite (buy and sell).
+
+The decimal of price in an order is 18, e.g., if the price of `BTC/USD` is 20000, and the price in an order would be `20000 * 10 ^18`. The quote in zkLink is mainly in units of `USD`,`BTC`; and the maximum value of price(uint120 type) is 1329227995784915872, which is enough to satisfy the actual quote requirements.
+
+##### expectBaseAmount and expectQuoteAmount
+zkLink allows submitter to set up token amount (baseToken and quoteToken) that is expected to be traded, but these two number cannot exceed the maximum token amount that can actually be traded by the order. I.e., in ZKEX `BTC/USD` orderbook, this may be the case:
+
+```
+ sell (price, amount)
+ 10000, 4
+ 8000, 2
+
+ buy (price, amount)
+ 7000, 3
+ ```
+When Alice wishes to buy 3 BTC with the price 10,000, ZKEX will send two `OrderMatching` to zkLink:
+
+```
+ maker(price, amount)   <-> taker(price, amount)
+ 8000, 2 <-> 10000, 3 // OrderMaching A
+ 10000, 4 <-> 10000, 3 // OrderMaching B
+ ```
+
+If zkLink noticed the insufficient BTC balance of maker when processing `OrderMaching A`, `A` will fail; then zkLink will process `OrderMaching B`, if the balance of maker and taker is correct, `B` will succeed. This result may not what ZKEX wishes: to process orders more efficiently, a DEX usually keeps its own data copy and the transaction data will firstly be updated in this data copy before acquiring the final execution result from zkLink. It bothers the DEX if an order is successfully matched but the amount does not match.
+
+With `expectBaseAmount` and `expectQuoteAmount`, ZKEX can send transactions to zkLink as:
+```
+ maker(price, amount, expected_amount)   <-> taker(price, amount, expected_amount)
+ 8000, 2, 2 <-> 10000, 3, 2 // OrderMaching A
+ 10000, 4, 1 <-> 10000, 3, 1 // OrderMaching B
+ ```
+ In this case, even `B` succeeds, the amount of BTC traded will be 1 as the same of DEX local data copy.
+
 
 #### Transaction Fees
-A fee for L2 transactions needs to be paid. Any token except for tokenId 2-16 can be accepted as transaction fees. The fees are for:
+A fee for L2 transactions needs to be paid. Any token except for tokenId 0 and 2-16 can be accepted as transaction fees. The fees are for:
 * computational cost for zero knowledge proofs, determined by the computation of a certain type of transaction and also the price of the fee_token.
 * the gas fee for uploading the proof to L1s, determined by the amount of gas, gas_price, token_price of a certain chain, and the price of fee_token.
 
 Algorithm:
-* fee = zkp_fee + total_gas_fee
-* zkp_fee = zkp_cost_chunk_usd(usd cost of executing a zk proof) \* op_chunks(op chunk number) \* token_usd_risk(token that worths 1 usd)
-* total_gas_fee consists of the gas_fee on all chains of the transaction:
-  * gas_fee of a single chain = wei_price_usd_for_chain  \* tx_gas_amount  \* scale_gas_price (scale gas_price to prevent accidents) \* token_usd_risk(token that worths 1 usd)
-  * wei_price_usd_for_chain: usd price of wei (the minimum unit of gas_coin on a certain chain); equals 0 if the chain_id of the transaction is not the according chain.
-  * tx_gas_amount: the total gas amount of a transaction to be uploaded to L1; calculated as tx_gas for uncompressed blocks on chains with uncompressed block commitment, or as tx_gas for compressed blocks on chains with compressed block commitment; equals 0 if the transaction is not uploaded to L1.
+
+```js
+ fee = zkp_fee + total_gas_fee
+ zkp_fee = zkp_cost_chunk_usd(usd cost of executing a zk proof) * op_chunks(op chunks number) / token_usd(token price in USD)
+ total_gas_fee = sum(onchain_gas_fee_of_each_chain) // the accumulated gas value of this transaction on each chain.
+ onchain_gas_fee_of_each_chain = tx_gas_amount * average_gas_price（average gas price in recent days） * wei_price_usd_for_chain (gas token price in USD)
+ ```
+
+tx_gas_amount is the total amount of gas consumed during pushing a trancation on-chain (commit + verify): tx gas of uncompressed block on a chain with uncompressed blocks; tx gas of compressed block on a chain with comressed blocks;  0 if the transaction is not uploaded to L1.
+
 
 The accounts charged with transaction fees are different for different transaction types:
 * transaction fees of OrderMatching are paid by submitters;
@@ -325,22 +395,6 @@ The height of block must be continuous monotonic increasing. For example, if the
 
 Theoretically, anyone may commit a block, but to avoid status conflict, block commitment is limited to Validators. There are two models of block commitment: compressed block commitment and uncompressed block commitment. Compressed block commitment can reduce the block size and gas cost for computation to a great extent.
 
-### Structure
-| Field                    | type  | Length(bytes) | Remarks                                   |
-|-----------------------|-------|-----------|--------------------------------------|
-| block_number          | U32   | 32        | block number                         |
-| fee_account_id        | U32   | 32        | layer2 collect-fee account           |
-| old_state_hash        | U256  | 256       | the new state root of previous block |
-| new_state_hash        | U256  | 256       | the newest state root of this block  |
-| timestamp             | U64   | 64        | block timestamp                      |
-| onchain_op_commitment | Bytes | flexible  | record offset commitment             |
-| public_data           | Bytes | flexible  | layer2 compressed transaction        |
-
-### Block Commitment
-
-```solidity
-blockCommitment = sha256( block_number + fee_account_id + old_state_hash + new_state_hash + timestamp+ sha256(public_data) + sha256(onchain_op_commitment))
-```
 
 ## Role
 ### User
