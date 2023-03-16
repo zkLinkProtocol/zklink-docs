@@ -13,4 +13,4 @@ zkLink attaches top priority to security. In virtue of zero knowledge technology
 | :----:| :----: | :----: | :----: |
 | [v.1.0 Protocol](https://github.com/zkLinkProtocol/zklink-audit-report) | CertiK | Smart Contract | Jun. 2021 |
 | [v.2.0 Protocol](https://static.zk.link/audit/ABDK_zkLink_Circuits_v_2_0.pdf) | ABDK | Circuits | Feb. 2023 |
-| [v.2.0 Protocol](https://static.zk.link/audit/ABDK_zkLink_Solidity_v_1_0.pdf) | ABDK| Solidity| Feb. 2023 |
+| [v.2.0 Protocol](https://static.zk.link/audit/ABDK_zkLink_Solidity_v_1_0.pdf) | ABDK| Smart Contract| Feb. 2023 |
