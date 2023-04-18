@@ -72,6 +72,7 @@ module.exports = {
       items: [
         'developer/API-AMM',
         'developer/API-orderbook',
+        'developer/Commit Block',  
       ],
     },
     {
