@@ -8,23 +8,10 @@ title: ' '
 
 
 ## Q. What is zkLink?
->zkLink is a unified, multi-chain L2 network secured by zero-knowledge technology. We are building multi-chain, multi-purpose DeFi infrastructure for the blockchain industry.
-<br/>
-Future use cases built on top of zkLink include:
-<br/>
-- Multi-chain Order Book trading
-<br/>
-- Multi-chain AMM trading
-<br/>
-- NFT marketplace
-<br/>
-- LaunchPad
-<br/>
-- L2 Wallet
-<br/>
-- Derivatives trading
-<br/>
-- And more…
+>zkLink is a unified multi-chain trading infrastructure secured with zk-SNARKS, empowering the next-generation of decentralized trading products such as order book DEX, NFT marketplaces, among others.
+
+>By connecting various L1 blockchains and L2 networks, zkLink's unified, multi-purpose ZK-Rollup middleware enables developers and traders to leverage aggregated assets and liquidity from different chains and offer a seamless multi-chain trading experience, contributing to a more accessible and efficient DeFi ecosystem for all.
+
 
 ## Q. Is zkLink still a cross-chain DEX?
 >zkLink will not directly offer a decentralized exchange service. Instead, you will see other DeFi projects utilize our technology. We believe zero-knowledge will be a game changer for the multi-chain DeFi-verse and will help deliver a new era of security, speed, and lower cost to the end user.
@@ -53,26 +40,7 @@ Keep following our official social media channels - and ignore any rumors of any
 
 <span className="highlight">Important: We do not yet have a token, so be aware of scams. All announcements will be made to @all at our official Telegram, Discord, and Twitter channels, and we will never contact any community member directly.</span>
 
-## Q: Will zkLink airdrop?
->There was a one-time, small-scale reward in a previous campaign. We’ve recorded the wallet addresses of winners and we will make good on the promises in the future after the token generation event (TGE).
-<br/>
-We cannot commit on a time frame when this allocation will happen, as we are prioritizing the mainnet launch and partnerships.
-<br/>
 
-## Q. What is the roadmap of zkLink going forward?
-- **Q1 2022**
-  - Launch Multi-Chain order book demo
-  - Connect Solana as an EVM-incompatible chain
-  - Support Atomic Swap & Optimize Circuit
-
-- **Q2 2022**
-  - Connect additional chains
-  - Launch Mainnet
-
-- **Q3 2022**
-  - Support Decentralized ZK Proofs
-  - Integrate oracle on ZK L2
-  - Strengthen atomic swops to support more complex use cases
 
 ## Q. Has there been a change in the zkLink team? Is zkLink hiring?
 > The team has not changed and we are in fact expanding! If you are a developer with experience in Solidity, Rust, or ZK-proofs, feel free to speak to us.

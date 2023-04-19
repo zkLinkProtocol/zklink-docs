@@ -7,11 +7,10 @@ title: ' '
 # Withdraw to L1
 
 ---
+zkLink supports dApp users to withdraw funds to any blockchains connected, regardless of the origin of the token.
 
-zkLink supports withdrawal of funds to any blockchains connected, regardless of the origin of the token.
 
-
-> 💡 E.g., a user deposit a certain number of USDC from Solana to zkLink L2 network, and they can withdraw USDC to Avalanche, without navigating outside zkLink to find a third-party token bridge.
+> 💡 E.g., a user deposit a certain number of USDC from Ethereum to zkLink, and they can withdraw USDC to Starknet, without navigating outside zkLink to find a third-party token bridge.
 
 ![Withdrawal Flow](../../static/img/flow-withdraw.jpg)
 

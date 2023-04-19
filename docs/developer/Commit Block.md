@@ -12,9 +12,9 @@ zkLink L2 state machine is driven by two types of events:
 - On-chain events on L1
 - L2 transactions
 
-Different from protocols like zkSync that only receive events from one L1 chain, zkLink accepts events from multiple L1 chains, which brings up an issue: each L1 contract can only verify the correctness of events from its own chain, and has no ability to verify the events of other L1s. For example, a validator can forge a deposit from BSC in a block uploaded to Ethereum, and Ethereum has no ability to verify whether this deposit is true.
+Unlike protocols such as zkSync, which only receive events from a single L1 chain, zkLink accepts events from multiple L1 chains, which brings up an issue: each L1 contract can only verify the correctness of events from its own chain, and has no ability to verify the events of other L1s. For example, a validator can forge a deposit from BSC in a block uploaded to Ethereum, and Ethereum has no ability to verify whether this deposit is true.
 
-To solve this problem, zkLink introduces a bridge role that will transmit block data cross different chains. Each L1 contract verifies events related to its L1 chain, and also informs other L1s of the events it verifies. By collecting all the event verified by other chains, an L1 contract is able to know whether the block data uploaded by the validator is correct.
+To solve this problem, zkLink introduces an independent inter blockchain general messaging service that transmits a hash value cross different chains. Each L1 contract verifies events related to its L1 chain, and also informs other L1s of the events it verifies. By collecting all the event verified by other chains, an L1 contract is able to know whether the block data uploaded by the validator is correct.
 
 ## **Full Commit**
 
@@ -42,7 +42,7 @@ commitment = sha256(pubdata+offsetsCommitment)
 
 ```
 
-The cross-chain bridge needs to transmit this commitment between different L1s.
+The cross-chain general messaging service needs to transmit this commitment between different L1s.
 
 Next, we discuss the ability of the validator to play maliciously:
 
@@ -67,7 +67,7 @@ Next, we discuss the ability of the validator to play maliciously:
     No, although the block can be committed on Ethereum, the pubdata is different with it on BSC, resulting in inconsistent commitment which would not pass the cross-chain block verification.
 
 
-Thus we can conclude that validator is unable to cheat with block verification via the cross-chain bridge. However, in the process above, the block pubdata committed to Ethereum contains a lot of noice unrelated to Ethereum transactions, which leads to a high cost of committing blocks on Ethereum.
+Thus we can conclude that validator is unable to cheat with block verification via the cross-chain general messaging service. However, in the process above, the block pubdata committed to Ethereum contains a lot of noice unrelated to Ethereum transactions, which leads to a high cost of committing blocks on Ethereum.
 
 ## **Compressed Commit**
 
@@ -104,7 +104,7 @@ In non-compressed model, the block commitment has to  be calculated with pubdata
     Yes, because the Ethereum contract cannot verify an OP such as Withdraw during commitment, i.e., cannot verify is the data in this OP is part of pubdata. But BSC contract has this info, since BSC contract records full pubdata.
 
 
-So apart from the commitment, the cross-chain bridge also needs to pass on the pubdata hash of on-chain OPs from all the chains connected. The calculation on BSC is:
+So apart from the commitment, the cross-chain general messaging service also needs to pass on the pubdata hash of on-chain OPs from all the chains connected. The calculation on BSC is:
 
 ```cpp
 ethOnchainPubdataHash = keccak256(keccak256(op0)+op4)
@@ -128,7 +128,7 @@ syncHash = keccak256(commitment, onchainPubdataHash)
 
 ## Security Issues during cross-chain verification
 
-If every block is verified via the cross-chain bridge, it is true that the Validator will not be able to forge pubdata under compressed model; but the cost would be too high. Can we perform cross-chain verification at certain intervals instead of verifying every block? The answer is no. Consider the following scenario:
+If every block is verified via the cross-chain general messaging service, it is true that the Validator will not be able to forge pubdata under compressed model; but the cost would be too high. Can we perform cross-chain verification at certain intervals instead of verifying every block? The answer is no. Consider the following scenario:
 
 ### Example
 
@@ -251,10 +251,10 @@ Since eth_sync_hash_1_fake is different from bsc_sync_hash_1, eth_sync_hash_2 an
 
 ## Disabling zk verification in compressed mode
 
-The security assumption of zkLink is that Validator and Bridge cannot conspire with each other. Based on this premise, a new architecture is proposed:
+The security assumption of zkLink is that Validator and general messaging service cannot conspire with each other. Based on this premise, a new architecture is proposed:
 
 - Cancel zk verification on the chains under compressed commitment mode.
 - Continue zk verification on the chain under full commitment mode.
 - Allow cross-chain verification to occur after a certain number of blocks.
 
-If the Bridge is honest, can the Validator still cheat? We believe not, because cross-chain verification ensures that the data committed in compressed mode must be the same as that committed in full mode, while zk verification in full commit mode ensures the correctness of data.
+If the general messaging service is honest, can the Validator still cheat? We believe not, because cross-chain verification ensures that the data committed in compressed mode must be the same as that committed in full mode, while zk verification in full commit mode ensures the correctness of data.

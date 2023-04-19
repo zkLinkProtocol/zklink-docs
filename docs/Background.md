@@ -20,5 +20,3 @@ This vision, while creating huge value for DeFi, also presents many problems:
 In this background, users either separate their assets to multiple ecosystems with low capital utilization, or pay high fees for multiple transactions at centralized exchanges in a laborious process. The latter goes against the principle of decentralization and privacy due to mandatory KYC requirements and the tracking of transfers by CEXs.
 
 If there is a decentralized ecosystem that not only solves liquidity problem but also provides CEX-like user experience, it will bring huge value to the DeFi-verse.
-
-> 🎁 <span className="highlight">The zkLink protocol solves these problems by creating a Layer2 network that connects different blockchains and Layer2 protocols by ZK-Rollup technology, where any reputable stablecoins or stablecoin LP shares can be collateralized and minted into a unified form in a unique design. The disparity of stablecoins (e.g. USDT and USDC) and origins (e.g. USDT from Ethereum and Solana) are eliminated and numerous use cases can securely benefit from the aggregated liquidity on zkLink Layer2 ecosystem.</span>

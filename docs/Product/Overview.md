@@ -7,7 +7,10 @@ title: ' '
 # Overview
 
 ---
-zkLink is a trading-focus L2 ecosystem that solves liquidity problems, and provides a growing number of chain-agnostic L2 liquidity solutions for dApps developers with various use cases and easy-to-deploy APIs. On the zkLink L2 ecosystem, there will be no boundary between separate chains and segmented local liquidity is aggregated.
+zkLink is a unified multi-chain trading infrastructure secured with zk-SNARKS, empowering the next-generation of decentralized trading products such as order book DEX, NFT marketplaces, among others.
+
+By connecting various L1 blockchains and L2 networks, zkLink's unified, multi-purpose ZK-Rollup middleware enables developers and traders to leverage aggregated assets and liquidity from different chains and offer a seamless multi-chain trading experience, contributing to a more accessible and efficient DeFi ecosystem for all.
+
 
 ![zkLink Structure](../../static/img/protocol.png)
 

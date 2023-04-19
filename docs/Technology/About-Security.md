@@ -7,12 +7,12 @@ title: ' '
 # Security Design
 
 ---
-In most multi-chain interoperability protocols, asset security relies on a group of nodes within a POS network, of which the security assumption is based on token values of the POS network.
+In the majority of multi-chain interoperability protocols, asset security relies on a group of nodes within a PoS network, of which the security assumption is based on token values of the PoS network.
 
 The security assumption of zkLink is based on mathematical verification instead of economic assumption. We use zk-SNARK that mathematically verifies cross-chain transactions with circuits and an oracle network (a group of juries) that judges the accuracy of the roots generated from the verification process.
 
 ## Two Key Components
-The two major concerns during cross-chain data transmission are:
+The two primary concerns during cross-chain data transmission include:
 1. Verification of cross-chain transactions;
 2. Judgment on the consistency of the data on the target and destination chains.
 
@@ -51,7 +51,9 @@ Instead of running our own program, zkLink introduces a light oracle network to 
 ![oracles](../../static/img/tech/oracles.png)
 ** Depending on the features of each Layer1 network, the choice of oracles can be different.
 
-We have multiple Oracles working together, forming a light network similar to a multi-sig community. More than one oracle can further improve the security level, while zkLink DAO will vote on the change of members in each oracle network.
+We utilize multiple Oracles working in unison, forming a light network similar to a multi-sig community. More than one oracle can further improve the security level, while zkLink DAO will vote on the change of members in each oracle network.
+
+In the current version of zkLink, we choose Layer0 to perform the function of the oracle network mentioned above.
 
 
 ## The Checks and Balances Design
@@ -64,8 +66,7 @@ By separating the verification and the judgment process, zkLink guarantees that 
 
 
 ## Preventing Attacks
-
-By studying the transaction processes of recent cross-chain security hacks, we sort them into two types: attacks in the computation process, or in the consensus process. With a different logical design, zkLink mitigates risks in both scenarios.
+By analyzing the transaction processes of recent cross-chain security breaches, we can categorize them into two types: attacks targeting the computation process or the consensus process.
 
 ### Vulnerability in the computation process
 Diving deeper into the recent cross-chain security incidents, we can conclude that most of them are caused by vulnerability in the computation process, i.e., the correctness of computation, rather than consensus mechanism. Here are some of the cases:
@@ -86,6 +87,6 @@ Reviewing the most recent [PolyNetwork Hack](https://decrypt.co/78163/polynetwor
 
 However, if the same thing happens on zkLink, at most, the service would be stopped for a short time.
 
-The authority of the zkLink consensus community (a network composed of multiple third-party oracles similar to a multi-sig group in other projects) is limited in it's authority to a minimum, as explained in [zkLink's checks and balances design](/docs/Technology/About-Security#the-checks-and-balances-design).
+In zkLink, the extra consensus is carried out by independent and reputable third parties (oracle network), with the rights of this role minimized, as explained in [zkLink's checks and balances design](/docs/Technology/About-Security#the-checks-and-balances-design).
 
 Even if hackers manage to spoof or steal the identity of the consensus community, they can never fake a transaction, instead the only damage they can ever cause is rejecting the transaction requests from Layer2 to Layer1, doing no harm at all to assets or account status.

@@ -38,9 +38,7 @@ module.exports = {
       items: [
         'Technology/know-ahead',
         'Technology/Technology',
-        'Technology/PCD',
         'Technology/About-Security',
-        'Technology/Roadmap',
       ],
     },
     {
@@ -48,9 +46,7 @@ module.exports = {
       label: 'Use Cases & Applications',
       collapsed: false,
       items: [
-        'Product/Overview',
         'Product/orderbook',
-        'Product/amm',
         'Product/NFT',
       ],
     },
@@ -72,7 +68,7 @@ module.exports = {
       items: [
         'developer/API-AMM',
         'developer/API-orderbook',
-        'developer/Commit Block',  
+        'developer/Commit Block',
       ],
     },
     {

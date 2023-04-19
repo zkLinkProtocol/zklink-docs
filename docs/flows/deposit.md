@@ -7,9 +7,9 @@ title: ' '
 # Deposit to L2
 
 ---
-Developers of each dApp built on top of the zkLink L2 ecosystem define their own business logic. To use these applications, a user must deposit to the zkLink L2 wallet.
+Developers of each dApp using zkLink service are able to define their own business logic. To use these applications, a user must deposit to zkLink beforehand.
 
-A user first initiates a deposit request to the on-chain zkLink smart contract. A Layer1_Watcher on zkLink Layer2 network is constantly monitoring L1 smart contract logs, and synchronizing the parameters of each request. zkLink service will update the user account once it receives the request and checks it.
+A user first initiates a deposit request to the on-chain zkLink smart contract. A Layer1_Watcher on zkLink protocol is constantly monitoring L1 smart contract logs, and synchronizing the parameters of each request. zkLink service will update the user account once it receives the request and checks it.
 
 ![Deposit Flow](../../static/img/flow-deposit.jpg)
 
