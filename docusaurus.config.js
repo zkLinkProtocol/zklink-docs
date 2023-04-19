@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'zkLink : multi-chain L2 network with unified liquidity for DeFi',
+  title: 'zkLink:unified multi-chain trading infrastructure secured with zk-SNARKS',
   tagline: 'zkLink are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
