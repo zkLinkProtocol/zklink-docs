@@ -6,44 +6,50 @@ title: ' '
 
 # A Multi-Chain ZK-Rollup
 ---
-## ZK-Rollup Stands Out Among Layer2 Solutions
-The current Layer2 solutions can be categorized into the following types: Sidechain, State Channels, Plasma, Rollups (including Optimistic Rollup, ZK-Rollup), and Validium (Matter Labs’ zkPorter). Different solutions vary in terms of data availability and security, with trade-offs in speed, finality time, scalability, computational cost, and security level.
+The zkLink protocol is instantiated as a multi-chain Zero-Knowledge (ZK) Rollup scheme. The ZK circuit is formulated and tailored to suit particular use cases, aiming to fulfill the requisites of economical and high-throughput trading.
 
-**Sidechain**: Despite its low development and utilization cost, sidechains are not secured by Layer1, and are dependent on the reputation of validators. This flaw prevents large-value trades and limits its usage to frequent transactions.
-
-**Plasma and State Channels**: Theoretically, these solutions can achieve instant withdrawal and the highest TPS among Layer2 technologies. However, it is time and money consuming to set up a specialized channel for each pair of traders. Thus they are more suitable for P2P transactions rather than common trading requests. Moreover, a Plasma/State Channels project depends on the constant attention of users or a watchtower to monitor each transaction for security purposes (liveness requirement).
-
-**Validium**: Validium can ensure the correctness of change-in-states with no withdrawal delay but lacks on-chain data availability. To solve this problem, many Validium solutions rely on a Data Availability Committee (DAC) whose members store a copy of account states off-chain and sign each batch attesting to the correctness of transactions. However, it is still trust-based and weaker than on-chain data availability in that a committee is always easier to attack than a fully-equipped blockchain.
-
-**Optimistic Rollups**: The most significant advantage of a rollup is its on-chain data availability, i.e., to store relevant transaction data on Layer1, which can be verified at any time. Op-Rollup solutions use fraud proofs as their security mechanism, assuming all transactions are rightful by default unless being challenged. This design results in three deficiencies:
-- sacrifice in security;
-- long wait times before token withdrawal;
-- The Dispute Time Frame usually requires seven days and hampers user experience.
-
-**Zero-knowledge Rollups**: In contrast to an Op-Rollup, a ZK-Rollup solution uses a validity proof (a SNARK - succinct non-interactive argument of knowledge) to guarantee that the data uploaded to Layer1 is not manipulated or falsified, ensuring the security of funds by the cryptographic method instead of trust and probability theory. It also resolves the DTF problem that an Op-Rollup faces since it only takes minutes to verify the proofs once sent to Layer1. As a result, ZK-Rollups are faster and more secure, at the expense of more intense computation and deployment difficulty.
-
-> ‘Zero Knowledge Proof’ is a technique which employs cryptographic algorithms so that various parties can verify the veracity of an item of information without sharing the data that compose it.  
-——Teresa Alameda
-
-For detailed explanation of ZK-Rollup technology, please refer to [EthHub-io](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-rollups/)
-
+## A Brief Summary of the Classic Architecture of a ZK-Rollup
+The classic design of zkRollup includes:
+1. **Commit stage:** Users submit transactions to the Rollup validator. The Rollup validator collects all transactions within a certain period of time, generates the Merkle tree root and Zero-Knowledge proof, and then commits it to the main chain.
+2. **Proof stage:** Anyone can verify the ZK proof committed by the Rollup validator to the main chain. If the proof is correct, then all submitted transactions are valid. This ensures that the Rollup validator's behavior is transparent and verifiable.
+3. **Execution stage:** The purpose of the execution stage is to process withdrawal requests on the chain. Only withdrawals that have passed the Layer 2 information of the zero-knowledge proof can be approved.
 
 ## A Multi-Chain ZK-Rollup Model
+zkLink is an improved design of zkRollup. The classic zkRollup has three stages: Commit stage, Proof stage, and Execution stage. zkLink adds a Consensus stage after the Proof stage. The purpose of the Consensus stage is to synchronize the states of different chains.
 
-![Contract](../../static/img/tech/offchain.png)
-
-There are generally three stages in a classic ZK-Rollup solution (referring to the implementation of Matter Labs): commit, prove, and execute. zkLink takes a step further and utilizes ZK-Rollup technology in chain interoperability by introducing a ‘consensus’ stage (step 3 above).
-
-1. <span className="highlight">Commit</span>: Multiple transactions happening on Layer2, including single-chain and cross-chain transactions, are batched into one bundle and would be uploaded to the smart contract on Layer1 together with a ZK-SNARK. The on-chain data fulfills data availability so that account states can be retrieved if anything goes wrong on the Layer2 network.
+1. <span className="highlight">Commit</span>: Multiple transactions happening on Layer2, including single-chain and multi-chain transactions, are batched into one bundle and would be uploaded to the smart contract on Layer1 together with a ZK-SNARK. The on-chain data fulfills data availability so that account states can be retrieved when anything goes wrong on the Layer2 network.
 
 2. <span className="highlight">Prove</span>: ZK proofs are submitted to Layer1 and verified by the smart contract. Once approved, it will emit an event and write a log for the respective blockchain, containing that current final_root (a hash value).
 
-3. <span className="highlight">Consensus</span>: The oracle network processes this stage, which will accomplish the interchange of the final_root with each chain, and compare if the final_root from the two chains are consistent with each other.
+3. <span className="highlight">Consensus</span>: The oracle network processes this stage, which will accomplish the interchange of the final_root with each chain, and compare if the two final_root from two chains are consistent with each other.
 
-4. <span className="highlight">Execute</span>: zk_verify guarantees that the new final_root is correctly computed with the old final_root and new transactions info, while the oracle network ensures the final_root is correctly passed to the other chain. Requests for funds flow will be executed once these two steps are confirmed.
+4. <span className="highlight">Execute</span>: zk_verify guarantees that the new final_root is correctly computed with the old final_root and new transactions info, while the oracle network ensures the final_root is correctly passed to the other chain. Requests for funds flowing from L2 to L1 will be executed once these two steps are confirmed.
+
+![Contract](../../static/img/tech/offchain.png)
 
 
-## Sequencer
+## The Exception Handling of zkLink Multi-Chain Rollup
+The exception handling mechanism includes Exit Mode and FullExit. They ensure that users' funds are secure and allow exiting at any time in the event of validator exceptions or malice.
+
+### Exit mode
+The exit mode means that when the validator cannot continue to work normally due to irresistible factors, it allows users to generate capital withdrawal proofs independently. The generation and submission of proofs should be permitted behaviors.
+- When the rollup validator cannot continue normal operations due to irresistible factors such as hacking attacks, users have the right to exit directly and withdraw funds.
+- Users can generate exit proofs on their own without the validator's permission. The exit proof proves the user's balance and transaction records in the rollup.
+- Users can submit exit proofs directly to the main chain without the validator's permission. After the main chain verifies the exit proofs, it will return the corresponding funds to the user.
+- The generation and submission of exit proofs do not require the validator's authorization or cooperation. This ensures that users can withdraw funds safely even when the validator is unavailable.
+- The main chain should verify the submitted exit proofs. Only proofs that can pass the verification will trigger the withdrawal of the corresponding funds. This prevents malicious exit proofs from damaging fund security.
+
+### FullExit
+- Users should have the right to initiate withdrawals from the main chain, which should not be refused. If the validator refuses, rollup will be forced into exit mode.
+
+
+## The System Break-down of zkLink Protocol
+The zkLink system consists of 5 components: Multi-Chain Rollup Contract, ZK Prover System, Sequencer System, Validator System, and Light Oracle Network.
+
+![zkLink-system-architecture](../../static/img/tech/zkLink-system-architecture.png)
+
+
+## Sequencers
 Sequencer are operated by the zkLink team. It does not mean that zkLink is a centralized project. As a matter of fact, zkLink system is **COMPLETELY decentralized** from the perspective of security that eliminates the risk of malicious behavior from operators or validators mathematically- not because they don't want to, but because they simply cannot - zero knowledge technology guarantees this point.
 
 Under the premise of open-source circuit, every off-chain execution must comply with the circuit's specifications. The circuit acts as the regulatory framework of zkLink: any illegal operations would not pass the circuit during `zk verify`, which is processed by the smart contract with the built-in `verify key`. Both the algorithm of `zk verify` and `verify key` will be published online. As long as the circuit has undergone rigorous auditing and is free of logical bugs, the ZK-based system can be considered safe and secure

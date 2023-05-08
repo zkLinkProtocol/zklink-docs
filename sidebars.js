@@ -47,18 +47,18 @@ module.exports = {
       collapsed: false,
       items: [
         'Product/orderbook',
+        'Product/amm',
         'Product/NFT',
       ],
     },
     {
       type: 'category',
-      label: 'L2 Flows',
+      label: 'The Rollup Workflow of zkLink Protocol',
       collapsed: false,
       items: [
         'flows/deposit',
         'flows/withdraw',
         'flows/transfer',
-        'flows/limit-order',
       ],
     },
     {

@@ -12,7 +12,7 @@ zkLink is a **unified multi-chain trading infrastructure** secured with **zk-SNA
 By connecting various L1 blockchains and L2 networks, zkLink's unified, multi-purpose ZK-Rollup middleware enables developers and traders to leverage aggregated assets and liquidity from different chains and offer a seamless multi-chain trading experience, contributing to a more accessible and efficient DeFi ecosystem for all.
 
 
-Furthermore, atop its multi-chain ZK-Rollup infrastructure, zkLink offers an array of API-driven use cases to cater to a diverse range of decentralized applications.
+Furthermore, atop our multi-chain ZK-Rollup infrastructure, zkLink offers an array of API-driven use cases to cater to a diverse range of decentralized applications.
 
 
 
@@ -33,23 +33,31 @@ Furthermore, atop its multi-chain ZK-Rollup infrastructure, zkLink offers an arr
 </div>
 
 ## Features
-### Zero-knowledge Proofs with Zero Security Compromise
-Zero-knowledge validity proofs are mathematically certified to guarantee only valid transactions are executed and cannot be manipulated or falsified, and hence ensure security of funds.
+### Native Asset Aggregation
+#### Multi-chain Token Listing and Trading
+dApps built atop the zkLink protocol can list and trade tokens across various L1s and L2s, including FTs and NFTs, enabling users to transact multi-chain tokens through a single user interface. No bridges are required in this process, thus circumventing cross-chain risks and costly bridging fees.
 
-- In virtue of ZK-Rollup's on-chain data availability, account states can always be rolled back in case of attacks, even when all the data on zkLink is lost.
-- Zero knowledge guarantees that nobody, including the platform itself, can upload fake zk_proof to the main chain.
+#### Multi-chain Token Portfolio Management
+A single wallet can manage multi-chain portfolios. For example, if Alice deposits 2 UNI from her wallet (e.g., Metamask) to the zkLink contract deployed on Ethereum, and then deposits 3 BNB from the BNB chain to the zkLink contract using the same wallet address, she will receive 2 UNI + 3 BNB at the same address on zkLink's rollup network. This functionality extends to tokens from Polygon, Avalanche, Starknet, zkSync, Linea, Scroll, Solana, and more.
 
 
-### A Rigorous Consensus Mechanism with Checks and Balances
-A light oracle network independently ensures the consistency of multi-chain states. Such separation of powers in the verification and judgment process ensures no single party controls asset security or is capable of malicious behavior.
+### Liquidity Aggregation
+#### Token Merge
+Tokens issued on different blockchains by the same entity (e.g., USDT ERC20, USDT SPL, USDT BEP20) will be merged into a single token (USDT) within the zkLink rollup network. This concept also applies to ETH, which will be consolidated from various sources, including Ethereum, zkSync, Starknet, and Scroll, eliminating chain identities. In summary, tokens of the same kind issued on different chains are merged into a single token, providing a seamless multi-chain user experience akin to a centralized exchange but without counterparty risk.
 
-- The checks and balances design can protect zkLink protocol against economic attack from both external hackers and internal stakeholders by preventing any single branch from having too much power.
+#### Stablecoin Liquidity Unification
+USD, a unified pricing currency, is introduced within the zkLink system and exists exclusively in the zkLink rollup network. USD is backed by a basket of fiat-backed and market-proven stablecoins, such as USDC issued by Circle, USDP issued by Paxos, and BUSD issued by Paxos. This unification eliminates disparities among fiat-backed stablecoins from different chains.
 
-### Seamless Multi-Chain Trading Experience
-With the suite of APIs provided by zkLink, developers can effortlessly create a DEX that closely resembles the user experience of a centralized exchange (CEX). Developers can focus solely on frontend user interaction and market operations, without worrying about performance or asset security concerns.
+USD can be transferred to any address within the zkLink system and serve as the base currency for any trading pair in the zkLink ecosystem. For instance, an order book DEX can list pairs like ETH/USD, BTC/USD, BNB/USD, etc., for both spot and derivatives trading. A NFT marketplace could also list NFT assets priced in USD to reduce friction costs and lower the user entry barrier.
 
-### Native Asset Aggregation From Multiple Chains
-dApps built with zkLink leverage seamless multi-chain liquidity, with rapid deployment solutions for decentralized and non-custodial order book DEX (spot and derivatives), NFT exchanges, and more.
+Key factors considered for the qualification of a fiat-backed stablecoin include, but are not limited to, regulated issuance entities, market-leading circulation supply, and transparency on Proof of Reserve or Collateral. Since stablecoins remain redeemable one-on-one for US Dollars, the peg ratio of USD to stablecoins is maintained at 1:1.
 
-- A unified currency for all purposes on the zkLink.
-- No need of multiple wallets for separate chains.
+dApps have the option to enable or disable the auto-conversion of USD. The smart contract can add or remove supported stablecoins.
+
+### App-specific Zero-knowledge Circuit
+The zkLink protocol's zero-knowledge circuit is customized to support industry-leading performance (1000+ TPS) for order book trading, bridging the gap between high-frequency traders' needs and on-chain products. At present, zero-knowledge circuit development remains complex, expensive, and time-consuming. Some core competencies of the zkLink infrastructure, facilitated by the app-specific circuit design approach, include:
+
+- **Customizability:** The zkLink engineering team offers customized designs for strategic partners in specific use cases, such as order book DEX and NFT trading.
+- **Development cost:** High-level APIs are easy to use.
+- **Efficiency:** The app-specific circuit is considerably smaller compared to general-purpose zk circuits, resulting in lower computational resource and on-chain gas consumption.
+- **Continuous optimization:** The protocol focuses on improving trading performance and reducing cost per trade.

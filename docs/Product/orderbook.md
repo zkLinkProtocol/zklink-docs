@@ -4,22 +4,25 @@ title: ' '
 
 ---
 
-# Use Case 1: Multi-Chain Orderbook DEX
+# Use Case 1: Multi-chain Atomic Swap for Order Book DEX
 
 ---
-> **🥇** <span className="highlight">A seamless, permissionless, and anti-censorship multi-chain trading experience</span>
+> **🥇** <span className="highlight">Enabling a seamless, permissionless, and anti-censorship multi-chain trading experience</span>
 
-zkLink supports atomic swap for order book traders (both spot trading and margin trading). With the unified massive liquidity on the zkLink infrastructure, we achieve limit orders and stop loss functions in a decentralized way for DeFi traders.
+zkLink supports atomic swaps for order book trades, including spot and derivatives. With massive liquidity facilitated by token merging and stablecoin unification, zkLink achieves limit orders and stop loss functions in a decentralized manner.
 
-### Simple CEX-like user experience
-- Partial fulfillment and multiple pending orders are supported;
+### User experience similar to a centralized exchange
+- Partial fulfillment and multiple order types are supported.
+- Up to 65535 maker orders.
+- Multi-chain token listing.
 
 ### Secure and efficient
-- High performance centralized buy/sell matching, but with decentralized finality;
-- Non-custodial assets, secured by ZK-Rollup L2 wallet;
+- High performance centralized buy/sell matching with instant finality.
+- Self-custodial, minimizing security assumptions.
+- Professional features such as cross-margin, unlocking higher capital efficiency for traders.
 
-### Easy to deploy for MM
-- Use existing market making strategy, only an extra sig service is needed.
+### Easy deployment for market makers
+- Use existing market-making strategy, only an extra signature service is required.
 
 
 <div className="cancel-md-margin cancel-img">

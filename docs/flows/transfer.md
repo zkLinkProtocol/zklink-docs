@@ -4,7 +4,7 @@ title: ' '
 
 ---
 
-# L2 Transfer
+# Transfer
 
 ---
 Transfer token between any two zkLink L2 addresses.
@@ -41,30 +41,23 @@ transfer: {
 | transfer.ts | The time stamp for this transaction |
 
 ---
-## Step 2: Check and execute
+## Step 2: Check and Execute
+The zkLink service verifies the transfer request.
 
-The zkLink service verifies the the withdrawal request to ensure:
-
-- valid signature
-- the initiator has enough balance
-- the request has not expired
-- the request has never been executed before
-
-Once it passes, the zkLink service will execute the transaction request and send the token from the source address to the target address.
+Once it passes, the zkLink service executes the transaction request and sends the token from the source address to the target address.
 
 ---
-## Step 3&4: Commit and prove
-
+## Step 3: Commit
 The transfer is included in a batch and committed to L1.
 
-The zkLink L2 service generates a validity proof and uploads it separately to L1 for verification.
+---
+## Step 4: Prove
+The zkLink L2 service generates a validity proof and separately uploads it to L1 for verification.
 
 ---
 ## Step 5: Verification
-
-The zkLink L1 smart contract verifies the `r_proof` using zero knowledge, and emits log( `final_root`).
+The zkLink L1 smart contract verifies the proof using zero knowledge and emits log( `final_root`).
 
 ---
-## Step 6: Send executed_tx to L1
-
+## Step 6: Send Executed Transaction to L1
 The transfer is settled with finality.

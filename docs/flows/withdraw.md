@@ -4,11 +4,10 @@ title: ' '
 
 ---
 
-# Withdraw to L1
+# Withdraw
 
 ---
-zkLink supports dApp users to withdraw funds to any blockchains connected, regardless of the origin of the token.
-
+zkLink supports dApp users to withdraw funds to any blockchains connected, regardless of the origin of the token, under the condition the token exists on the destination chain.
 
 > 💡 E.g., a user deposit a certain number of USDC from Ethereum to zkLink, and they can withdraw USDC to Starknet, without navigating outside zkLink to find a third-party token bridge.
 
@@ -17,7 +16,7 @@ zkLink supports dApp users to withdraw funds to any blockchains connected, regar
 ---
 ## Step 1: Withdrawal Request
 
-The user initiate a withdrawal request from his/her zkLink L2 wallet, and sign it, calling a withdraw function with the following parameters:
+The user initiates a withdrawal request from their zkLink L2 wallet and signs it, calling a withdraw function with the required parameters.
 
 ```python
 withdraw: {
@@ -44,31 +43,27 @@ withdraw: {
 | withdraw.nonce | Current account nonce |
 
 ---
-## Step 2: Check and execute
+## Step 2: Check and Execute
+The zkLink service verifies the withdrawal request
 
-zkLink service verifies the transfer request:
-
-- valid signature
-- the token amount in the user’s L2 wallet minus pending balance is greater than the amount of the withdrawal request
-- the request has not expired
-- the request has never been executed before
+Once it passes, the zkLink service executes the transaction request and sends the token from the source address to the target address.
 
 ---
-## Step 3&4: Commit and prove
-
+## Step 3: Commit 
 The withdrawal transaction is included in a batch and committed to L1.
 
-zkLink L2 service generates a validity proof and uploads it separately to L1 for verification.
+---
+## Step 4: Prove
+zkLink L2 service generates a validity proof and separately uploads it to L1 for verification.
 
 ---
 ## Step 5: Verification
-
-zkLink L1 smart contract verifies the `r_proof` using zero knowledge, and emits log( `final_root`).
-
----
-## Step 6: Send executed_tx to L1
+zkLink L1 smart contract verifies the proof using zero knowledge and emits log( `final_root`). 
 
 ---
-## Step 7: Transfer token to L1 address
+## Step 6: Send Executed Transaction to L1
+Transfer Token to L1 Address.
 
-The right amount of tokens will be transferred from the zkLink L1 contract to the target L1 address. The withdrawal transaction from L2 to L1 is then finalized.
+The appropriate amount of tokens is transferred from the zkLink L1 contract to the target L1 address.
+
+The withdrawal transaction from L2 to L1 is finalized.

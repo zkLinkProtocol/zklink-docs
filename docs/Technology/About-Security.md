@@ -7,65 +7,34 @@ title: ' '
 # Security Design
 
 ---
-In the majority of multi-chain interoperability protocols, asset security relies on a group of nodes within a PoS network, of which the security assumption is based on token values of the PoS network.
+zkLink's security design focuses on ensuring the correctness of off-chain states and the validity of transactions. 
 
-The security assumption of zkLink is based on mathematical verification instead of economic assumption. We use zk-SNARK that mathematically verifies cross-chain transactions with circuits and an oracle network (a group of juries) that judges the accuracy of the roots generated from the verification process.
+The protocol uses zk-SNARK proofs to verify the validity of off-chain states and a lightweight oracle network (a group of juries) to judge the consistency of the final roots across connected layer1 blockchains and layer2 networks.
 
 ## Two Key Components
-The two primary concerns during cross-chain data transmission include:
-1. Verification of cross-chain transactions;
-2. Judgment on the consistency of the data on the target and destination chains.
+The two major components that ensure the security of the protocol:
+1. Verification of multi-chain transactions;
+2. Judgment on the consistency of the final roots among the connected chains.
 
-One of the main features of ZK-Rollup is data availability on Layer1. For a single-chain ZK-Rollup solution, a SNARK ensures that all state changes are the result of accurately running the circuit. However, in terms of cross-chain transactions, zero-knowledge alone cannot enforce the consistency of cross-chain states (final roots in different chains matching each other). The operator can submit two final roots in different chains that both satisfy the constraints, allowing them to perform a double spend.
+## Verification of Multi-Chain Transactions
+Building upon the classic zkRollup design, zkLink extends its capabilities by accepting external state inputs from multiple sources, specifically by allowing deposit transactions from various chains. Assets from different chains are unified and recorded on a single rollup state tree, eliminating any transaction obstacles that may arise due to differing source chains and greatly enhancing transaction convenience. All changes occurring on this extended state tree generate zero-knowledge proofs and are submitted to each connected chain for verification, ensuring that all transactions are executed correctly.
 
-Most cross-chain protocols rely on a group of nodes within a POS network (a multi-sig committee) to ensure verification correctness and data consistency, which means that both would break should the committee be compromised. The security assumption is based on the sum of token values of this POS network.
+However, multiple external state inputs pose new challenges for the on-chain verification of rollup validity. For instance, each Layer1 smart contract can only verify deposit transactions originating from its own chain, and it cannot verify the existence of deposit transactions from other chains. Therefore, it is necessary to ensure that all connected chains receive strictly consistent state tree change information.
 
-In zkLink, zero-knowledge proofs ensure computation correctness (removing the possibility of attack unless the underlying proving system is broken), and the oracle network ensures data consistency. As zkLink employs multiple permissionless oracle networks, data consistency in practice is more secure than in the multi-sig case.
-
-
-## Security Assumptions
-The security of zkLink system is under the assumptions below:
-
-- The security of the blockchains and VM-compatible scaling protocols connected. The purpose of zkLink is to connect chains together, wherein the "bucket effect" makes the minimum commitment of zkLink security is determined by the one with the lowest security level among the many chains connected. Of course, the decision on connecting or disconnecting a chain should be seriously considered and made collectively by the community.
-- zkLink, Chainlink and other oracles are obligated to the DeFi community by acting in good faith in all decisions taken, and will reject and report any malicious action.
-
-## The Verification of Cross-chain Transactions
-![recursive](../../static/img/tech/recursive.png)
-SNARKs allow collapsing verification of arbitrarily large computations into checking an equation with a small number of variables. ZK-Rollup leverages this property to minimize the amount of data needed for the judgment of the verification process.
-
-On top of the classic ZK-Rollup design, zkLink conducts an additional recursive verification process with `zk_proofs` from both chains. After that, the two independent systems will have a mutual final_root. Then, just like a classic ZK-Rollup solution, zkLink uploads all transaction parameters and the final_root to Layer1 contracts for on-chain data availability.
-
-The `zk_verify` function will approve the recursive ZK-SNARK before the Layer1 smart contract emits log (`final_root`).
-
-Once the final_root is calculated, it is impossible to fake the source data, since it and the final_root exhibit a nonlinear and unidirectional causality in a hash function. Any slight change in the source data would cause an entirely different final_root.
-
-Thus, the verification problem now becomes comparing whether the two or more final_roots from each chain are consistent or not (no need to verify every detail of the massive amount of transaction data). This process is simple enough for everyone to accomplish, making it possible for a light oracle network to compare the final_roots.
+## Consistency of State Tree Final Root
+zkLink introduces a light oracle network to check the consistency of state tree change information, which passes the final root of one chain to the other and compares if the two 32-byte-hash final roots match - only when true will the layer2 block be accepted and finality of the batched transactions achieved. Note that any reputable third party can join the light oracle network to safeguard the consistency of multi-chain states. For instance, A makert maker that has deployed capital to the zkLink contract may choose to run a oracle service themself to fully eliminate the conspiracy risk.
 
 
-## The Judgment on the Consistency of Final_roots
-In most chain interoperability projects, the consistency of multi-chain status is checked and signed by a multi-sig group, meaning the assets security depends on the reliability of the committee, and the vulnerability of the verification program.
-
-Instead of running our own program, zkLink introduces a light oracle network to complete this task, which passes the final_root of one chain to the other and also compares if the two 32-byte-hash final_roots match - only when will the block be accepted.
-
+In the long term, it is possible that one of the versions of the zkLink protocol will run solely on the Ethereum rollups and Ethereum mainnet, which would result in the cancellation of the light oracle network and simply the consistency check, as Ethereum itself can safely transmit the final roots to the rollups.
 
 ![oracles](../../static/img/tech/oracles.png)
-** Depending on the features of each Layer1 network, the choice of oracles can be different.
 
-We utilize multiple Oracles working in unison, forming a light network similar to a multi-sig community. More than one oracle can further improve the security level, while zkLink DAO will vote on the change of members in each oracle network.
+## Checks and Balances Design
 
-In the current version of zkLink, we choose Layer0 to perform the function of the oracle network mentioned above.
-
-
-## The Checks and Balances Design
-
-In zkLink’s check and balance security design, the cross-chain transactions are verified by ZK-SNARK, which generates the final roots (rollup state roots).
-
-The oracle network (a group of juries) then passes the final roots from chain to chain and compares the final roots to judge the consistency between them.
-
-By separating the verification and the judgment process, zkLink guarantees that no single party controls asset security, and thus minimizes the probability of being compromised, whether that coming from external hacks or internal malicious activity.
+To summarize the above, zkLink employs a check and balance security design. Multi-chain transactions are verified by ZK-SNARKs, which generate the final root (rollup state roots). The lightweight oracle network (a group of juries) then passes the final roots from chain to chain and the contract compares the final roots to judge the consistency between them. By separating the verification and judgment processes, zkLink guarantees that no single party controls asset security, minimizing the probability of being compromised, whether that comes from external hacks or internal malicious activity.
 
 
-## Preventing Attacks
+## Anti-Attacks
 By analyzing the transaction processes of recent cross-chain security breaches, we can categorize them into two types: attacks targeting the computation process or the consensus process.
 
 ### Vulnerability in the computation process
@@ -87,6 +56,6 @@ Reviewing the most recent [PolyNetwork Hack](https://decrypt.co/78163/polynetwor
 
 However, if the same thing happens on zkLink, at most, the service would be stopped for a short time.
 
-In zkLink, the extra consensus is carried out by independent and reputable third parties (oracle network), with the rights of this role minimized, as explained in [zkLink's checks and balances design](/docs/Technology/About-Security#the-checks-and-balances-design).
+In zkLink, the extra consensus is carried out by independent and reputable third parties (oracle network), with the rights of this role minimized, as explained in [zkLink's checks and balances design](/docs/Technology/About-Security#checks-and-balances-design).
 
 Even if hackers manage to spoof or steal the identity of the consensus community, they can never fake a transaction, instead the only damage they can ever cause is rejecting the transaction requests from Layer2 to Layer1, doing no harm at all to assets or account status.

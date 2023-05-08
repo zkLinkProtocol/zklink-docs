@@ -4,17 +4,22 @@ title: ' '
 
 ---
 
-# Deposit to L2
+# Deposit
 
 ---
-Developers of each dApp using zkLink service are able to define their own business logic. To use these applications, a user must deposit to zkLink beforehand.
+DApp developers using zkLink service are able to define their own business logic. 
 
-A user first initiates a deposit request to the on-chain zkLink smart contract. A Layer1_Watcher on zkLink protocol is constantly monitoring L1 smart contract logs, and synchronizing the parameters of each request. zkLink service will update the user account once it receives the request and checks it.
+To use these applications, a user must deposit to zkLink's rollup contract beforehand.
 
 ![Deposit Flow](../../static/img/flow-deposit.jpg)
 
 ---
 ## Step 1: Deposit Request
+1. User A initiates a deposit request to the on-chain zkLink smart contract.
+2. Layer1 Watcher on zkLink protocol monitors L1 smart contract logs and synchronizes the parameters of each request.
+3. zkLink service updates the user account upon receiving the request and checking it.
+4. Users can immediately use their deposit in the zkLink ecosystem without waiting for the verification process.
+
 
 Once the user signs the deposit transaction, a deposit function is called with the following parameters:
 
@@ -51,27 +56,23 @@ After 10 blocks’ confirmation, the zkLink L2 service receives the deposit requ
 ---
 ## Step 3: Check and execute
 
-The zkLink service verifies the validity of the deposit request to ensure:
-
-- valid signature
-- there is enough token in the pending balance that is locked in the L1 vault
-- the request has never been executed before
-
-Once it passes, the user’s zkLink L2 account state will be updated.
+zkLink service verifies the deposit request, If it passes, the user's zkLink L2 account state is updated.
 
 ---
-## Step 4&5: Commit and prove
-
+## Step 4: Commit
 The deposit transaction is included in a batch and committed to L1.
 
-zkLink L2 service generates a validity proof and uploads it separately to L1 for verification.
+---
+## Step 5: Prove
+The deposit transaction is included in a batch and committed to L1.
 
 ---
 ## Step 6: Verification
-
-zkLink L1 smart contract verifies the `r_proof` using zero knowledge, and emits log( `final_root`).
+zkLink L1 smart contract verifies the proof using zero-knowledge and emits log( `final_root`).
 
 ---
-## Step 7: Send executed_tx to L1
+## Step 7: Send Executed Transaction to L1
+Remove the corresponding amount from the pending balance.
 
-Remove the according amount from the pending balance. The deposit transaction is settled with finality.
+The deposit transaction is settled with finality.
+
