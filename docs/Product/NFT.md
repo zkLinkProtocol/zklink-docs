@@ -4,7 +4,7 @@ title: ' '
 
 ---
 
-# Use Case 3: Multi-chain NFT Mint and Trade
+# Use Case 3: Multi-Chain NFT Mint and Trade
 
 ---
 > **🥇** <span className="highlight">A global NFT marketplace on the zkLink L2 ecosystem that aggregates the NFTs native to different blockchains:</span>
