@@ -71,6 +71,15 @@ module.exports = {
         'developer/Commit Block',
       ],
     },
+        {
+      type: 'category',
+      label: 'Testnet',
+      collapsed: false,
+      items: [
+        'testnet/Supported-Networks',
+        'testnet/Testnet-Versions'
+      ],
+    },
     {
       type: 'doc',
       id: 'Audits',
