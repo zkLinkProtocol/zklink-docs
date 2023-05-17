@@ -61,16 +61,6 @@ module.exports = {
         'flows/transfer',
       ],
     },
-    {
-      type: 'category',
-      label: 'Developers',
-      collapsed: false,
-      items: [
-        'developer/API-AMM',
-        'developer/API-orderbook',
-        'developer/Commit Block',
-      ],
-    },
         {
       type: 'category',
       label: 'Testnet',

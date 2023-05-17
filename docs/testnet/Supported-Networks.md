@@ -7,10 +7,10 @@ title: ' '
 # Supported Networks
 
 ---
-| Network Name | ChainId | Supported | Exodus Supported | Remark |
+| Network | ChainId | Supported | Exodus | Comment |
 |--------------|---------|-----------|----------|----------|
 |Goerli Testnet|   5                | ✔️         | ✔️        |   --       |
-|zkSync Era Testnet| 280             | Only Compressed Mode | ✔️   |    --      |
+|zkSync Era Testnet| 280             | Compressed Mode Only | ✔️   |    --      |
 |Scroll Alpha Testnet| 534353        | ✔️         | ✔️        |     --     |
 |Linea Goerli Testnet|    59140     | ✔️         | ✔️        |      --    |
 |Bsc Testnet| 97                     | ✔️         |  ✔️         |    --      |
