@@ -41,26 +41,6 @@ module.exports = {
         'Technology/About-Security',
       ],
     },
-    {
-      type: 'category',
-      label: 'Use Cases & Applications',
-      collapsed: false,
-      items: [
-        'Product/orderbook',
-        'Product/amm',
-        'Product/NFT',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'The Rollup Workflow of zkLink Protocol',
-      collapsed: false,
-      items: [
-        'flows/deposit',
-        'flows/withdraw',
-        'flows/transfer',
-      ],
-    },
         {
       type: 'category',
       label: 'Testnet',
@@ -71,28 +51,43 @@ module.exports = {
       ],
     },
     {
+      type: 'category',
+      label: 'L2 Work FLow',
+      collapsed: false,
+      items: [
+        'flows/deposit',
+        'flows/transfer',
+        'flows/withdraw'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Use Cases',
+      collapsed: false,
+      items: [
+        'Product/orderbook',
+        'Product/NFT',
+        'Product/amm'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'API',
+      collapsed: false,
+      items: [
+        'developer/API-orderbook',
+        'developer/API-AMM'
+      ],
+    },
+    {
       type: 'doc',
       id: 'Audits',
       label: 'Audits'
     },
     {
-      type: 'category',
-      label: 'User Guide',
-      collapsed: false,
-      items: [
-        'UserGuide/M5-pre',
-        'UserGuide/M5-L2',
-      ],
-    },
-    {
-      type: 'doc',
-      id: 'FAQ',
-      label: 'FAQ'
-    },
-    {
       type: 'doc',
       id: 'Token Economy',
-      label: 'Token Economy'
+      label: 'Tokenomics'
     },
     {
       type: 'doc',
