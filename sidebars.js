@@ -52,12 +52,10 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'L2 Work FLow',
+      label: 'Deposit',
       collapsed: false,
       items: [
-        'flows/deposit',
-        'flows/transfer',
-        'flows/withdraw'
+        'deposit/deposit'
       ],
     },
     {
