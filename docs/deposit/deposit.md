@@ -46,32 +46,34 @@ Example scenarios:
 
 ---
 ## Exhaustive Scenarios
+
 <table>
-      <tr>
-        <td></td><td></td><td colspan="4">Receiver Address</td>
+    <tr>
+        <td></td><td></td><td colspan="4" align="center">Receiver Address</td>
     </tr>  
-  <tr>
-        <th></th><th></th><th>AA Wallet - EVM (20 bytes)</th><th>AA Wallet - nonEVM(Starknet 32 bytes)</th><th>EOA EVM(20 bytes)</th><th>EOA nonEVM(32 bytes)</th>
+    <tr>
+        <th></th><th></th><th align="center">AA Wallet - EVM (20 bytes)</th><th align="center">AA Wallet - nonEVM (Starknet 32 bytes)</th><th align="center">EOA EVM (20 bytes)</th><th align="center">EOA nonEVM (32 bytes)</th>
     </tr>
     <tr>
-        <td rowspan="6">Sender Address</td><td>EOA - EVM</td><td>ABC</td><td>AC</td><td>AC</td><td>AC</td>
+        <td rowspan="6">Sender Address</td><td align="center">EOA - EVM</td><td align="center">ABC</td><td align="center">AC</td><td align="center">AC</td><td align="center">AC</td>
     </tr>
     <tr>
-        <td>EOA - nonEVM</td><td>AC</td><td>ABC</td><td>AC</td><td>AC</td>
+        <td align="center">EOA - nonEVM</td><td align="center">AC</td><td align="center">ABC</td><td align="center">AC</td><td align="center">AC</td>
     </tr>
     <tr>
-        <td>owned AA Wallet -EVM</td><td>ABC</td><td>AC</td><td>AC</td><td>AC</td>
+        <td align="center">owned AA Wallet - EVM</td><td align="center">ABC</td><td align="center">AC</td><td align="center">AC</td><td align="center">AC</td>
     </tr>
-      <tr>
-        <td>owned AA Wallet -nonEVM</td><td>AC</td><td>ABC</td><td>AC</td><td>AC</td>
+    <tr>
+        <td align="center">owned AA Wallet - nonEVM</td><td align="center">AC</td><td align="center">ABC</td><td align="center">AC</td><td align="center">AC</td>
     </tr>
-      <tr>
-        <td>CEX - EVM</td><td>BC</td><td>C</td><td>C</td><td>C</td>
+    <tr>
+        <td align="center">CEX - EVM</td><td align="center">BC</td><td align="center">C</td><td align="center">C</td><td align="center">C</td>
     </tr>
-      <tr>
-        <td>CEX - nonEVM</td><td>C</td><td>BC</td><td>C</td><td>C</td>
+    <tr>
+        <td align="center">CEX - nonEVM</td><td align="center">C</td><td align="center">BC</td><td align="center">C</td><td align="center">C</td>
     </tr>
 </table>
+
 
 ---
 Below are 2 typical operational processes using [ZKEX.com](http://zkex.com/) as an example (the first dApp deployed on zkLink):
