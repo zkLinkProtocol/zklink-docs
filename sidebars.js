@@ -68,7 +68,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Wallet & User Assets Streamline',
+      label: 'Wallet & User Fund Streamline',
       collapsed: false,
       items: [
         'streamline/deposit',
