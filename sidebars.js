@@ -52,10 +52,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Deposit',
+      label: 'Wallet & User Assets Streamline',
       collapsed: false,
       items: [
-        'deposit/deposit'
+        'streamline/deposit',
+        'streamline/withdraw',
+        'streamline/wallet'
       ],
     },
     {
