@@ -4,9 +4,12 @@ title: ' '
 
 ---
 
-# Supported Networks
+# Connected Networks
 
 ---
+> 💡Multiple dApps may share one network, and one dApp may have multiple versions in different networks.
+
+
 | Network | ChainId | Supported | Exodus | Comment |
 |--------------|---------|-----------|----------|----------|
 |Goerli Testnet|   5                | ✔️         | ✔️        |   --       |

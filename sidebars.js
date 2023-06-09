@@ -41,13 +41,29 @@ module.exports = {
         'Technology/About-Security',
       ],
     },
-        {
+    {
       type: 'category',
-      label: 'Testnet',
+      label: 'Network Information',
       collapsed: false,
       items: [
-        'testnet/Supported-Networks',
-        'testnet/Testnet-Versions'
+        {
+          type: 'category',
+          label: 'Mainnet',
+          collapsed: true,
+          items: [
+            'networks/mainnet_networks',
+            'networks/mainnet_addresses'
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Testnet',
+          collapsed: true,
+          items: [
+            'networks/testnet_networks',
+            'networks/testnet_addresses'
+          ],
+        }
       ],
     },
     {
