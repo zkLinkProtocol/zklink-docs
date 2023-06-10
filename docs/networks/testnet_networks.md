@@ -14,7 +14,7 @@ title: ' '
 |--------------|---------|-----------|----------|----------|
 |Goerli Testnet|   5                | ✔️         | ✔️        |   --       |
 |zkSync Era Testnet| 280             | Compressed Mode Only | ✔️   |    --      |
-|Scroll Alpha Testnet| 534353        | ✔️         | ✔️        |     --     |
+|Scroll Alpha Testnet| 534353        | ❌       | ❌    |Lack of support for Sha2-256     |
 |Linea Goerli Testnet|    59140     | ✔️         | ✔️        |      --    |
 |Bsc Testnet| 97                     | ✔️         |  ✔️         |    --      |
 |Polygon Testnet |80001              | ✔️         |  ✔️        |      --    |
