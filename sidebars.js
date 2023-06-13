@@ -27,8 +27,7 @@ module.exports = {
       label: 'Welcome',
       collapsed: false,
       items: [
-        'Introduction',
-        'Background',
+        'Introduction'
       ],
     },
     {
