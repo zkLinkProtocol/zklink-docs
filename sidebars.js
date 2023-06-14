@@ -77,6 +77,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Integration Architecture',
+      collapsed: false,
+      items: [
+        'Integration Architecture/Derivatives',
+        'Integration Architecture/spot',
+        'Integration Architecture/zkjump'
+      ],
+    },
+    {
+      type: 'category',
       label: 'Use Cases',
       collapsed: false,
       items: [
