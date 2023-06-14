@@ -4,7 +4,7 @@ title: ' '
 
 ---
 
-# Multi-Chain Spot Exchange (Simple Integration)
+# Simple Integration (Multi-Chain Spot Exchange)
 
 ---
 

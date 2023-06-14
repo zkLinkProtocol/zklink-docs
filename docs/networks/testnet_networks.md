@@ -4,7 +4,7 @@ title: ' '
 
 ---
 
-# Connected Networks
+# Testnet: Connected Networks
 
 ---
 > 💡Multiple dApps may share one network, and one dApp may have multiple versions in different networks.

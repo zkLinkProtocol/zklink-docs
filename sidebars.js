@@ -45,24 +45,10 @@ module.exports = {
       label: 'Network Information',
       collapsed: false,
       items: [
-        {
-          type: 'category',
-          label: 'Mainnet',
-          collapsed: true,
-          items: [
-            'networks/mainnet_networks',
-            'networks/mainnet_addresses'
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Testnet',
-          collapsed: true,
-          items: [
-            'networks/testnet_networks',
-            'networks/testnet_addresses'
-          ],
-        }
+        'networks/mainnet_networks',
+        'networks/mainnet_addresses',
+        'networks/testnet_networks',
+        'networks/testnet_addresses'
       ],
     },
     {
@@ -83,25 +69,6 @@ module.exports = {
         'Integration Architecture/Derivatives',
         'Integration Architecture/spot',
         'Integration Architecture/zkjump'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Use Cases',
-      collapsed: false,
-      items: [
-        'Product/orderbook',
-        'Product/NFT',
-        'Product/amm'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'API',
-      collapsed: false,
-      items: [
-        'developer/API-orderbook',
-        'developer/API-AMM'
       ],
     },
     {

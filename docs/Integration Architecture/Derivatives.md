@@ -4,7 +4,7 @@ title: ' '
 
 ---
 
-# Multi-Chain Derivatives & Spot Exchange (Heavyweight Integration)
+# Heavyweight Integration (Multi-Chain Derivatives & Spot Exchange)
 
 ---
 > 💡 A case study of ZKEX 3.0: a multi-chain derivatives & spot exchange with a unified account
